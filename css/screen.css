@@ -1,0 +1,156 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+
+*/
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/screen.scss */
+.nopadding {
+  padding: 0 !important;
+}
+
+/* line 16, ../sass/screen.scss */
+.nomargin {
+  margin: 0 !important;
+}
+
+/* line 19, ../sass/screen.scss */
+.fullwidth {
+  width: 100% !important;
+}
+
+/* line 22, ../sass/screen.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 25, ../sass/screen.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg.jpg);
+  background-size: 100%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+/* line 36, ../sass/screen.scss */
+header, #fakehead {
+  background-color: #283032;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  z-index: 9999;
+}
+/* line 44, ../sass/screen.scss */
+header #logo, #fakehead #logo {
+  margin: 27px;
+}
+/* line 46, ../sass/screen.scss */
+header #logo img, #fakehead #logo img {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+/* line 52, ../sass/screen.scss */
+header #nav, #fakehead #nav {
+  width: 140px;
+  margin: 0 auto;
+}
+/* line 55, ../sass/screen.scss */
+header #nav li, #fakehead #nav li {
+  color: #FFF;
+  padding: 14px 0;
+}
+/* line 58, ../sass/screen.scss */
+header #nav li a, #fakehead #nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 59, ../sass/screen.scss */
+header #nav li a i, #fakehead #nav li a i {
+  margin-right: 20px;
+}
+/* line 67, ../sass/screen.scss */
+header #nav li:visited, #fakehead #nav li:visited {
+  color: #fff;
+}
+
+/* line 75, ../sass/screen.scss */
+#fakehead {
+  z-index: 1;
+  position: relative !important;
+}

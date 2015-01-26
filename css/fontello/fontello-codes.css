@@ -1,0 +1,10 @@
+
+.icon-music:before { content: '\e800'; } /* '' */
+.icon-video:before { content: '\e801'; } /* '' */
+.icon-picture:before { content: '\e802'; } /* '' */
+.icon-github:before { content: '\e803'; } /* '' */
+.icon-feather:before { content: '\e804'; } /* '' */
+.icon-menu:before { content: '\e805'; } /* '' */
+.icon-search:before { content: '\e806'; } /* '' */
+.icon-right-open-big:before { content: '\e807'; } /* '' */
+.icon-left-open-big:before { content: '\e808'; } /* '' */

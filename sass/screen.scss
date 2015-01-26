@@ -1,0 +1,78 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+
+*/
+
+@import "compass/reset";
+.nopadding{
+	padding:0!important;
+}
+.nomargin{
+	margin:0!important;
+}
+.fullwidth{
+	width:100%!important;
+}
+.hide{
+	display:none!important;
+}
+body{
+	width:100%;
+	height:100%;
+	background-image:url(../images/bg.jpg);
+	background-size: 100%;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	font-family: 'Raleway', sans-serif;
+	color:#fff;
+}
+
+header, #fakehead{
+	background-color: #283032;
+	height: 100%;
+	position: absolute!important;
+	top: 0;
+	left: 0;
+	color: #FFF;
+	z-index:9999;
+	#logo{
+		margin: 27px;
+		img{
+			width: 150px;
+			margin: 0 auto;
+			display:block;
+		}
+	}
+	#nav{
+		width: 140px;
+		margin: 0 auto;
+		li{
+			color: #FFF;
+			padding: 14px 0;
+			a{
+				i{
+					margin-right: 20px;
+
+				}
+				text-decoration:none;
+				color: #fff;
+
+			}
+			&:visited{
+				color: #fff;
+			}
+		}
+		
+	}
+}
+
+#fakehead{
+	z-index:1;
+	position: relative!important;
+	}
