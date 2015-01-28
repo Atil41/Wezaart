@@ -22,6 +22,10 @@ font-family: 'Raleway', sans-serif;
 .hide{
 	display:none!important;
 }
+input{
+    	font-family: 'Raleway', sans-serif!important;
+
+}
 body{
 	width:100%;
 	height:100%;
@@ -29,18 +33,19 @@ body{
 	background-size: 100%;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif!important;
 	color:#fff;
 }
 
 header, #fakehead{
 	background-color: #283032;
 	height: 100%;
-	position: absolute!important;
+	//position: absolute!important;
 	top: 0;
 	left: 0;
 	color: #FFF;
 	z-index:9999;
+        overflow:hidden;
 	#logo{
 		margin: 27px;
 		img{
@@ -75,4 +80,72 @@ header, #fakehead{
 #fakehead{
 	z-index:1;
 	position: relative!important;
+}
+#navhide{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	padding: 8px 6px;
+}
+#searchbar {
+	position: absolute;
+	top: 35px;
+	left: 60px;
+	border: 0;
+	background-color: transparent;
+        &:after{
+            content: "";
+            border-bottom: 1px solid #fff;
+            width: 135px;
+            height: 1px;
+            position: absolute;
+            top: 30px;
+            left: 5px;
+            opacity: 0.5;
+        }
+
+	input{
+		border: 0;
+		background-color: transparent;
+		opacity: 0.5;
+		width: 120px;
+                color:#fff;
+                &:focus{
+                     outline: 0;
+                }
 	}
+	a{
+            
+		color: #fff;
+                opacity: 0.5;
+	}
+}
+nav#navslider{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    li{
+        float: left;
+        text-transform: uppercase;
+        margin-left:10px;
+        color:#fff;
+        padding: 6px 20px;
+
+        a{
+            color: #FFF;
+        }
+        &.button{
+            background-color: #fff;
+            border-radius: 20px;
+            a{
+            color: #000;
+
+            }
+            
+        }
+    }
+}

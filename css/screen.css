@@ -94,6 +94,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 25, ../sass/screen.scss */
+input {
+  font-family: "Raleway", sans-serif !important;
+}
+
+/* line 29, ../sass/screen.scss */
 body {
   width: 100%;
   height: 100%;
@@ -101,56 +106,133 @@ body {
   background-size: 100%;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif !important;
   color: #fff;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 header, #fakehead {
   background-color: #283032;
   height: 100%;
-  position: absolute !important;
   top: 0;
   left: 0;
   color: #FFF;
   z-index: 9999;
+  overflow: hidden;
 }
-/* line 44, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 header #logo, #fakehead #logo {
   margin: 27px;
 }
-/* line 46, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 header #logo img, #fakehead #logo img {
   width: 150px;
   margin: 0 auto;
   display: block;
 }
-/* line 52, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 header #nav, #fakehead #nav {
   width: 140px;
   margin: 0 auto;
 }
-/* line 55, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 header #nav li, #fakehead #nav li {
   color: #FFF;
   padding: 14px 0;
 }
-/* line 58, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 header #nav li a, #fakehead #nav li a {
   text-decoration: none;
   color: #fff;
 }
-/* line 59, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 header #nav li a i, #fakehead #nav li a i {
   margin-right: 20px;
 }
-/* line 67, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 header #nav li:visited, #fakehead #nav li:visited {
   color: #fff;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 #fakehead {
   z-index: 1;
   position: relative !important;
+}
+
+/* line 84, ../sass/screen.scss */
+#navhide {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  padding: 8px 6px;
+}
+
+/* line 94, ../sass/screen.scss */
+#searchbar {
+  position: absolute;
+  top: 35px;
+  left: 60px;
+  border: 0;
+  background-color: transparent;
+}
+/* line 100, ../sass/screen.scss */
+#searchbar:after {
+  content: "";
+  border-bottom: 1px solid #fff;
+  width: 135px;
+  height: 1px;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  opacity: 0.5;
+}
+/* line 111, ../sass/screen.scss */
+#searchbar input {
+  border: 0;
+  background-color: transparent;
+  opacity: 0.5;
+  width: 120px;
+  color: #fff;
+}
+/* line 117, ../sass/screen.scss */
+#searchbar input:focus {
+  outline: 0;
+}
+/* line 121, ../sass/screen.scss */
+#searchbar a {
+  color: #fff;
+  opacity: 0.5;
+}
+
+/* line 127, ../sass/screen.scss */
+nav#navslider {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
+/* line 131, ../sass/screen.scss */
+nav#navslider li {
+  float: left;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: #fff;
+  padding: 6px 20px;
+}
+/* line 138, ../sass/screen.scss */
+nav#navslider li a {
+  color: #FFF;
+}
+/* line 141, ../sass/screen.scss */
+nav#navslider li.button {
+  background-color: #fff;
+  border-radius: 20px;
+}
+/* line 144, ../sass/screen.scss */
+nav#navslider li.button a {
+  color: #000;
 }
