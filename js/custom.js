@@ -62,6 +62,5 @@ jQuery(document).ready(function ($) {
     $('#navhidebtn').click(function () {
         $('#content').toggleClass("navhide");
         $('#content').toggleClass("col-md-10").toggleClass("col-md-12");
-        ScaleSlider();
     });
 });
