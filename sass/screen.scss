@@ -1,7 +1,7 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -10,93 +10,109 @@ font-family: 'Raleway', sans-serif;
 */
 
 @import "compass/reset";
+
 .nopadding{
-	padding:0!important;
+    padding:0!important;
 }
 .nomargin{
-	margin:0!important;
+    margin:0!important;
 }
 .fullwidth{
-	width:100%!important;
+    width:100%!important;
 }
 .hide{
-	display:none!important;
+    display:none!important;
 }
 input{
-    	font-family: 'Raleway', sans-serif!important;
-
+    font-family: 'Raleway', sans-serif!important;
+}
+html {
+    height: 100%;
 }
 body{
-	width:100%;
-	height:100%;
-	background-image:url(../images/bg.jpg);
-	background-size: 100%;
-	background-position: 50% 0;
-	background-repeat: no-repeat;
-	font-family: 'Raleway', sans-serif!important;
-	color:#fff;
+    width:100%;
+    min-height: 100%;
+    height: 100%;
+    background-image:url(../images/bg.jpg);
+    background-size: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif!important;
+    color:#fff;
+    margin: 0;
+    padding: 0;
 }
 
-header, #fakehead{
-	background-color: #283032;
-	height: 100%;
-	//position: absolute!important;
-	top: 0;
-	left: 0;
-	color: #FFF;
-	z-index:9999;
-        overflow:hidden;
-	#logo{
-		margin: 27px;
-		img{
-			width: 150px;
-			margin: 0 auto;
-			display:block;
-		}
-	}
-	#nav{
-		width: 140px;
-		margin: 0 auto;
-		li{
-			color: #FFF;
-			padding: 14px 0;
-			a{
-				i{
-					margin-right: 20px;
 
-				}
-				text-decoration:none;
-				color: #fff;
+header#head{
+    background-color: #283032;
+    height: 100%;
+    display: block !important;
+    float: left;
+    height: 100%;
+    color: #FFF;
+    #sidebar{
+        position:fixed;
+        top:0;
 
-			}
-			&:visited{
-				color: #fff;
-			}
-		}
-		
-	}
+        #logo{
+            margin: 27px;
+            img{
+                width: 150px;
+                margin: 0 auto;
+                display:block;
+            }
+        }
+        #nav{
+            width: 140px;
+            margin: 0 auto;
+            li{
+                color: #FFF;
+                padding: 14px 0;
+                a{
+                    i{
+                        margin-right: 20px;
+
+                    }
+                    text-decoration:none;
+                    color: #fff;
+
+                }
+                &:visited{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
 }
 
-#fakehead{
-	z-index:1;
-	position: relative!important;
+#navhidebtn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    padding: 8px 6px;
 }
-#navhide{
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	background-color: #fff;
-	position: absolute;
-	left: 10px;
-	top: 30px;
-	padding: 8px 6px;
-}
-#searchbar {
-	position: absolute;
-	top: 35px;
-	left: 60px;
-	border: 0;
-	background-color: transparent;
+
+section#content {
+    background-color: #fff;
+    overflow:visible;
+    position:absolute;
+    margin-left:16.66666667%;
+    transition: all .6s ease-in-out;
+    &.navhide{
+        margin-left: 0!important;
+    }
+    #searchbar {
+        position: absolute;
+        top: 35px;
+        left: 60px;
+        border: 0;
+        background-color: transparent;
         &:after{
             content: "";
             border-bottom: 1px solid #fff;
@@ -108,44 +124,88 @@ header, #fakehead{
             opacity: 0.5;
         }
 
-	input{
-		border: 0;
-		background-color: transparent;
-		opacity: 0.5;
-		width: 120px;
-                color:#fff;
-                &:focus{
-                     outline: 0;
-                }
-	}
-	a{
-            
-		color: #fff;
-                opacity: 0.5;
-	}
-}
-nav#navslider{
-    position: absolute;
-    top: 30px;
-    right: 35px;
-    li{
-        float: left;
-        text-transform: uppercase;
-        margin-left:10px;
-        color:#fff;
-        padding: 6px 20px;
-
-        a{
-            color: #FFF;
+        input{
+            border: 0;
+            background-color: transparent;
+            opacity: 0.5;
+            width: 120px;
+            color:#fff;
+            &:focus{
+                outline: 0;
+            }
         }
-        &.button{
-            background-color: #fff;
-            border-radius: 20px;
+        a{
+
+            color: #fff;
+            opacity: 0.5;
+        }
+    }
+    nav#navslider{
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        li{
+            float: left;
+            text-transform: uppercase;
+            margin-left:10px;
+            color:#fff;
+            padding: 6px 20px;
+
             a{
-            color: #000;
+                color: #FFF;
+            }
+            &.button{
+                background-color: #fff;
+                border-radius: 20px;
+                a{
+                    color: #000;
+
+                }
 
             }
-            
+        }
+    }
+    #topartiste{
+        width: 100%;
+        padding:30px;
+        .title{
+            margin:10px 25px;
+            h2{
+                display: inline-block;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        .wrapper{
+            display: flex;
+
+            .artiste{
+                padding-top:30px;
+                border: 1px solid #eee;
+                width: 180px;
+                height: 270px;
+                text-align: center;
+                margin: auto;
+                span{
+                    display: inline-block;
+                    font-size:12px;
+                }
+                .name{
+                    display: block;
+                    margin-top: 18px;
+
+                    span{
+                        display: inline-block;
+                        font-size:14px;
+                        font-weight:bold;
+                        color:#333;
+                        >span{
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
         }
     }
 }
