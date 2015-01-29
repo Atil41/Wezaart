@@ -187,25 +187,40 @@ section#content {
                 height: 270px;
                 text-align: center;
                 margin: auto;
+                position:relative;
+                a{
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 25px;
+                        left: 35px;
+                        height: 110px;
+                        width: 110px;
+                        background-image: url(../images/contour.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            span{
+                display: inline-block;
+                font-size:12px;
+            }
+            .name{
+                display: block;
+                margin-top: 18px;
+
                 span{
                     display: inline-block;
-                    font-size:12px;
-                }
-                .name{
-                    display: block;
-                    margin-top: 18px;
-
-                    span{
-                        display: inline-block;
-                        font-size:14px;
-                        font-weight:bold;
-                        color:#333;
-                        >span{
-                            text-transform: uppercase;
-                        }
+                    font-size:14px;
+                    font-weight:bold;
+                    color:#333;
+                    >span{
+                        text-transform: uppercase;
                     }
                 }
             }
         }
     }
+
 }

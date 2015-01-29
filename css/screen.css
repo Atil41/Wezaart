@@ -281,25 +281,38 @@ section#content #topartiste .wrapper .artiste {
   height: 270px;
   text-align: center;
   margin: auto;
+  position: relative;
 }
-/* line 190, ../sass/screen.scss */
-section#content #topartiste .wrapper .artiste span {
+/* line 192, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste a:before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  height: 110px;
+  width: 110px;
+  background-image: url(../images/contour.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 205, ../sass/screen.scss */
+section#content #topartiste .wrapper span {
   display: inline-block;
   font-size: 12px;
 }
-/* line 194, ../sass/screen.scss */
-section#content #topartiste .wrapper .artiste .name {
+/* line 209, ../sass/screen.scss */
+section#content #topartiste .wrapper .name {
   display: block;
   margin-top: 18px;
 }
-/* line 198, ../sass/screen.scss */
-section#content #topartiste .wrapper .artiste .name span {
+/* line 213, ../sass/screen.scss */
+section#content #topartiste .wrapper .name span {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   color: #333;
 }
-/* line 203, ../sass/screen.scss */
-section#content #topartiste .wrapper .artiste .name span > span {
+/* line 218, ../sass/screen.scss */
+section#content #topartiste .wrapper .name span > span {
   text-transform: uppercase;
 }
