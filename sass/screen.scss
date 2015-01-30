@@ -51,39 +51,39 @@ header#head{
     float: left;
     height: 100%;
     color: #FFF;
-    #sidebar{
-        position:fixed;
-        top:0;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-        #logo{
-            margin: 27px;
-            img{
-                width: 150px;
-                margin: 0 auto;
-                display:block;
-            }
-        }
-        #nav{
-            width: 140px;
+    #logo{
+        margin: 27px;
+        img{
+            width: 150px;
             margin: 0 auto;
-            li{
-                color: #FFF;
-                padding: 14px 0;
-                a{
-                    i{
-                        margin-right: 20px;
-
-                    }
-                    text-decoration:none;
-                    color: #fff;
+            display:block;
+        }
+    }
+    #nav{
+        width: 140px;
+        margin: 0 auto;
+        li{
+            color: #FFF;
+            padding: 14px 0;
+            a{
+                i{
+                    margin-right: 20px;
 
                 }
-                &:visited{
-                    color: #fff;
-                }
+                text-decoration:none;
+                color: #fff;
+
+            }
+            &:visited{
+                color: #fff;
             }
         }
     }
+
 
 }
 
@@ -95,7 +95,7 @@ header#head{
     position: absolute;
     left: 10px;
     top: 30px;
-    padding: 8px 6px;
+    padding: 8px 7px;
 }
 
 section#content {
@@ -188,7 +188,7 @@ section#content {
                 text-align: center;
                 margin: auto;
                 position:relative;
-                a{
+                >a{
                     &:before {
                         content: '';
                         position: absolute;
@@ -201,13 +201,81 @@ section#content {
                         background-repeat: no-repeat;
                     }
                 }
+                .artistebtn{
+                    margin-top: 10px;
+                }
+                div{
+                    position:relative;
+                    a {
+                        position: absolute;
+                        padding-top: 6px ;
+                        bottom: -40px;
+                        width:33px;
+                        height:33px;
+                        border-radius:50%;
+                        background-color:#fff;
+                        border:1px solid #bfbfbf;
+                        font-size:15px;
+                        text-align:center;
+                        color: #293033;
+                        transition: all .3s ease-in;
+
+
+                        &:nth-child(1){
+                            left: 20px;
+                            &:hover{
+                                color: #fff;
+                                background-color:#293033;
+                            }
+                        }
+                        &:nth-child(2){
+                            background-color:#FFF;
+                            width:40px;
+                            height:40px;
+                            left: 70px;
+
+                            .button{
+                                width:30px;
+                                height:30px;
+                                top: -2px;
+                                left: 4.5px;
+                                padding-top: 5px;
+                                background-color: #7a93b5;
+                                color: #fff;
+                                border-radius: 50%;
+                                transition: all .3s ease-in;
+
+                            }
+
+                            &:hover .button{
+                                color: #fff;
+                                padding-top: 7px;
+                                width:39px;
+                                height:39px;
+                                padding-top: 10px;
+                                top: -7px;
+                                left: 0px;
+                            }
+
+                        }
+                        &:nth-child(3){
+                            font-size:13px;
+                            right: 20px;
+                            &:hover{
+                                color: #fff;
+                                background-color:#293033;
+                            }
+                        }
+
+                    }
+                }
             }
             span{
                 display: inline-block;
                 font-size:12px;
             }
             .name{
-                display: block;
+                display: inline-block;
                 margin-top: 18px;
 
                 span{

@@ -126,43 +126,41 @@ header#head {
   float: left;
   height: 100%;
   color: #FFF;
-}
-/* line 54, ../sass/screen.scss */
-header#head #sidebar {
   position: fixed;
   top: 0;
+  left: 0;
 }
 /* line 58, ../sass/screen.scss */
-header#head #sidebar #logo {
+header#head #logo {
   margin: 27px;
 }
 /* line 60, ../sass/screen.scss */
-header#head #sidebar #logo img {
+header#head #logo img {
   width: 150px;
   margin: 0 auto;
   display: block;
 }
 /* line 66, ../sass/screen.scss */
-header#head #sidebar #nav {
+header#head #nav {
   width: 140px;
   margin: 0 auto;
 }
 /* line 69, ../sass/screen.scss */
-header#head #sidebar #nav li {
+header#head #nav li {
   color: #FFF;
   padding: 14px 0;
 }
 /* line 72, ../sass/screen.scss */
-header#head #sidebar #nav li a {
+header#head #nav li a {
   text-decoration: none;
   color: #fff;
 }
 /* line 73, ../sass/screen.scss */
-header#head #sidebar #nav li a i {
+header#head #nav li a i {
   margin-right: 20px;
 }
 /* line 81, ../sass/screen.scss */
-header#head #sidebar #nav li:visited {
+header#head #nav li:visited {
   color: #fff;
 }
 
@@ -175,7 +173,7 @@ header#head #sidebar #nav li:visited {
   position: absolute;
   left: 10px;
   top: 30px;
-  padding: 8px 6px;
+  padding: 8px 7px;
 }
 
 /* line 101, ../sass/screen.scss */
@@ -184,7 +182,8 @@ section#content {
   overflow: visible;
   position: absolute;
   margin-left: 16.66666667%;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+          transition: all .6s ease-in-out;
 }
 /* line 107, ../sass/screen.scss */
 section#content.navhide {
@@ -271,6 +270,9 @@ section#content #topartiste .title h2 {
 }
 /* line 180, ../sass/screen.scss */
 section#content #topartiste .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 /* line 183, ../sass/screen.scss */
@@ -284,7 +286,7 @@ section#content #topartiste .wrapper .artiste {
   position: relative;
 }
 /* line 192, ../sass/screen.scss */
-section#content #topartiste .wrapper .artiste a:before {
+section#content #topartiste .wrapper .artiste > a:before {
   content: '';
   position: absolute;
   top: 25px;
@@ -295,24 +297,97 @@ section#content #topartiste .wrapper .artiste a:before {
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 205, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste .artistebtn {
+  margin-top: 10px;
+}
+/* line 207, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div {
+  position: relative;
+}
+/* line 209, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a {
+  position: absolute;
+  padding-top: 6px;
+  bottom: -40px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  font-size: 15px;
+  text-align: center;
+  color: #293033;
+  -webkit-transition: all .3s ease-in;
+          transition: all .3s ease-in;
+}
+/* line 224, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(1) {
+  left: 20px;
+}
+/* line 226, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(1):hover {
+  color: #fff;
+  background-color: #293033;
+}
+/* line 231, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(2) {
+  background-color: #FFF;
+  width: 40px;
+  height: 40px;
+  left: 70px;
+}
+/* line 237, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(2) .button {
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: 4.5px;
+  padding-top: 5px;
+  background-color: #7a93b5;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in;
+          transition: all .3s ease-in;
+}
+/* line 250, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(2):hover .button {
+  color: #fff;
+  padding-top: 7px;
+  width: 39px;
+  height: 39px;
+  padding-top: 10px;
+  top: -7px;
+  left: 0px;
+}
+/* line 261, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(3) {
+  font-size: 13px;
+  right: 20px;
+}
+/* line 264, ../sass/screen.scss */
+section#content #topartiste .wrapper .artiste div a:nth-child(3):hover {
+  color: #fff;
+  background-color: #293033;
+}
+/* line 273, ../sass/screen.scss */
 section#content #topartiste .wrapper span {
   display: inline-block;
   font-size: 12px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 section#content #topartiste .wrapper .name {
-  display: block;
+  display: inline-block;
   margin-top: 18px;
 }
-/* line 213, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 section#content #topartiste .wrapper .name span {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   color: #333;
 }
-/* line 218, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 section#content #topartiste .wrapper .name span > span {
   text-transform: uppercase;
 }
