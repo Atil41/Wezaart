@@ -25,15 +25,15 @@
         <link rel="stylesheet" href="css/fontello/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello/fontello-ie7.css"><![endif]-->
         <!--/FONTELLO-->
         <!--Slider-->
+        <!-- Important Owl stylesheet -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
 
-        <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-        <script type="text/javascript" src="js/docs.min.js"></script>
-        <script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Default Theme -->
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- Include js plugin -->
+        <script src="js/owl.carousel.min.js"></script>
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -88,69 +88,38 @@
                         </li>
                     </ul>
                 </div>
-                <div id="Profil">
-                    <div id="Login">
+                <div id="profil">
+                    <div id="login">
+                        <ul>
+                            <li class="button"><a href="#">Se connecter</a></li>
+                            <li class="button"><a href="#">S'inscrire</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </header>
         <section id="content" class="col-md-12 nopadding navhide">
             <section id="slider">
-                <div class="contain">
-                    <!-- Jssor Slider Begin -->
-                    <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
-                    <div class="contain">
-                        <!-- Jssor Slider Begin -->
-                        <!-- You can move inline styles to css file or css block. -->
-                        <!-- ================================================== -->
-                        <div id="slider1_container" class="fullwidth" style="display: none; position: relative; margin: 0 auto; width: 980px;height: 380px; overflow: hidden;">
 
-                            <!-- Loading Screen -->
-                            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
-                                </div>
-                                <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;">
-                                </div>
-                            </div>
-
-                            <!-- Slides Container -->
-                            <div u="slides" class="fullwidth "  style="cursor: move; position: absolute; right: 0px; top: 0px; width: 1140px; height: 442px;overflow: hidden;">
-                                <div>
-                                    <img u="image" src="images/home/01.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="images/home/02.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="images/home/03.jpg" />
-                                </div>
-                                <div>
-                                    <img u="image" src="images/home/04.jpg" />
-                                </div>
-                            </div>
-
-                            <!-- Bullet Navigator Skin Begin -->
-
-                            <!-- bullet navigator container -->
-                            <div u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; right: 6px;">
-                                <!-- bullet navigator item prototype -->
-                                <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
-                            </div>
-                            <!-- Arrow Navigator Skin Begin -->
-                            <!-- Arrow Left -->
-                            <span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;"></span>
-                            <!-- Arrow Right -->
-                            <span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px"></span>
-                            <!-- Arrow Navigator Skin End -->
-                        </div>
-                        <!-- Jssor Slider End -->
+                <div  id="owl-slide" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img  src="images/home/01.jpg" />
                     </div>
-                    <!-- Jssor Slider End -->
+                    <div  class="item">
+                        <img  src="images/home/02.jpg" />
+                    </div>
+                    <div  class="item">
+                        <img src="images/home/03.jpg" />
+                    </div>
+                    <div  class="item">
+                        <img src="images/home/04.jpg" />
+                    </div>
                 </div>
+
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
-            <div id="searchbar"><input type="text" placeholder="Recherche"><a href="#"<i class="icon-search"></i></a></div>
+            <div id="searchbar"><input type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
             <nav id="navslider">
                 <ul>
                     <li><a href="#">Le concept</a></li>
@@ -161,7 +130,7 @@
                 <div class="title">
                     <h2>Le top artiste</h2>
                 </div>
-                <div class="wrapper">
+                <div id="owl-artistes" class="wrapper" >
 
                     <div class="artiste">
                         <a href="#"><img src="images/artiste1.png"></a>
@@ -182,7 +151,8 @@
                             <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
                             <a href="#"><div class="button"><i class="icon-share"></i></div></a>
                         </div>
-                    </div><div class="artiste">
+                    </div>
+                    <div class="artiste">
                         <a href="#"><img src="images/artiste3.png"></a>
                         <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
                         <span>This is Photoshop's version  of Lorem Ipsum...</span>
@@ -191,7 +161,8 @@
                             <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
                             <a href="#"><div class="button"><i class="icon-share"></i></div></a>
                         </div>
-                    </div><div class="artiste">
+                    </div>
+                    <div class="artiste">
                         <a href="#"><img src="images/artiste4.png"></a>
                         <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
                         <span>This is Photoshop's version  of Lorem Ipsum...</span>
@@ -200,7 +171,58 @@
                             <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
                             <a href="#"><div class="button"><i class="icon-share"></i></div></a>
                         </div>
-                    </div><div class="artiste">
+                    </div>
+                    <div class="artiste">
+                        <a href="#"><img src="images/artiste5.png"></a>
+                        <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                        <span>This is Photoshop's version  of Lorem Ipsum...</span>
+                        <div class="artistebtn">
+                            <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
+                            <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
+                            <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="artiste">
+                        <a href="#"><img src="images/artiste1.png"></a>
+                        <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                        <span>This is Photoshop's version  of Lorem Ipsum...</span>
+                        <div class="artistebtn">
+                            <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
+                            <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
+                            <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="artiste">
+                        <a href="#"><img src="images/artiste2.png"></a>
+                        <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                        <span>This is Photoshop's version  of Lorem Ipsum...</span>
+                        <div class="artistebtn">
+                            <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
+                            <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
+                            <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="artiste">
+                        <a href="#"><img src="images/artiste3.png"></a>
+                        <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                        <span>This is Photoshop's version  of Lorem Ipsum...</span>
+                        <div class="artistebtn">
+                            <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
+                            <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
+                            <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="artiste">
+                        <a href="#"><img src="images/artiste4.png"></a>
+                        <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                        <span>This is Photoshop's version  of Lorem Ipsum...</span>
+                        <div class="artistebtn">
+                            <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
+                            <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
+                            <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                        </div>
+                    </div>
+                    <div class="artiste">
                         <a href="#"><img src="images/artiste5.png"></a>
                         <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
                         <span>This is Photoshop's version  of Lorem Ipsum...</span>
