@@ -460,9 +460,16 @@ section#content {
 			width: 394px;
 			height: 292px;
 			display: block;
-			background: url(../images/imagemusique.png) center top no-repeat;
+			background: url(../images/img-cat-music.png) center top no-repeat;
+			text-decoration: none;
 			
 			.cercleinfos {
+			text-decoration: none;
+			font-family: 'Libre Baskerville', serif;
+			font-style: italic;
+			font-weight: 400; 
+			font-size:20px;
+			color:#fff;
 			background:grey;
 			border-radius:50%;
 			width:30px;
@@ -479,7 +486,8 @@ section#content {
 		.imagemusique:hover {
 		
 			.cercleinfos {
-			display: none;
+			//display: none;
+			background:purple;
 			}
 			
 			.textinfos {
@@ -500,7 +508,7 @@ section#content {
 			width: 394px;
 			height: 292px;
 			display: block;
-			background: url(../images/imagedesign.png) center top no-repeat;
+			background: url(../images/img-cat-design.png) center top no-repeat;
 			
 			.cercleinfos {
 			background:grey;
@@ -535,12 +543,12 @@ section#content {
 			font-weight: bold;
 			}
 		}
-		.imagelettre {
+		.imagelettres {
 			float: right;
 			width: 394px;
 			height: 292px;
 			display: block;
-			background: url(../images/imagelettre.png) center top no-repeat;
+			background: url(../images/img-cat-lettres.png) center top no-repeat;
 			
 			.cercleinfos {
 			background:grey;
@@ -556,7 +564,7 @@ section#content {
 			}
 		}
 		
-		.imagelettre:hover {
+		.imagelettres:hover {
 		
 			.cercleinfos {
 			display: none;
@@ -610,12 +618,12 @@ section#content {
 			}
 		}
 		
-		.imagegauche {
+		.imagevideo {
 			float: left;
 			width: 394px;
 			height: 292px;
 			display: block;
-			background: url(../images/imagemusique.png) center top no-repeat;
+			background: url(../images/img-cat-video.png) center top no-repeat;
 			
 			.cercleinfos {
 			background:grey;
@@ -631,7 +639,7 @@ section#content {
 			}
 		}
 		
-		.imagegauche:hover {
+		.imagevideo:hover {
 		
 			.cercleinfos {
 			display: none;
@@ -650,7 +658,46 @@ section#content {
 			font-weight: bold;
 			}
 		}
+		.imagehappening {
+			float: left;
+			width: 394px;
+			height: 292px;
+			display: block;
+			background: url(../images/img-cat-happening.png) center top no-repeat;
+			
+			.cercleinfos {
+			background:grey;
+			border-radius:50%;
+			width:30px;
+			height:30px;
+			margin: 20px 0 0 340px;
+			text-align: center;
+			}
+			
+			.textinfos {
+			display: none;
+			}
+		}
 		
+		.imagehappening:hover {
+		
+			.cercleinfos {
+			display: none;
+			}
+			
+			.textinfos {
+			background: #000;
+			opacity:0.7;
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-align: center;
+			padding: 30px;
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+			}
+		}
 		.clear {
 		clear: both;
 		}
