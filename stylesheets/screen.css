@@ -518,26 +518,26 @@ section#content #topartiste .wrapper .name span > span {
   text-transform: uppercase;
 }
 /* line 430, ../sass/screen.scss */
-section#content #sectionmusicale {
+section#content #sectiongauche {
   margin: 30px;
   background: #fff;
 }
 /* line 434, ../sass/screen.scss */
-section#content #sectionmusicale .textgauche {
+section#content #sectiongauche .textgauche {
   margin: 0 30px 0 30px;
   float: left;
   width: 55%;
 }
 /* line 439, ../sass/screen.scss */
-section#content #sectionmusicale .textgauche .title {
+section#content #sectiongauche .textgauche .title {
   margin: 20px 0 15px 0;
 }
 /* line 442, ../sass/screen.scss */
-section#content #sectionmusicale .textgauche .title .span {
+section#content #sectiongauche .textgauche .title .span {
   float: left;
 }
 /* line 446, ../sass/screen.scss */
-section#content #sectionmusicale .textgauche .title .decouvrir {
+section#content #sectiongauche .textgauche .title .decouvrir {
   float: right;
   width: 230px;
   padding: 5px;
@@ -547,7 +547,7 @@ section#content #sectionmusicale .textgauche .title .decouvrir {
   mardin: none;
 }
 /* line 458, ../sass/screen.scss */
-section#content #sectionmusicale .imagedroite {
+section#content #sectiongauche .imagemusique {
   float: right;
   width: 394px;
   height: 292px;
@@ -555,7 +555,7 @@ section#content #sectionmusicale .imagedroite {
   background: url(../images/imagemusique.png) center top no-repeat;
 }
 /* line 465, ../sass/screen.scss */
-section#content #sectionmusicale .imagedroite .cercleinfos {
+section#content #sectiongauche .imagemusique .cercleinfos {
   background: grey;
   border-radius: 50%;
   width: 30px;
@@ -564,15 +564,15 @@ section#content #sectionmusicale .imagedroite .cercleinfos {
   text-align: center;
 }
 /* line 474, ../sass/screen.scss */
-section#content #sectionmusicale .imagedroite .textinfos {
+section#content #sectiongauche .imagemusique .textinfos {
   display: none;
 }
 /* line 481, ../sass/screen.scss */
-section#content #sectionmusicale .imagedroite:hover .cercleinfos {
+section#content #sectiongauche .imagemusique:hover .cercleinfos {
   display: none;
 }
 /* line 485, ../sass/screen.scss */
-section#content #sectionmusicale .imagedroite:hover .textinfos {
+section#content #sectiongauche .imagemusique:hover .textinfos {
   background: #000;
   opacity: 0.7;
   width: 100%;
@@ -584,121 +584,16 @@ section#content #sectionmusicale .imagedroite:hover .textinfos {
   color: #fff;
   font-weight: bold;
 }
-/* line 499, ../sass/screen.scss */
-section#content #sectionmusicale .clear {
-  clear: both;
-}
-/* line 504, ../sass/screen.scss */
-section#content #sectionvideo {
-  margin: 30px;
-  background: #fff;
-}
-/* line 508, ../sass/screen.scss */
-section#content #sectionvideo .textdroite {
-  margin: 0 30px 0 30px;
-  float: right;
-  width: 55%;
-}
-/* line 513, ../sass/screen.scss */
-section#content #sectionvideo .textdroite .title {
-  margin: 20px 0 15px 0;
-  text-align: right;
-}
-/* line 517, ../sass/screen.scss */
-section#content #sectionvideo .textdroite .title .span {
-  float: right;
-}
-/* line 521, ../sass/screen.scss */
-section#content #sectionvideo .textdroite .title .decouvrir {
-  float: left;
-  width: 230px;
-  padding: 5px;
-  background: #eee;
-  border-radius: 35px;
-  text-align: center;
-  mardin: none;
-}
-/* line 533, ../sass/screen.scss */
-section#content #sectionvideo .imagegauche {
-  float: left;
-  width: 394px;
-  height: 292px;
-  display: block;
-  background: url(../images/imagemusique.png) center top no-repeat;
-}
-/* line 540, ../sass/screen.scss */
-section#content #sectionvideo .imagegauche .cercleinfos {
-  background: grey;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin: 20px 0 0 340px;
-  text-align: center;
-}
-/* line 549, ../sass/screen.scss */
-section#content #sectionvideo .imagegauche .textinfos {
-  display: none;
-}
-/* line 556, ../sass/screen.scss */
-section#content #sectionvideo .imagegauche:hover .cercleinfos {
-  display: none;
-}
-/* line 560, ../sass/screen.scss */
-section#content #sectionvideo .imagegauche:hover .textinfos {
-  background: #000;
-  opacity: 0.7;
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-/* line 574, ../sass/screen.scss */
-section#content #sectionvideo .clear {
-  clear: both;
-}
-/* line 578, ../sass/screen.scss */
-section#content #sectiondesign {
-  margin: 30px;
-  background: #fff;
-}
-/* line 582, ../sass/screen.scss */
-section#content #sectiondesign .textgauche {
-  margin: 0 30px 0 30px;
-  float: left;
-  width: 55%;
-}
-/* line 587, ../sass/screen.scss */
-section#content #sectiondesign .textgauche .title {
-  margin: 20px 0 15px 0;
-}
-/* line 590, ../sass/screen.scss */
-section#content #sectiondesign .textgauche .title .span {
-  float: left;
-}
-/* line 594, ../sass/screen.scss */
-section#content #sectiondesign .textgauche .title .decouvrir {
-  float: right;
-  width: 230px;
-  padding: 5px;
-  background: #eee;
-  border-radius: 35px;
-  text-align: center;
-  mardin: none;
-}
-/* line 606, ../sass/screen.scss */
-section#content #sectiondesign .imagedroite {
+/* line 498, ../sass/screen.scss */
+section#content #sectiongauche .imagedesign {
   float: right;
   width: 394px;
   height: 292px;
   display: block;
-  background: url(../images/imagemusique.png) center top no-repeat;
+  background: url(../images/imagedesign.png) center top no-repeat;
 }
-/* line 613, ../sass/screen.scss */
-section#content #sectiondesign .imagedroite .cercleinfos {
+/* line 505, ../sass/screen.scss */
+section#content #sectiongauche .imagedesign .cercleinfos {
   background: grey;
   border-radius: 50%;
   width: 30px;
@@ -706,16 +601,16 @@ section#content #sectiondesign .imagedroite .cercleinfos {
   margin: 20px 0 0 20px;
   text-align: center;
 }
-/* line 622, ../sass/screen.scss */
-section#content #sectiondesign .imagedroite .textinfos {
+/* line 514, ../sass/screen.scss */
+section#content #sectiongauche .imagedesign .textinfos {
   display: none;
 }
-/* line 629, ../sass/screen.scss */
-section#content #sectiondesign .imagedroite:hover .cercleinfos {
+/* line 521, ../sass/screen.scss */
+section#content #sectiongauche .imagedesign:hover .cercleinfos {
   display: none;
 }
-/* line 633, ../sass/screen.scss */
-section#content #sectiondesign .imagedroite:hover .textinfos {
+/* line 525, ../sass/screen.scss */
+section#content #sectiongauche .imagedesign:hover .textinfos {
   background: #000;
   opacity: 0.7;
   width: 100%;
@@ -727,27 +622,137 @@ section#content #sectiondesign .imagedroite:hover .textinfos {
   color: #fff;
   font-weight: bold;
 }
-/* line 647, ../sass/screen.scss */
-section#content #sectiondesign .clear {
+/* line 538, ../sass/screen.scss */
+section#content #sectiongauche .imagelettre {
+  float: right;
+  width: 394px;
+  height: 292px;
+  display: block;
+  background: url(../images/imagelettre.png) center top no-repeat;
+}
+/* line 545, ../sass/screen.scss */
+section#content #sectiongauche .imagelettre .cercleinfos {
+  background: grey;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 20px 0 0 20px;
+  text-align: center;
+}
+/* line 554, ../sass/screen.scss */
+section#content #sectiongauche .imagelettre .textinfos {
+  display: none;
+}
+/* line 561, ../sass/screen.scss */
+section#content #sectiongauche .imagelettre:hover .cercleinfos {
+  display: none;
+}
+/* line 565, ../sass/screen.scss */
+section#content #sectiongauche .imagelettre:hover .textinfos {
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 579, ../sass/screen.scss */
+section#content #sectiongauche .clear {
   clear: both;
 }
-/* line 652, ../sass/screen.scss */
+/* line 584, ../sass/screen.scss */
+section#content #sectiondroite {
+  margin: 30px;
+  background: #fff;
+}
+/* line 588, ../sass/screen.scss */
+section#content #sectiondroite .textdroite {
+  margin: 0 30px 0 30px;
+  float: right;
+  width: 55%;
+}
+/* line 593, ../sass/screen.scss */
+section#content #sectiondroite .textdroite .title {
+  margin: 20px 0 15px 0;
+  text-align: right;
+}
+/* line 597, ../sass/screen.scss */
+section#content #sectiondroite .textdroite .title .span {
+  float: right;
+}
+/* line 601, ../sass/screen.scss */
+section#content #sectiondroite .textdroite .title .decouvrir {
+  float: left;
+  width: 230px;
+  padding: 5px;
+  background: #eee;
+  border-radius: 35px;
+  text-align: center;
+  mardin: none;
+}
+/* line 613, ../sass/screen.scss */
+section#content #sectiondroite .imagegauche {
+  float: left;
+  width: 394px;
+  height: 292px;
+  display: block;
+  background: url(../images/imagemusique.png) center top no-repeat;
+}
+/* line 620, ../sass/screen.scss */
+section#content #sectiondroite .imagegauche .cercleinfos {
+  background: grey;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 20px 0 0 340px;
+  text-align: center;
+}
+/* line 629, ../sass/screen.scss */
+section#content #sectiondroite .imagegauche .textinfos {
+  display: none;
+}
+/* line 636, ../sass/screen.scss */
+section#content #sectiondroite .imagegauche:hover .cercleinfos {
+  display: none;
+}
+/* line 640, ../sass/screen.scss */
+section#content #sectiondroite .imagegauche:hover .textinfos {
+  background: #000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 654, ../sass/screen.scss */
+section#content #sectiondroite .clear {
+  clear: both;
+}
+/* line 659, ../sass/screen.scss */
 section#content #footer {
   margin: 30px;
   border-top: 1px solid #999;
   padding-top: 10px;
 }
-/* line 657, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 section#content #footer a {
   margin-right: 20px;
 }
-/* line 661, ../sass/screen.scss */
+/* line 668, ../sass/screen.scss */
 section#content #footer #footerleft {
   float: left;
   width: 55%;
   padding: 5px;
 }
-/* line 667, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 section#content #footer #footerright {
   float: right;
   width: 150px;
