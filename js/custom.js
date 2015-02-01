@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+
 
     $("#owl-slide").owlCarousel({
         navigation: false, // Show next and prev buttons
@@ -26,8 +26,10 @@ jQuery(document).ready(function ($) {
         pagination: false
 
     });
+    $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+
 
     $('#navhidebtn').click(function () {
-        $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+        $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
     });
 });
