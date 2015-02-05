@@ -11,6 +11,15 @@ font-family: 'Raleway', sans-serif;
 
 @import "compass/reset";
 
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}
+
+
 .nopadding{
     padding:0!important;
 }
@@ -141,45 +150,41 @@ header#head{
             &.button{
                 background-color: #fff;
                 border-radius: 20px;
-                a{
-                    color: #000;
-
-                }
-
+                color: #000;
             }
         }
     }
 
-	#barres {
-	width: 100%;
-	position: absolute;
-    bottom: 0px;
-	
-		#jaune {
-		height:5px;
-		width:25%;
-		background-color:#eeb939;
-		float: left;
-		}
-		#rouge {
-		height:5px;
-		width:25%;
-		background-color:#e06748;
-		float: left;
-		}
-		#violet {
-		height:5px;
-		width:25%;
-		background-color:#895993;
-		float: left;
-		}
-		#bleu {
-		height:5px;
-		width:25%;
-		background-color:#98b8e1;
-		float: left;
-		}
-	}
+    #barres {
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+
+        #jaune {
+            height:5px;
+            width:25%;
+            background-color:#eeb939;
+            float: left;
+        }
+        #rouge {
+            height:5px;
+            width:25%;
+            background-color:#e06748;
+            float: left;
+        }
+        #violet {
+            height:5px;
+            width:25%;
+            background-color:#895993;
+            float: left;
+        }
+        #bleu {
+            height:5px;
+            width:25%;
+            background-color:#98b8e1;
+            float: left;
+        }
+    }
 }
 
 #navhidebtn{
@@ -230,7 +235,35 @@ section#content {
             z-index: 9999;
             margin-top: -40px;
             position: absolute;
-            width: 100%;
+            top: -10px;
+            right: 30px;
+
+            .owl-prev{
+                background: url(../images/arrow-prev-noir.png) no-repeat 10px center;
+                font-size: 0;
+                padding: 14px;
+                border: 1px solid #cccccc;
+                border-radius: 50%;
+                float: left;
+                &:hover{
+                    background: url(../images/arrow-prev-blanc.png) #283032 no-repeat 10px center;
+
+                }
+            }
+            .owl-next{
+                background: url(../images/arrow-next-noir.png)  no-repeat 10px center;
+                font-size: 0;
+                padding: 14px;
+                border: 1px solid #cccccc;
+                border-radius: 50%;
+                float: left;
+                &:hover{
+                    background: url(../images/arrow-next-blanc.png) #283032 no-repeat 10px center;
+
+                }
+            }
+
+
             .owl-page{
                 span{
                     opacity: 1;
@@ -250,6 +283,10 @@ section#content {
         left: 60px;
         border: 0;
         background-color: transparent;
+        @include placeholder {
+            color: white;
+            font-weight:100;
+        }
         &:after{
             content: "";
             border-bottom: 1px solid #fff;
@@ -264,9 +301,9 @@ section#content {
         input{
             border: 0;
             background-color: transparent;
-            opacity: 0.5;
+            opacity: 0.8;
             width: 120px;
-            color:#fff;
+
             &:focus{
                 outline: 0;
             }
@@ -294,6 +331,8 @@ section#content {
             &.button{
                 background-color: #fff;
                 border-radius: 20px;
+                color: #000;
+
                 a{
                     color: #000;
 
@@ -311,13 +350,14 @@ section#content {
             }
         }
     }
-	
+
     #topartiste{
         width: 100%;
-		background: #fff;
-		
+        background: #fff;
+
         .title{
             margin:10px 25px;
+            margin-top:0;
             h2{
                 display: inline-block;
                 font-size: 18px;
@@ -325,9 +365,9 @@ section#content {
                 text-transform: uppercase;
             }
         }
-        .wrapper{
-            display: flex;
 
+        .wrapper{
+            padding-bottom:20px;
             .artiste{
                 padding-top:30px;
                 border: 1px solid #eee;
@@ -387,7 +427,7 @@ section#content {
                                 height:30px;
                                 top: -2px;
                                 left: 4px;
-                                padding-top: 5px;
+                                padding-top: 4px;
                                 background-color: #7a93b5;
                                 color: #fff;
                                 border-radius: 50%;
@@ -438,322 +478,349 @@ section#content {
             }
         }
     }
-	
-	#sectiongauche {
-	margin: 30px;
-	background: #fff;
-	
-		.textgauche {
-			margin: 0 30px 0 30px;
-			float: left;
-			width: 52%;
-			
-			.title {
-				margin: 20px 0 15px 0;
-				
-				.span {
-				float: left;
-				}
-				
-				.decouvrir {
-					color:#fff;
-					float: right;
-					margin:-30px;
-					//width: 230px;
-					width: 50%;
-					padding: 5px;
-					background: #99b8e6;
-					border-radius: 35px;
-					text-align: center;
-					margin: none;
-				}
-			}
-		}
-		
-		.imagemusique {
-			float: right;
-			width: 394px;
-			height: 292px;
-			display: block;
-			background: url(../images/img-cat-music.png) center top no-repeat;
-			text-decoration: none;
-			
-			.cercleinfos {
-			text-decoration: none;
-			font-family: 'Libre Baskerville', serif;
-			font-style: italic;
-			font-weight: 400; 
-			font-size:20px;
-			color:#fff;
-			background:#293134;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: 20px 0 0 20px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			display: none;
-			}
-		}
-		
-		.imagemusique:hover {
-		
-			.cercleinfos {
-			display: none;
-			}
 
-			.cercleinfos2 {
-			text-decoration: none;
-			font-family: 'Libre Baskerville', serif;
-			font-style: italic;
-			font-weight: 400; 
-			font-size:20px;
-			color:#fff;
-			background:purple;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: -10px 0 0 -10px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			background: #000;
-			opacity:0.7;
-			width: 100%;
-			height: 100%;
-			display: block;
-			text-align: center;
-			padding: 30px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			}
-		}
-		.imagedesign {
-			float: right;
-			width: 394px;
-			height: 292px;
-			display: block;
-			background: url(../images/img-cat-design.png) center top no-repeat;
-			
-			.cercleinfos {
-			background:grey;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: 20px 0 0 20px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			display: none;
-			}
-		}
-		
-		.imagedesign:hover {
-		
-			.cercleinfos {
-			display: none;
-			}
-			
-			.textinfos {
-			background: #000;
-			opacity:0.7;
-			width: 100%;
-			height: 100%;
-			display: block;
-			text-align: center;
-			padding: 30px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			}
-		}
-		.imagelettres {
-			float: right;
-			width: 394px;
-			height: 292px;
-			display: block;
-			background: url(../images/img-cat-lettres.png) center top no-repeat;
-			
-			.cercleinfos {
-			background:grey;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: 20px 0 0 20px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			display: none;
-			}
-		}
-		
-		.imagelettres:hover {
-		
-			.cercleinfos {
-			display: none;
-			}
-			
-			.textinfos {
-			background: #000;
-			opacity:0.7;
-			width: 100%;
-			height: 100%;
-			display: block;
-			text-align: center;
-			padding: 30px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			}
-		}
-		
-		.clear {
-		clear: both;
-		}
-	}
-	
-	#sectiondroite {
-	margin: 30px;
-	background: #fff;
-	
-		.textdroite {
-			margin: 0 30px 0 30px;
-			float: right;
-			width: 53%;
-			
-			.title {
-				margin: 20px 0 15px 0;
-				text-align:right;
-				
-				.span {
-				float: right;
-				}
-				
-				.decouvrir {
-					color:#fff;
-					float: left;
-					margin:-30px;
-					//width: 230px;
-					width: 50%;
-					padding: 5px;
-					background: #99b8e6;
-					border-radius: 35px;
-					text-align: center;
-					margin: none;
-				}
-			}
-		}
-		
-		.imagevideo {
-			float: left;
-			width: 394px;
-			height: 292px;
-			display: block;
-			background: url(../images/img-cat-video.png) center top no-repeat;
-			
-			.cercleinfos {
-			background:grey;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: 20px 0 0 340px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			display: none;
-			}
-		}
-		
-		.imagevideo:hover {
-		
-			.cercleinfos {
-			display: none;
-			}
-			
-			.textinfos {
-			background: #000;
-			opacity:0.7;
-			width: 100%;
-			height: 100%;
-			display: block;
-			text-align: center;
-			padding: 30px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			}
-		}
-		.imagehappening {
-			float: left;
-			width: 394px;
-			height: 292px;
-			display: block;
-			background: url(../images/img-cat-happening.png) center top no-repeat;
-			
-			.cercleinfos {
-			background:grey;
-			border-radius:50%;
-			width:30px;
-			height:30px;
-			margin: 20px 0 0 340px;
-			text-align: center;
-			}
-			
-			.textinfos {
-			display: none;
-			}
-		}
-		
-		.imagehappening:hover {
-		
-			.cercleinfos {
-			display: none;
-			}
-			
-			.textinfos {
-			background: #000;
-			opacity:0.7;
-			width: 100%;
-			height: 100%;
-			display: block;
-			text-align: center;
-			padding: 30px;
-			text-decoration: none;
-			color: #fff;
-			font-weight: bold;
-			}
-		}
-		.clear {
-		clear: both;
-		}
-	}
-	
-	#footer {
-	margin: 30px;
-	border-top: 1px solid #999;
-	padding-top: 10px;
-	
-		a {
-		margin-right: 20px;
-		}
-	
-		#footerleft {
-		float: left;
-		width: 55%;
-		padding: 5px;
-		}
-		
-		#footerright {
-		float: right;
-		width: 150px;
-		text-align: right;
-		}
-	}
+    #sectiongauche {
+        margin: 30px;
+        background: #fff;
+
+        .textgauche {
+            margin: 0 30px 0 30px;
+            float: left;
+            width: 52%;
+
+            .title {
+                margin: 20px 0 15px 0;
+
+                .span {
+                    float: left;
+                }
+
+                .decouvrir {
+                    color:#fff;
+                    float: right;
+                    margin:-30px;
+                    //width: 230px;
+                    width: 50%;
+                    padding: 5px;
+                    background: #99b8e6;
+                    border-radius: 35px;
+                    text-align: center;
+                    margin: none;
+                }
+            }
+        }
+
+        .imagemusique {
+            float: right;
+            width: 394px;
+            height: 292px;
+            display: block;
+            background: url(../images/img-cat-music.png) center top no-repeat;
+            text-decoration: none;
+            position:relative;
+            .cercleinfos i{
+                font-size:15px;
+                color:#fff;
+                background:#293134;
+                border-radius:50%;
+                position: absolute;
+                top:20px;
+                left: 20px;
+                padding: 5px;
+                transition: all 0.3s ease-in-out;
+            }
+            .textinfos {
+                opacity:0;
+                transition: all 0.3s ease-in-out;
+                background: #000;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 20% 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+
+            }
+        }
+        .imagemusique:hover {
+            .cercleinfos i{
+                background:#895993;
+                z-index: 1;
+            }
+            .textinfos {
+                opacity:0.7;
+
+            }
+        }
+        .imagedesign {
+            float: right;
+            width: 394px;
+            height: 292px;
+            display: block;
+            position: relative;
+            background: url(../images/img-cat-design.png) center top no-repeat;
+            .cercleinfos i{
+                font-size:15px;
+                color:#fff;
+                background:#293134;
+                border-radius:50%;
+                position: absolute;
+                top:20px;
+                left: 20px;
+                padding: 5px;
+                transition: all 0.3s ease-in-out;
+
+            }
+            .textinfos {
+                opacity: 0;
+                background: #000;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 20% 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+
+            }
+        }
+        .imagedesign:hover {
+            .cercleinfos i{
+                background:#895993;
+                z-index: 1;
+            }
+            .textinfos {
+                opacity:0.7;
+
+            }
+        }
+        .imagelettres {
+            float: right;
+            width: 394px;
+            height: 292px;
+            display: block;
+            position: relative;
+            background: url(../images/img-cat-lettres.png) center top no-repeat;
+
+            .cercleinfos i{
+                font-size:15px;
+                color:#fff;
+                background:#293134;
+                border-radius:50%;
+                position: absolute;
+                top:20px;
+                left: 20px;
+                padding: 5px;
+                transition: all 0.3s ease-in-out;
+
+            }
+
+            .textinfos {
+                opacity: 0;
+                background: #000;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                padding: 20% 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+
+            }
+        }
+
+        .imagelettres:hover {
+
+            .cercleinfos i{
+                background:#895993;
+                z-index: 1;
+            }
+
+            .textinfos {
+                opacity:0.7;
+
+            }
+        }
+
+        .clear {
+            clear: both;
+        }
+    }
+
+    #sectiondroite {
+        margin: 30px;
+        background: #fff;
+
+        .textdroite {
+            margin: 0 30px 0 30px;
+            float: right;
+            width: 53%;
+
+            .title {
+                margin: 20px 0 15px 0;
+                text-align:right;
+
+                .span {
+                    float: right;
+                }
+
+                .decouvrir {
+                    color:#fff;
+                    float: left;
+                    margin:-30px;
+                    //width: 230px;
+                    width: 50%;
+                    padding: 5px;
+                    background: #99b8e6;
+                    border-radius: 35px;
+                    text-align: center;
+                    margin: none;
+                }
+            }
+        }
+
+        .imagevideo {
+            float: left;
+            width: 394px;
+            height: 292px;
+            display: block;
+            position: relative;
+            background: url(../images/img-cat-video.png) center top no-repeat;
+
+            .cercleinfos i{
+                font-size:15px;
+                color:#fff;
+                background:#293134;
+                border-radius:50%;
+                position: absolute;
+                top:20px;
+                right: 20px;
+                padding: 5px;
+                transition: all 0.3s ease-in-out;
+
+            }
+
+            .textinfos {
+                opacity: 0;
+                background: #000;
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-align: center;
+                padding: 20% 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+
+            }
+        }
+
+        .imagevideo:hover {
+
+            .cercleinfos i{
+                background:#895993;
+                z-index: 1;
+            }
+
+            .textinfos {
+                opacity:0.7;
+
+
+            }
+        }
+        .imagehappening {
+            float: left;
+            width: 394px;
+            height: 292px;
+            display: block;
+            position: relative;
+            background: url(../images/img-cat-happening.png) center top no-repeat;
+
+            .cercleinfos i{
+                font-size:15px;
+                color:#fff;
+                background:#293134;
+                border-radius:50%;
+                position: absolute;
+                top:20px;
+                right: 20px;
+                padding: 5px;
+                transition: all 0.3s ease-in-out;
+
+            }
+
+            .textinfos {
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                background: #000;
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-align: center;
+                padding: 20% 20px;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+
+        .imagehappening:hover {
+
+            .cercleinfos i{
+                background:#895993;
+                z-index: 1;
+            }
+
+            .textinfos {
+                opacity:0.7;
+
+
+            }
+        }
+        .clear {
+            clear: both;
+        }
+    }
+
+    .footer {
+        padding: 30px;
+        border-top: 1px solid #c4c4c4;
+        overflow: hidden;
+        line-height: 30px;
+        a{
+            color:#000!important;
+        }
+
+        p {
+            background: transparent;
+            margin: 0;
+        }
+        .info {
+            float: left;
+            ul li {
+                float: left;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            ol li {
+                float: left;
+                margin-right: 10px;
+                opacity: 0.6;
+            }
+        }
+        .copyright {
+            float: right;
+            text-align: right;
+            p {
+                font-weight: bold;
+            }
+            span {
+                opacity: 0.6;
+            }
+        }
+    }
 }
