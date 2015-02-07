@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
         itemsDesktop: [1000, 1], //5 items between 1000px and 901px
         itemsDesktopSmall: [900, 1], // betweem 900px and 601px
         itemsTablet: [600, 2], //2 items between 600 and 0
-        itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+        itemsMobile: true, // itemsMobile disabled - inherit from itemsTablet option
         navigation: true,
         autoPlay: false,
         pagination: false
@@ -29,4 +29,5 @@ jQuery(document).ready(function ($) {
     $('#navhidebtn').click(function () {
         $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
     });
+
 });

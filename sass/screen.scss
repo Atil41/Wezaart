@@ -8,6 +8,10 @@ font-family: 'Raleway', sans-serif;
 
 
 */
+$break-small: 768px;
+$break-large: 970px;
+
+
 
 @import "compass/reset";
 
@@ -53,6 +57,7 @@ body{
     color:#fff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -69,7 +74,7 @@ header#head{
     padding:0;
 
     #logo{
-        margin: 27px;
+        margin: 27px auto;
         img{
             width: 150px;
             margin: 0 auto;
@@ -84,11 +89,11 @@ header#head{
             transition: all .3s ease-in-out;
 
             a{
-                padding: 14px 40px;
+                padding: 14px 30px;
                 text-decoration:none;
                 color: #fff;
                 display:inherit;
-                width:200px;
+                width:100%;
                 i{
                     margin-right: 20px;
                 }
@@ -115,7 +120,7 @@ header#head{
                 li{
                     opacity:0.5;
                     a{
-                        padding-left: 80px;
+                        padding-left: 70px;
                     }
                     &:hover{
                         background-color:transparent;
@@ -131,30 +136,31 @@ header#head{
 
 
     #login{
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        li{
-            float: left;
-            text-transform: uppercase;
-            margin-left:10px;
-            color:#fff;
-            padding: 6px 20px;
+        position:absolute;
+        bottom:30px;
+        ul{
             text-align:center;
-            width:160px;
-            margin:5px 0;
+            li{
+                text-transform: uppercase;
+                margin-left:10px;
+                color:#fff;
+                padding: 6px 20px;
+                text-align:center;
+                width:160px;
+                margin:5px 0;
+                display:inline-block;
 
-            a{
-                color: #FFF;
-            }
-            &.button{
-                background-color: #fff;
-                border-radius: 20px;
-                color: #000;
+                a{
+                    color: #FFF;
+                }
+                &.button{
+                    background-color: #fff;
+                    border-radius: 20px;
+                    color: #000;
+                }
             }
         }
     }
-
     #barres {
         width: 100%;
         position: absolute;
@@ -202,8 +208,14 @@ section#content {
     background: #ccc;
     overflow:visible;
     position:absolute;
-    margin-left:16.66666667%;
     transition: all .6s ease-in-out;
+    @media screen and (max-width: $break-small) {
+        margin-left:50%;
+    }
+    @media screen and (min-width: $break-large) {
+        margin-left:16.66666667%;
+    }
+
     &.navhide{
         margin-left: 0!important;
     }
