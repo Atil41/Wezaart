@@ -26,6 +26,8 @@ jQuery(document).ready(function ($) {
         pagination: false
     });
     $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+    $('#Container').mixItUp();
+
     $('#navhidebtn').click(function () {
         $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
     });
