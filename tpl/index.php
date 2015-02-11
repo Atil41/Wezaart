@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.mixitup.min.js"></script>
         <script src="../js/custom.js"></script>
 
 
@@ -42,8 +43,8 @@
         <!--/Slider-->
     </head>
     <body>
+        <?php include_once 'header.php'; ?>
         <section id="content" class="col-sm-6 col-md-12 nopadding navhide notransition">
-            <?php include_once 'header.php'; ?>
             <?php include_once 'home.php'; ?>
             <?php include_once 'footer.php'; ?>
         </section>

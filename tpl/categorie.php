@@ -58,8 +58,8 @@
                 </h1>
                 <div id="filter">
                     <p>Trier par :</p>
-                    <button class="sort active" data-sort="popularity:asc">Popularité</button>
-                    <button class="sort" data-sort="date:asc">Nom</button>
+                    <button class="sort" data-sort="popularity:asc">Popularité</button>
+                    <button class="sort" data-sort="nom:asc">Nom</button>
                     <button class="sort" data-sort="date:asc">Date</button>
                 </div>
             </section>
@@ -84,7 +84,7 @@
                         $file = new SplFileObject('../data/titre.txt');
                         //this is zero based so need to subtract 1
                         $file->seek($myLine - 1);
-                        echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                        echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
                     }
                     ?>
                 </div>

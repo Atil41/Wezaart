@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
 
-
     $("#owl-slide").owlCarousel({
         navigation: false, // Show next and prev buttons
         slideSpeed: 300,
@@ -31,5 +30,6 @@ jQuery(document).ready(function ($) {
     $('#navhidebtn').click(function () {
         $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
     });
+    $(".sort:nth-child(2)").addClass("active");
 
 });
