@@ -49,11 +49,15 @@
 
                 <h1>
                     <?php
-                    $myLine = rand(1, 115);
-                    $file = new SplFileObject('../data/nom.txt');
-                    //this is zero based so need to subtract 1
-                    $file->seek($myLine - 1);
-                    echo $file->current();
+                    if (isset($_GET['type']) and ! empty($_GET['type'])) {
+                        echo $_GET['type'];
+                    } else {
+                        $myLine = rand(1, 115);
+                        $file = new SplFileObject('../data/nom.txt');
+                        //this is zero based so need to subtract 1
+                        $file->seek($myLine - 1);
+                        echo $file->current();
+                    }
                     ?>
                 </h1>
                 <div id="filter">
