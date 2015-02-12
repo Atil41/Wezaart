@@ -48,6 +48,13 @@
         <div id="profil">
             <div id="login">
                 <ul>
+                    <?php
+                    if (isset($_GET['logged']) || !empty($_GET['logged'])) {
+                        if ($_GET['logged'] == 1) {
+                            echo '<a href="#"><li class="button">1</li></a>';
+                        }
+                    }
+                    ?>
                     <a href="#"><li class="button">Se connecter</li></a>
                     <a href="#"><li class="button">S'inscrire</li></a>
                 </ul>
