@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
     <?php include_once 'head.php'; ?>
@@ -43,7 +44,6 @@
             <div id="wezuploadedwrap" class="col-md-12">
 
                 <div id="Container" class="wrapper" >
-
                     <?php
                     for ($i = 1; $i <= 20; $i++) {
                         $myLine = rand(1, 105);

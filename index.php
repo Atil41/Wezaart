@@ -1,3 +1,1 @@
-<?php
-
-header('Location: ./tpl/index.php');
+<?php header('Location: ./tpl/index.php'); ?>
