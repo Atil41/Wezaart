@@ -317,7 +317,7 @@ section#content {
             background-color: transparent;
             opacity: 0.8;
             width: 120px;
-
+            color: #FFF;
             &:focus{
                 outline: 0;
             }
@@ -861,6 +861,7 @@ section#content {
                     height: 100%;
                     color:#FFF;
                     background-size:cover;
+                    background-position: center;
                     img{
                         position: absolute;
                     }

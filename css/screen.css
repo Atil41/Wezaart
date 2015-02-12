@@ -415,6 +415,7 @@ section#content #searchbar input {
   background-color: transparent;
   opacity: 0.8;
   width: 120px;
+  color: #FFF;
 }
 /* line 321, ../sass/screen.scss */
 section#content #searchbar input:focus {
@@ -968,59 +969,60 @@ section#content #wezuploadedwrap #Container .wezuploaded a {
   height: 100%;
   color: #FFF;
   background-size: cover;
+  background-position: center;
 }
-/* line 864, ../sass/screen.scss */
+/* line 865, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a img {
   position: absolute;
 }
-/* line 867, ../sass/screen.scss */
+/* line 868, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a span {
   position: absolute;
   bottom: 5px;
   left: 5px;
 }
-/* line 880, ../sass/screen.scss */
+/* line 881, ../sass/screen.scss */
 section#content .footer {
   padding: 30px;
   border-top: 1px solid #c4c4c4;
   overflow: hidden;
   line-height: 30px;
 }
-/* line 885, ../sass/screen.scss */
+/* line 886, ../sass/screen.scss */
 section#content .footer a {
   color: #000 !important;
 }
-/* line 889, ../sass/screen.scss */
+/* line 890, ../sass/screen.scss */
 section#content .footer p {
   background: transparent;
   margin: 0;
 }
-/* line 893, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 section#content .footer .info {
   float: left;
 }
-/* line 895, ../sass/screen.scss */
+/* line 896, ../sass/screen.scss */
 section#content .footer .info ul li {
   float: left;
   margin-right: 10px;
   font-weight: bold;
 }
-/* line 900, ../sass/screen.scss */
+/* line 901, ../sass/screen.scss */
 section#content .footer .info ol li {
   float: left;
   margin-right: 10px;
   opacity: 0.6;
 }
-/* line 906, ../sass/screen.scss */
+/* line 907, ../sass/screen.scss */
 section#content .footer .copyright {
   float: right;
   text-align: right;
 }
-/* line 909, ../sass/screen.scss */
+/* line 910, ../sass/screen.scss */
 section#content .footer .copyright p {
   font-weight: bold;
 }
-/* line 912, ../sass/screen.scss */
+/* line 913, ../sass/screen.scss */
 section#content .footer .copyright span {
   opacity: 0.6;
 }

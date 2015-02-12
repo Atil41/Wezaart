@@ -80,15 +80,20 @@
             <div id="wezuploadedwrap" class="col-md-12">
 
                 <div id="Container" class="wrapper" >
+
                     <?php
                     for ($i = 1; $i <= 20; $i++) {
-                        $randomW = rand(170, 220);
-                        $randomH = rand(170, 220);
                         $myLine = rand(1, 105);
                         $file = new SplFileObject('../data/titre.txt');
                         //this is zero based so need to subtract 1
                         $file->seek($myLine - 1);
-                        echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                        if (isset($_GET['type']) || !empty($_GET['type'])) {
+                            echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(../images/categorie/' . $_GET['type'] . '/lorempixel-' . $i . '.jpg)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                        } else {
+                            $randomW = rand(170, 220);
+                            $randomH = rand(170, 220);
+                            echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                        }
                     }
                     ?>
                 </div>
