@@ -7,6 +7,10 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 
 
+.noFocus:focus {
+    outline: none;
+}
+
 */
 $break-small: 768px;
 $break-large: 970px;

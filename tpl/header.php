@@ -45,16 +45,33 @@
                 </li>
             </ul>
         </div>
-        <div id="profil">
-            <div id="login">
+        <div id="profil" class="noFocus">
+            <div id="login" class="noFocus">
                 <ul>
-                    <a href="#"><li class="button">Se connecter</li></a>
+                    <a href="#test-form" class="popup-with-form noFocus"><li class="button noFocus">Se connecter</li></a>
                     <a href="#"><li class="button">S'inscrire</li></a>
                 </ul>
             </div>
         </div>
-
-
+		
+<form id="test-form" class="white-popup-block mfp-hide">
+	<h1>CONNEXION</h1>
+	<fieldset style="border:0;">
+		<p>CONNEXION FACEBOOK <br/>CONNEXION TWITTER</p>
+		<ol>
+			<li>
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" placeholder="Adresse Email" required="" style="background-color:transparent">
+			</li>
+			<li>
+				<label for="password">Mot de passe</label>
+				<input id="password" name="password" type="password" placeholder="Mot de passe" required="" style="background-color:transparent">
+			</li>
+		</ol>
+		<input name="remember" type="checkbox" <?php if(isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail']!="")) {echo "checked";}  ?> />
+		<label>Se souvenir de moi</label>
+	</fieldset>
+</form>
 
         <div id="barres">
             <div id="jaune"></div>
