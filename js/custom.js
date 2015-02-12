@@ -20,9 +20,11 @@ jQuery(document).ready(function ($) {
         itemsDesktopSmall: [900, 1], // betweem 900px and 601px
         itemsTablet: [600, 2], //2 items between 600 and 0
         itemsMobile: true, // itemsMobile disabled - inherit from itemsTablet option
+        slideSpeed: 600,
         navigation: true,
         autoPlay: true,
-        pagination: false
+        pagination: false,
+        scrollPerPage: true
     });
     $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
     $('#Container').mixItUp();
