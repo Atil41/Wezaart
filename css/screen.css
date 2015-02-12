@@ -909,16 +909,30 @@ section#content #profilhead {
   position: relative;
 }
 /* line 810, ../sass/screen.scss */
-section#content #profilhead h1 {
-  text-transform: uppercase;
+section#content #profilhead .title {
   position: absolute;
   top: 70px;
   left: 20px;
+}
+/* line 814, ../sass/screen.scss */
+section#content #profilhead .title h1 {
+  text-transform: uppercase;
   z-index: 1;
   font-weight: bold;
   color: #FFF;
+  float: left;
 }
-/* line 819, ../sass/screen.scss */
+/* line 821, ../sass/screen.scss */
+section#content #profilhead .title h2 {
+  text-transform: uppercase;
+  z-index: 1;
+  font-weight: 100;
+  color: #FFF;
+  float: left;
+  margin-top: 26px;
+  margin-left: 10px;
+}
+/* line 831, ../sass/screen.scss */
 section#content #profilhead #filter {
   position: absolute;
   bottom: 0;
@@ -926,33 +940,33 @@ section#content #profilhead #filter {
   background-color: rgba(41, 48, 51, 0.5);
   padding: 5px 20px;
 }
-/* line 825, ../sass/screen.scss */
+/* line 837, ../sass/screen.scss */
 section#content #profilhead #filter * {
   float: left;
   display: inline-block;
 }
-/* line 829, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 section#content #profilhead #filter button {
   background: none;
   border: 0;
   color: #FFF;
   opacity: 0.5;
 }
-/* line 834, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 section#content #profilhead #filter button.active {
   opacity: 1;
 }
-/* line 838, ../sass/screen.scss */
+/* line 850, ../sass/screen.scss */
 section#content #profilhead #filter p {
   color: #fff;
   margin: 0 30px;
   line-height: 22px;
 }
-/* line 846, ../sass/screen.scss */
+/* line 858, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .mix {
   display: none;
 }
-/* line 849, ../sass/screen.scss */
+/* line 861, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded {
   width: 180px;
   height: 220px;
@@ -961,7 +975,7 @@ section#content #wezuploadedwrap #Container .wezuploaded {
   margin: 10px;
   position: relative;
 }
-/* line 857, ../sass/screen.scss */
+/* line 869, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a {
   border-radius: 3px;
   display: block;
@@ -971,58 +985,67 @@ section#content #wezuploadedwrap #Container .wezuploaded a {
   background-size: cover;
   background-position: center;
 }
-/* line 865, ../sass/screen.scss */
-section#content #wezuploadedwrap #Container .wezuploaded a img {
-  position: absolute;
+/* line 878, ../sass/screen.scss */
+section#content #wezuploadedwrap #Container .wezuploaded a:hover span {
+  opacity: 1;
 }
-/* line 868, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a span {
   position: absolute;
-  bottom: 5px;
-  left: 5px;
+  bottom: 0px;
+  left: 0px;
+  padding: 5px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+  /* IE6-9 */
 }
-/* line 881, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 section#content .footer {
   padding: 30px;
   border-top: 1px solid #c4c4c4;
   overflow: hidden;
   line-height: 30px;
 }
-/* line 886, ../sass/screen.scss */
+/* line 904, ../sass/screen.scss */
 section#content .footer a {
   color: #000 !important;
 }
-/* line 890, ../sass/screen.scss */
+/* line 908, ../sass/screen.scss */
 section#content .footer p {
   background: transparent;
   margin: 0;
 }
-/* line 894, ../sass/screen.scss */
+/* line 912, ../sass/screen.scss */
 section#content .footer .info {
   float: left;
 }
-/* line 896, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 section#content .footer .info ul li {
   float: left;
   margin-right: 10px;
   font-weight: bold;
 }
-/* line 901, ../sass/screen.scss */
+/* line 919, ../sass/screen.scss */
 section#content .footer .info ol li {
   float: left;
   margin-right: 10px;
   opacity: 0.6;
 }
-/* line 907, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 section#content .footer .copyright {
   float: right;
   text-align: right;
 }
-/* line 910, ../sass/screen.scss */
+/* line 928, ../sass/screen.scss */
 section#content .footer .copyright p {
   font-weight: bold;
 }
-/* line 913, ../sass/screen.scss */
+/* line 931, ../sass/screen.scss */
 section#content .footer .copyright span {
   opacity: 0.6;
 }

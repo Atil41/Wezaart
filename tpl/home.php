@@ -24,7 +24,7 @@
     <ul>
         <a href="#"><li>Le concept</li></a>
         <a href="#"><li class="button">WEZ'LIVE</li></a>
-        <a href="#"><li class="buttonred">Premium</li></a>
+        <a href="#"><li class="buttonred">Devenez VIP</li></a>
     </ul>
 </nav>
 <div id="topartiste" class="col-md-12">

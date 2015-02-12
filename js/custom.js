@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         itemsTablet: [600, 2], //2 items between 600 and 0
         itemsMobile: true, // itemsMobile disabled - inherit from itemsTablet option
         navigation: true,
-        autoPlay: false,
+        autoPlay: true,
         pagination: false
     });
     $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
