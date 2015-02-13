@@ -18,7 +18,7 @@ if(isset($_POST['remember'])){
                     <ul>
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
                         <li><a href="categorie.php?type=performances&subtype=théâtre">Théâtre</a></li>
-                        <li><a href="categorie.php?type=performances&subtype=expression_libre">Expression libre</a></li>
+                        <li><a href="categorie.php?type=performances&subtype=expression">Expression</a></li>
                         <li><a href="categorie.php?type=performances">...</a></li>
                     </ul>
                 </li>
