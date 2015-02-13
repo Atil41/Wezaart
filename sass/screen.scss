@@ -7,11 +7,42 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 
 
+*/
+
 .noFocus:focus {
     outline: none;
 }
 
-*/
+#identification {
+    background-color: #fff;
+	color:black;
+	color:black;
+	margin:auto;
+	width:40%;
+	height:70%;
+}
+
+#logintwitter {
+    background-color: #55acef;
+	color:white;
+	margin:auto;
+	width:50%;
+	height:40px;
+}
+#loginfacebook {
+    background-color: #3b5999;
+	color:white;
+	margin:auto;
+	width:50%;
+	height:40px;
+}
+.buttonlogin{
+    background-color: #283033;
+    border-radius: 20px;
+    color: #fff;
+}
+
+
 $break-small: 768px;
 $break-large: 970px;
 
@@ -171,28 +202,28 @@ header#head{
         position: absolute;
         bottom: 0px;
 
+        #rose {
+            height:5px;
+            width:25%;
+            background-color:#d81a60;
+            float: left;
+        }
+        #orange {
+            height:5px;
+            width:25%;
+            background-color:#fb8c00;
+            float: left;
+        }
         #jaune {
             height:5px;
             width:25%;
-            background-color:#eeb939;
+            background-color:#fed835;
             float: left;
         }
-        #rouge {
+        #vert {
             height:5px;
             width:25%;
-            background-color:#e06748;
-            float: left;
-        }
-        #violet {
-            height:5px;
-            width:25%;
-            background-color:#895993;
-            float: left;
-        }
-        #bleu {
-            height:5px;
-            width:25%;
-            background-color:#98b8e1;
+            background-color:#a3cc28;
             float: left;
         }
     }
@@ -446,7 +477,7 @@ section#content {
                                 top: -2px;
                                 left: 4px;
                                 padding-top: 4px;
-                                background-color: #7a93b5;
+                                background-color: #c6c6c6;
                                 color: #fff;
                                 border-radius: 50%;
                                 transition: all .3s ease-in;
@@ -520,7 +551,7 @@ section#content {
                     //width: 230px;
                     width: 50%;
                     padding: 5px;
-                    background: #99b8e6;
+                    background: #c6c6c6;
                     border-radius: 35px;
                     text-align: center;
                     margin: none;
@@ -692,7 +723,7 @@ section#content {
                     //width: 230px;
                     width: 50%;
                     padding: 5px;
-                    background: #99b8e6;
+                    background: #c6c6c6;
                     border-radius: 35px;
                     text-align: center;
                     margin: none;
