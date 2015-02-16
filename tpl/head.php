@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="../css/intro.css"/>
     <link rel="stylesheet" type="text/css" href="../css/superslides.css"/>
     <script src="../jsintro/jquery.superslides.min.js"></script>
-    <script src="../jsintro/owl.carousel.js"></script>
     <script src="../jsintro/onepage-scroll.js"></script>
     <script src="../jsintro/main.js"></script>
 
