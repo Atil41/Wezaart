@@ -17,7 +17,7 @@ if(isset($_POST['remember'])){
                 <li><a href="categorie.php?type=performances"><i class="icon-music"></i>Performances</a>
                     <ul>
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
-                        <li><a href="categorie.php?type=performances&subtype=théâtre">Théâtre</a></li>
+                        <li><a href="categorie.php?type=performances&subtype=Art_Vivant">Art Vivant</a></li>
                         <li><a href="categorie.php?type=performances&subtype=expression">Expression</a></li>
                         <li><a href="categorie.php?type=performances">...</a></li>
                     </ul>
@@ -69,21 +69,19 @@ if(isset($_POST['remember'])){
 				<h1>CONNEXION</h1>
 				<fieldset style="border:0;">
 					<p>
-						<div id="logintwitter">Se connecter avec Twitter</div><br/>
-						<div id="loginfacebook">Se connecter avec Facebook</div>
+						<div id="logintwitter"><div id="logotwitter">Se connecter avec Twitter</div></div><br/>
+						<div id="loginfacebook"><div id="logofb">Se connecter avec Facebook</div></div>
 					</p>
 					<ol>
 						<li>
-							<label for="email">Email</label>
 							<input id="email" name="email" type="email" placeholder="Adresse Email" required="" value="<?php if(isset($_COOKIE['cookiemail'])) { echo $_COOKIE['cookiemail']; } ?>" style="background-color:transparent">
 						</li>
 						<li>
-							<label for="password">Mot de passe</label>
 							<input id="password" name="password" type="password" placeholder="Mot de passe" required="" velue="<?php if(isset($_COOKIE['cookiepass'])) { echo $_COOKIE['cookiepass']; } ?>" style="background-color:transparent">
 						</li>
 					</ol>
 					<input name="remember" id="coche1" type="checkbox" <?php if(isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail']!="")) {echo "checked";}  ?> />
-					<label for="coche1">Se souvenir de moi</label><br/>
+					<label for="coche1">Se souvenir de moi</label>Mot de passe oublié ?<br/>
 					<input type="Submit" value="S'identifier" class="buttonlogin" name="envoie"  style="top: 640px;">
 				</fieldset>
 			</form>
