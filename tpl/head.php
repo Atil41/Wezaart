@@ -10,6 +10,13 @@
     <script src="../js/jquery.mixitup.min.js"></script>
     <script src="../js/custom.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/intro.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/superslides.css"/>
+    <script src="../jsintro/jquery.superslides.min.js"></script>
+    <script src="../jsintro/owl.carousel.js"></script>
+    <script src="../jsintro/onepage-scroll.js"></script>
+    <script src="../jsintro/main.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
