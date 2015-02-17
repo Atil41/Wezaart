@@ -1,3 +1,13 @@
+<?php /* Code à insérer dans le haut de la page */
+
+if(isset($_POST['remember'])){  
+  setcookie("cookiemail", $_POST['login'], time()+60*60*24*100, "/");  
+  setcookie("cookiepass", $_POST['password'], time()+60*60*24*100, "/");  
+} else {
+  setcookie("cookiemail","" , NULL, "/");  
+  setcookie("cookiepass","" , NULL, "/");  
+}
+?>
 <head>
     <meta charset="utf-8">
     <title>Wezaart</title>
