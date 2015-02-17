@@ -15,27 +15,57 @@ font-family: 'Raleway', sans-serif;
 
 #identification {
     background-color: #fff;
-    color:black;
-    color:black;
-    margin:auto;
-    width:40%;
-    height:70%;
+	color:black;
+	color:black;
+	margin:auto;
+	width:40%;
+	height:70%;
+	
+		input[type=password], input[type=email]{
+			width: 250px;
+			height: 35px;
+			padding-left: 11px;
+			font-size: 17px;
+			margin-bottom: 20px;
+			border: 1px solid #e0e0e0;
+			border-radius: 3px;
+		}
+
+		#logintwitter {
+		background-color: #55acef;
+		color:white;
+		margin:auto;
+		width:50%;
+		height:40px;
+		}
+		#logotwitter {
+		background-image: url(../images/logintwitter.png);
+		background-repeat: no-repeat;
+		//width: 80px;
+		height: 103px;
+		padding: 0;
+		text-align:right;
+		}
+		#logofb {
+			background-image: url(../images/loginfb.png);
+			background-repeat: no-repeat;
+			//width: 80px;
+			height: 103px;
+			padding: 0;
+			text-align:right;
+		}
+		#loginfacebook {
+			background-color: #3b5999;
+			color:white;
+			margin:auto;
+			width:50%;
+			height:40px;
+		}
 }
 
-#logintwitter {
-    background-color: #55acef;
-    color:white;
-    margin:auto;
-    width:50%;
-    height:40px;
-}
-#loginfacebook {
-    background-color: #3b5999;
-    color:white;
-    margin:auto;
-    width:50%;
-    height:40px;
-}
+
+
+
 .buttonlogin{
     background-color: #283033;
     border-radius: 20px;
