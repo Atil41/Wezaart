@@ -1,21 +1,21 @@
 $(document).ready(function () {
 
-    // Top Slider Full Screen
-    $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
-    $(window).on('resize', function () {
-        $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
-    });
-
-    // Navigation ------------------------------------------------ //
-    // Initialisation
-    $('.wrapper').animate({
-        width: $(window).width() - $('.header').width() + 'px'
-    }, 0);
-    $(window).on('resize', function () {
-        $('.wrapper').stop().animate({
-            width: $(window).width() - $('.header').width() + 'px'
-        }, 0);
-    });
+//    // Top Slider Full Screen
+//    $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
+//    $(window).on('resize', function () {
+//        $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
+//    });
+//
+//    // Navigation ------------------------------------------------ //
+//    // Initialisation
+//    $('.wrapper').animate({
+//        width: $(window).width() - $('.header').width() + 'px'
+//    }, 0);
+//    $(window).on('resize', function () {
+//        $('.wrapper').stop().animate({
+//            width: $(window).width() - $('.header').width() + 'px'
+//        }, 0);
+//    });
 
 //	// Slider Owl
 //	$('.slider .owl-carousel').owlCarousel({
@@ -101,19 +101,19 @@ $(document).ready(function () {
 //    });
 
     // Rollover Navigation
-    $(".navigation li > a").click(function () {
-        var parent = $(this).parent().find("ul");
-        if (parent.is(':visible')) {
-            $(".navigation .active ul").stop().slideUp(150);
-            parent.stop().slideUp(150);
-            $(this).parent().removeClass("active");
-        } else if (!parent.is(':visible')) {
-            $(".navigation li ul").stop().slideUp(150);
-            $(".navigation li").removeClass("active");
-            parent.stop().slideDown(150);
-            $(this).parent().addClass("active");
-        }
-    });
+//    $(".navigation li > a").click(function () {
+//        var parent = $(this).parent().find("ul");
+//        if (parent.is(':visible')) {
+//            $(".navigation .active ul").stop().slideUp(150);
+//            parent.stop().slideUp(150);
+//            $(this).parent().removeClass("active");
+//        } else if (!parent.is(':visible')) {
+//            $(".navigation li ul").stop().slideUp(150);
+//            $(".navigation li").removeClass("active");
+//            parent.stop().slideDown(150);
+//            $(this).parent().addClass("active");
+//        }
+//    });
 
     // Rollover Informations Home
     $('.explication .illustration .info').click(function () {
@@ -140,7 +140,6 @@ $(document).ready(function () {
     $("#intro").on('click', function () {
         $(".intro-box").stop().fadeIn(300);
     });
-
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
         var timerWidth = 100 / nbrSlide;

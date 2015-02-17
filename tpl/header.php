@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <form id="test-form" class="white-popup-block mfp-hide" action="<?php "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" method="post">
+        <form id="test-form" class="white-popup-block mfp-hide" action="<?php "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" method="post">
             <div id="identification">
                 <h1>CONNEXION</h1>
                 <fieldset style="border:0;">
@@ -67,19 +67,10 @@
                     </p>
                     <ol>
                         <li>
-                            <input id="email" name="email" type="email" placeholder="Adresse Email" required="" value="<?php
-                            if (isset($_COOKIE['cookiemail'])) {
-                                echo $_COOKIE['cookiemail'];
-                            }
-                            ?>" style="background-color:transparent">
+                            <input id="email" name="email" type="email" placeholder="Adresse Email" required="">
                         </li>
                         <li>
-                            <input id="password" name="password" type="password" placeholder="Mot de passe" required="" velue="<?php
-                            if (isset($_COOKIE['cookiepass'])) {
-                                echo $_COOKIE['cookiepass'];
-                            }
-                            ?>" style="background-color:transparent">
-                        </li>
+                            <input id="password" name="password" type="password" placeholder="Mot de passe" required="" >
                     </ol>
                     <input name="remember" id="coche1" type="checkbox" <?php
                     if (isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail'] != "")) {
@@ -94,8 +85,16 @@
     else :
         echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
         ?>
-        <a href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>?logout"><button>logout</button></a>
-    <?php endif; ?>
+        <a href="<?php
+        echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        if (!isset($_GET) || empty($_GET)) {
+            echo "?";
+        } else {
+            echo '&';
+        }
+        echo 'logout';
+        ?>"><button>logout</button></a>
+       <?php endif; ?>
 
 </div>
 <div id="barres">
