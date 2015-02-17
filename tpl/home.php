@@ -19,7 +19,7 @@
 </section>
 <!-- page content -->
 <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
-<div id="searchbar"><input type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+<div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
 <nav id="navtop">
     <ul>
         <a href="#"><li>Le concept</li></a>
