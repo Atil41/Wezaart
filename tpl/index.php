@@ -1,20 +1,15 @@
 <?php
-if (isset($_GET['logged']) || !empty($_GET['logged'])) {
-    $user = $_GET['logged'];
-    $pass = $_GET['logged'];
+//if (isset($_GET['logged']) || !empty($_GET['logged'])) {
+//    $user = $_GET['logged'];
+//    $pass = $_GET['logged'];
+//}
 
-    if (($_POST['username'] == $user) && ($_POST['password'] == $pass)) {
-
-        /* Set cookie to last 1 year */
-        setcookie('username', $_POST['username'], time() + 365 * 24 * 3600, null, null, false, true);
-        setcookie('password', md5($_POST['password']), time() + 365 * 24 * 3600, null, null, false, true);
-
-        header('Location: index.php');
-    } else {
-        echo 'Username/Password Invalid';
-    }
+if (isset($_POST['email']) || isset($_POST['password'])) {
+    setcookie("cookiemail", $_POST['email'], time() + 60 * 60 * 24 * 100, "/");
+    setcookie("cookiepass", $_POST['password'], time() + 60 * 60 * 24 * 100, "/");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <?php include_once 'head.php'; ?>
