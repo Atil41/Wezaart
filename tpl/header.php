@@ -57,41 +57,60 @@
                 </div>
             </div>
         </div>
-			<form id="test-form" class="white-popup-block mfp-hide" action="formlogin.php" method="post">
-		<div id="identification">
-				<h1>CONNEXION</h1>
-				<fieldset style="border:0;">
-					<p>
-						<div id="logintwitter"><div id="logotwitter">Se connecter avec Twitter</div></div><br/>
-						<div id="loginfacebook"><div id="logofb">Se connecter avec Facebook</div></div>
-					</p>
-					<ol>
-						<li>
-							<input id="email" name="email" type="email" placeholder="Adresse Email" required="" value="<?php if(isset($_COOKIE['cookiemail'])) { echo $_COOKIE['cookiemail']; } ?>" style="background-color:transparent">
-						</li>
-						<li>
-							<input id="password" name="password" type="password" placeholder="Mot de passe" required="" velue="<?php if(isset($_COOKIE['cookiepass'])) { echo $_COOKIE['cookiepass']; } ?>" style="background-color:transparent">
-						</li>
-					</ol>
-					<input name="remember" id="coche1" type="checkbox" <?php if(isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail']!="")) {echo "checked";}  ?> />
-					<label for="coche1">Se souvenir de moi</label>Mot de passe oublié ?<br/>
-					<input type="Submit" value="S'identifier" class="buttonlogin" name="envoie"  style="top: 640px;">
-				</fieldset>
-			</form>
-		</div>
-        <div id="barres">
-            <div id="rose"></div>
-            <div id="orange"></div>
-            <div id="jaune"></div>
-            <div id="vert"></div>
-        </div>
-    </div>
-    <div id="barres">
-        <div id="rose"></div>
-        <div id="orange"></div>
-        <div id="jaune"></div>
-        <div id="vert"></div>
-    </div>
+        <form id="test-form" class="white-popup-block mfp-hide" action="<?php "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" method="post">
+            <div id="identification">
+                <h1>CONNEXION</h1>
+                <fieldset style="border:0;">
+                    <p>
+                    <div id="logintwitter"><div id="logotwitter">Se connecter avec Twitter</div></div><br/>
+                    <div id="loginfacebook"><div id="logofb">Se connecter avec Facebook</div></div>
+                    </p>
+                    <ol>
+                        <li>
+                            <input id="email" name="email" type="email" placeholder="Adresse Email" required="" value="<?php
+                            if (isset($_COOKIE['cookiemail'])) {
+                                echo $_COOKIE['cookiemail'];
+                            }
+                            ?>" style="background-color:transparent">
+                        </li>
+                        <li>
+                            <input id="password" name="password" type="password" placeholder="Mot de passe" required="" velue="<?php
+                            if (isset($_COOKIE['cookiepass'])) {
+                                echo $_COOKIE['cookiepass'];
+                            }
+                            ?>" style="background-color:transparent">
+                        </li>
+                    </ol>
+                    <input name="remember" id="coche1" type="checkbox" <?php
+                    if (isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail'] != "")) {
+                        echo "checked";
+                    }
+                    ?> />
+                    <label for="coche1">Se souvenir de moi</label>Mot de passe oublié ?<br/>
+                    <input type="Submit" value="S'identifier" class="buttonlogin" name="envoie"  style="top: 640px;">
+                </fieldset>
+        </form>
+        <?php
+    else :
+        echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
+        ?>
+        <a href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>?logout"><button>logout</button></a>
+    <?php endif; ?>
+
+</div>
+<div id="barres">
+    <div id="rose"></div>
+    <div id="orange"></div>
+    <div id="jaune"></div>
+    <div id="vert"></div>
+</div>
+</div>
+<div id="barres">
+    <div id="rose"></div>
+    <div id="orange"></div>
+    <div id="jaune"></div>
+    <div id="vert"></div>
+</div>
 </div>
 
 </header>

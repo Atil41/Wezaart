@@ -8,6 +8,12 @@ if (isset($_POST['email']) || isset($_POST['password'])) {
     setcookie("cookiemail", $_POST['email'], time() + 60 * 60 * 24 * 100, "/");
     setcookie("cookiepass", $_POST['password'], time() + 60 * 60 * 24 * 100, "/");
 }
+if (isset($_GET['logout'])) {
+    unset($_COOKIE['cookiemail']);
+    unset($_COOKIE['cookiepass']);
+    setcookie('cookiemail', null, -1, '/');
+    setcookie('cookiepass', null, -1, '/');
+}
 ?>
 
 <!DOCTYPE html>
