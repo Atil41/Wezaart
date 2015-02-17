@@ -42,41 +42,42 @@
     <!-- Include js plugin -->
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <!--/Slider-->
-	
-	  <script>
-		  $(function() {
-			var availableTags = [
-			  "Danse",
-			  "Art Vivant",
-			  "Expression",
-			  "Peinture",
-			  "Sclupture",
-			  "Illustration",
-			  "Photographie",
-			  "2D Numérique",
-			  "3D Numérique",
-			  "Musique",
-			  "Instrumental",
-			  "Voix",
-			  "Cinéma",
-			  "Litterature",
-			  "Bande dessiné",
-			  "Julian Marino",
-			  "David",
-			  "Jennifer",
-			  "Guillaume",
-			  "Ican 4DDN",
-			  "Gary",
-			  "Jean pierre"
-			];
-			$( "#tags" ).autocomplete({
-			  source: availableTags
-			});
-		  });
-	  </script>	
-	
+
+    <script>
+        $(function () {
+            var availableTags = [
+                "Danse",
+                "Art Vivant",
+                "Expression",
+                "Peinture",
+                "Sclupture",
+                "Illustration",
+                "Photographie",
+                "2D Numérique",
+                "3D Numérique",
+                "Musique",
+                "Instrumental",
+                "Voix",
+                "Cinéma",
+                "Litterature",
+                "Bande dessiné",
+                "Julian Marino",
+                "David",
+                "Jennifer",
+                "Guillaume",
+                "Ican 4DDN",
+                "Gary",
+                "Jean pierre"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+
 </head>

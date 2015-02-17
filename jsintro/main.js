@@ -100,7 +100,7 @@ $(document).ready(function () {
 //        }
 //    });
 
-    // Rollover Navigation
+// Rollover Navigation
 //    $(".navigation li > a").click(function () {
 //        var parent = $(this).parent().find("ul");
 //        if (parent.is(':visible')) {
@@ -115,7 +115,7 @@ $(document).ready(function () {
 //        }
 //    });
 
-    // Rollover Informations Home
+// Rollover Informations Home
     $('.explication .illustration .info').click(function () {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
@@ -124,15 +124,7 @@ $(document).ready(function () {
             $(this).parent().find('.roll').stop().fadeIn(150);
         }
     });
-
     // Intro - One Page Scroll ------------------------------------------------ //
-    $(".intro").onepage_scroll({
-        sectionContainer: ".slide",
-        animationTime: 1000,
-        responsiveFallback: 600,
-        loop: true,
-        beforeMove: introTimer()
-    });
 
     $("#intro-close").on('click', function () {
         $(".intro-box").stop().fadeOut(300);
@@ -140,6 +132,7 @@ $(document).ready(function () {
     $("#intro").on('click', function () {
         $(".intro-box").stop().fadeIn(300);
     });
+
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
         var timerWidth = 100 / nbrSlide;
@@ -151,6 +144,21 @@ $(document).ready(function () {
             introTimer()
         }, 300)
     }
+    if ($.cookie('intro') == undefined) {
+        $.cookie('intro', "viewed");
+        $(".intro").onepage_scroll({
+            sectionContainer: ".slide",
+            animationTime: 1000,
+            responsiveFallback: 600,
+            loop: true,
+            beforeMove: introTimer()
+        });
+    }
+    else {
+        $(".intro-box").stop().fadeOut(0);
+    }
+
+
 });
 
 

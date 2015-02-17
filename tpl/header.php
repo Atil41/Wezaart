@@ -45,7 +45,7 @@
                 </li>
             </ul>
         </div>
-        <?php if ((!isset($_COOKIE['cookiemail'])) || (!isset($_COOKIE['cookiepass'])) || (empty($_COOKIE['cookiemail'])) || (empty($_COOKIE['cookiepass']))): ?>
+        <?php if (((!isset($_COOKIE['cookiemail'])) && (!isset($_COOKIE['cookiepass']))) && ((empty($_POST['cookiemail'])) && (empty($_POST['cookiepass'])))): ?>
             <div id="profil" class="noFocus">
                 <div id="login" class="noFocus">
                     <ul>
@@ -54,53 +54,63 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <form id="test-form" class="white-popup-block mfp-hide" action="<?php "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" method="post">
-            <div id="identification">
-                <h1>CONNEXION</h1>
-                <fieldset style="border:0;">
-                    <p>
-                    <div id="logintwitter"><div id="logotwitter">Se connecter avec Twitter</div></div><br/>
-                    <div id="loginfacebook"><div id="logofb">Se connecter avec Facebook</div></div>
-                    </p>
-                    <ol>
-                        <li>
-                            <input id="email" name="email" type="email" placeholder="Adresse Email" required="">
-                        </li>
-                        <li>
-                            <input id="password" name="password" type="password" placeholder="Mot de passe" required="" >
-                    </ol>
-                    <input name="remember" id="coche1" type="checkbox" <?php
-                    if (isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail'] != "")) {
-                        echo "checked";
-                    }
-                    ?> />
-                    <label for="coche1">Se souvenir de moi</label>Mot de passe oublié ?<br/>
-                    <input type="Submit" value="S'identifier" class="buttonlogin" name="envoie"  style="top: 640px;">
-                </fieldset>
-        </form>
-        <?php
-    else :
-        echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
-        ?>
-        <a href="<?php
-        echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        if (!isset($_GET) || empty($_GET)) {
-            echo "?";
-        } else {
-            echo '&';
-        }
-        echo 'logout';
-        ?>"><button>logout</button></a>
-       <?php endif; ?>
+            <form id="test-form" class="white-popup-block mfp-hide" action="<?php "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" method="post">
+                <div id="identification">
+                    <h1>CONNEXION</h1>
+                    <fieldset style="border:0;">
+                        <p>
+                        <div id="logintwitter"><div id="logotwitter">Se connecter avec Twitter</div></div><br/>
+                        <div id="loginfacebook"><div id="logofb">Se connecter avec Facebook</div></div>
+                        </p>
+                        <ol>
+                            <li>
+                                <input id="email" name="email" type="email" placeholder="Adresse Email" required="">
+                            </li>
+                            <li>
+                                <input id="password" name="password" type="password" placeholder="Mot de passe" required="" >
+                        </ol>
+                        <input name="remember" id="coche1" type="checkbox" <?php
+                        if (isset($_COOKIE['cookiemail']) && ($_COOKIE['cookiemail'] != "")) {
+                            echo "checked";
+                        }
+                        ?> />
+                        <label for="coche1">Se souvenir de moi</label>Mot de passe oublié ?<br/>
+                        <input type="Submit" value="S'identifier" class="buttonlogin" name="envoie"  style="top: 640px;">
+                    </fieldset>
+            </form>
+            <?php
+        else :
+            if ((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) {
+                echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
+            }
+            if ((isset($_POST['cookiemail'])) && (isset($_POST['cookiepass']))) {
+                echo $_POST['cookiemail'] . " " . $_POST['cookiepass'];
+            }
+            ?>
+            <a href="<?php
+            echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            if (!isset($_GET) || empty($_GET)) {
+                echo "?";
+            } else {
+                echo '&';
+            }
+            echo 'logout';
+            ?>"><button>logout</button></a>
+           <?php
+           endif;
 
-</div>
-<div id="barres">
-    <div id="rose"></div>
-    <div id="orange"></div>
-    <div id="jaune"></div>
-    <div id="vert"></div>
-</div>
+
+           //echo $_POST['cookiemail'];
+           //echo $_COOKIE['cookiemail'];
+           ?>
+
+    </div>
+    <div id="barres">
+        <div id="rose"></div>
+        <div id="orange"></div>
+        <div id="jaune"></div>
+        <div id="vert"></div>
+    </div>
 </div>
 <div id="barres">
     <div id="rose"></div>
