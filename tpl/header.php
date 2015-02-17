@@ -1,5 +1,3 @@
-
-
 <header id="head" class="col-xs-6 col-md-2">
     <div id="sidebar">
         <div id="logo"><a href="../index.php"><img src="../images/logo wezaart blanc-new.png" alt="logo"/></a></div>
