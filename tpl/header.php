@@ -90,24 +90,45 @@
 						<input type="Submit" value="S'identifier" class="buttonlogin" name="envoie" />
                     </fieldset>
             </form>
+			
             <?php
         else :
-            if ((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) {
-                echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
-            }
-            if ((isset($_POST['cookiemail'])) && (isset($_POST['cookiepass']))) {
-                echo $_POST['cookiemail'] . " " . $_POST['cookiepass'];
-            }
-            ?>
-            <a href="<?php
-            echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            if (!isset($_GET) || empty($_GET)) {
-                echo "?";
-            } else {
-                echo '&';
-            }
-            echo 'logout';
-            ?>"><button>logout</button></a>
+			?>
+			
+			<div class="userconnect">
+				<a href="#"><img src="../images/artiste1.png" /></a><br/>
+				<a class="username" href="#">Prénom User</a><br/>
+				
+				<p class="barre"><img src="top" /> 18 | 24 <img src="down" /></p>
+				
+				<div class="userbtn">
+					<a href="#"><div class="userbutton"><i class="icon-heart-filled"></i></div></a>
+					<a href="#"><div class="userbutton2"><div><i class="icon-plus"></i></div></div></a>
+					<a href="#"><div class="userbutton"><i class="icon-share"></i></div></a>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<div id="logout">
+				<?php
+				if ((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) {
+					echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
+				}
+				if ((isset($_POST['cookiemail'])) && (isset($_POST['cookiepass']))) {
+					echo $_POST['cookiemail'] . " " . $_POST['cookiepass'];
+				}
+				?>
+				<a href="<?php
+				echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+				if (!isset($_GET) || empty($_GET)) {
+					echo "?";
+				} else {
+					echo '&';
+				}
+				echo 'logout';
+				?>"><button>logout</button></a>
+			</div>
            <?php
            endif;
 
