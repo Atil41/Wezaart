@@ -110,13 +110,13 @@
                         <div id="logintwitter"><a id="logotwitter">Se connecter avec Twitter</a></div><br/>
                         <div id="loginfacebook"><a id="logofacebook">Se connecter avec Facebook</a></div>
                         </p>
-
+						<p>OU</p>
                         <ol>
                             <li>
-                                <input id="email" name="email" type="email" placeholder="Adresse Email" required="">
+                                <input id="email" name="email" type="email" placeholder="Adresse Email" style="background-color:transparent" required="">
                             </li>
                             <li>
-                                <input id="password" name="password" type="password" placeholder="Mot de passe" required="" >
+                                <input id="password" name="password" type="password" placeholder="Mot de passe" style="background-color:transparent" required="" >
                         </ol>
 
                         <div id="souvenir">
