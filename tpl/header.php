@@ -62,6 +62,10 @@
                     <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
                     <a href="#"><div class="button"><i class="icon-share"></i></div></a>
                 </div>
+                <div class="moneys">
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> <img src="../images/pieces.png" /><img src="../images/top.png" /></div><div class="chiffres">3,70€</div></div></a><p></p>
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> <img src="../images/pieces.png" /><img src="../images/down.png" /></div><div class="chiffres">1,20€</div></div></a>
+                </div>
                 <div id="logout">
                     <?php
                     if ((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) {
