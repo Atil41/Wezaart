@@ -55,7 +55,7 @@ if (isset($_GET['logout'])) {
             <div id="searchbar"><input type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
             <nav id="navtop">
                 <ul>
-                    <a href="#"><li>Le concept</li></a>
+                    <a href="#" class="prehome"><li>Le concept</li></a>
                     <a href="#"><li class="button">WEZ'LIVE</li></a>
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
@@ -81,6 +81,7 @@ if (isset($_GET['logout'])) {
                 </div>
             </div>
 
+            <?php include_once 'prehome.php' ?>
 
             <?php include_once 'footer.php'; ?>
         </section>
