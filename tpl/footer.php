@@ -1,3 +1,4 @@
+<?php include('intro.php'); ?>
 <div class="footer col-md-12">
     <div class="info">
         <ul>
