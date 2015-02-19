@@ -81,6 +81,7 @@ if (isset($_GET['logout'])) {
                 </div>
             </div>
 
+            <?php include_once 'prehome.php' ?>
 
             <?php include_once 'footer.php'; ?>
         </section>
