@@ -50,7 +50,7 @@
             <div class="userconnect">
                 <a href="#"><img src="../images/artiste1.png" /></a><br/>
                 <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-                <p class="barre"><img src="top" /> 18 | 24 <img src="down" /></p>
+                <p class="barre"><img src="../images/top.png" /> 18 | 24 <img src="../images/down.png" /></p>
 
                 <!--                <div class="userbtn">
                                     <a href="#"><div class="userbutton"><i class="icon-heart-filled"></i></div></a>
