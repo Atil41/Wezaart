@@ -8,7 +8,7 @@
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
                         <li><a href="categorie.php?type=performances&subtype=Art_Vivant">Art Vivant</a></li>
                         <li><a href="categorie.php?type=performances&subtype=expression">Expression</a></li>
-                        <li><a href="categorie.php?type=performances">...</a></li>
+                        <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_plastiques"><i class="icon-video"></i>Arts Plastiques</a>
@@ -16,7 +16,7 @@
                         <li><a href="categorie.php?type=arts_plastiques&subtype=peinture">Peinture</a></li>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=sculpture">Sculpture</a></li>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=illustration">Illustration</a></li>
-                        <li><a href="categorie.php?type=arts_plastiques">...</a></li>
+                        <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_numériques"><i class="icon-picture"></i>Arts numériques</a>
@@ -24,7 +24,7 @@
                         <li><a href="categorie.php?type=arts_numériques&subtype=photographie">Photographie</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=2D_numérique">2D Numérique</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=3D_numérique">3D Numérique</a></li>
-                        <li><a href="categorie.php?type=arts_numériques">...</a></li>
+                        <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=sons"><i class="icon-github"></i>Sons</a>
@@ -32,7 +32,7 @@
                         <li><a href="categorie.php?type=sons&subtype=musique">Musique</a></li>
                         <li><a href="categorie.php?type=sons&subtype=instrumental">Instrumental</a></li>
                         <li><a href="categorie.php?type=sons&subtype=voix">Voix</a></li>
-                        <li><a href="categorie.php?type=sons">...</a></li>
+                        <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=récits"><i class="icon-feather"></i>Récits</a>
@@ -40,7 +40,7 @@
                         <li><a href="categorie.php?type=récits&subtype=cinéma">Cinéma</a></li>
                         <li><a href="categorie.php?type=récits&subtype=littérature">Littérature</a></li>
                         <li><a href="categorie.php?type=récits&subtype=bande_dessinée">Bande Dessinée</a></li>
-                        <li><a href="categorie.php?type=récits">...</a></li>
+                        <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
             </ul>
