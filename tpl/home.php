@@ -141,7 +141,7 @@
             <div class="title">
                 <span class="h2">
                     La section<br/>
-                    <strong>MUSICALE</strong>
+                    <strong>Performance</strong>
                 </span>
                 <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
             </div>
