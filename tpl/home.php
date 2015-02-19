@@ -270,8 +270,6 @@
                 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
             </div>
         </div>
-
-
         <div class="clear"></div>
     </div>
 </div>
