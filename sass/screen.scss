@@ -106,8 +106,6 @@ font-family: 'Raleway', sans-serif;
     text-align: center;
     width: 100%;
     padding: 0 20px;
-    position: absolute;
-    bottom: 20px;
     >a:nth-child(1){
         position:relative;
         &:before {
@@ -440,7 +438,6 @@ section#content {
     }
     #owl-slide {
         .item{
-            background-color:red;
             img{
                 display: block;
                 width: 100%;

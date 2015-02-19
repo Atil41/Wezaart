@@ -132,6 +132,11 @@ $(document).ready(function () {
     $("#intro").on('click', function () {
         $(".intro-box").stop().fadeIn(300);
     });
+    $(".prehome").on('click', function () {
+        $(".intro-box").stop().fadeIn(300);
+    });
+    $(".intro-box").stop().fadeOut(0).fadeIn(300);
+
 
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
@@ -146,17 +151,18 @@ $(document).ready(function () {
     }
     if ($.cookie('intro') == undefined) {
         $.cookie('intro', "viewed");
-        $(".intro").onepage_scroll({
-            sectionContainer: ".slide",
-            animationTime: 1000,
-            responsiveFallback: 600,
-            loop: true,
-            beforeMove: introTimer()
-        });
+
     }
     else {
         $(".intro-box").stop().fadeOut(0);
     }
+    $(".intro").onepage_scroll({
+        sectionContainer: ".slide",
+        animationTime: 1000,
+        responsiveFallback: 600,
+        loop: true,
+        beforeMove: introTimer()
+    });
 
 
 });
