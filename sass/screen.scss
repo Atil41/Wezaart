@@ -198,6 +198,35 @@ font-family: 'Raleway', sans-serif;
 
         }
     }
+	
+    .moneys {
+	
+		.euros {
+		text-decoration:none;
+		background-color: #171a1c;
+		margin:auto;
+		color:white;
+		border-radius: 50px;
+		height:30px;
+        width: 125px;
+		}
+		a {
+		text-decoration:none;
+		}
+		.iconesmoneys {
+		padding-top:3px;
+		float: left;
+		margin-left:20px;
+		}
+		.chiffres{
+		padding-top:4px;
+		}
+		img {
+		padding-right:5px;
+		}
+		
+	}
+	
     .userbtn {
         width: 100%;
         padding: 10px;
