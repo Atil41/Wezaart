@@ -135,7 +135,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 presentation">
     <div id="sectiongauche">
         <div class="textgauche">
             <div class="title">

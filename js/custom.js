@@ -22,7 +22,6 @@ jQuery(document).ready(function ($) {
         itemsMobile: true, // itemsMobile disabled - inherit from itemsTablet option
         slideSpeed: 600,
         navigation: true,
-        autoPlay: true,
         pagination: false,
         scrollPerPage: true
     });

@@ -60,27 +60,108 @@ if (isset($_GET['logout'])) {
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
             </nav>
-            <div id="wezuploadedwrap" class="col-md-12">
+            <div id="wezuploadedwrap" class="col-md-10">
 
                 <div id="Container" class="wrapper" >
                     <?php
-                    for ($i = 1; $i <= 20; $i++) {
+                    for ($i = 1; $i <= 25; $i++) {
                         $myLine = rand(1, 105);
                         $file = new SplFileObject('../data/titre.txt');
                         //this is zero based so need to subtract 1
                         $file->seek($myLine - 1);
                         if (isset($_GET['type']) || !empty($_GET['type'])) {
-                            echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(../images/categorie/' . $_GET['type'] . '/lorempixel-' . $i . '.jpg)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                            echo '<div class="wezuploaded mix col-md-3" category="' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(../images/categorie/' . $_GET['type'] . '/lorempixel-' . $i . '.jpg)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
                         } else {
                             $randomW = rand(170, 220);
                             $randomH = rand(170, 220);
-                            echo '<div class = "wezuploaded mix category-' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
+                            echo '<div class="wezuploaded mix col-md-3" category="' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
                         }
                     }
                     ?>
                 </div>
             </div>
+            <div id="rightcolumn" class="col-md-2">
 
+                <div id="partenaire" class="wrapper" >
+                    <img src="../images/partenairefournisseur.png">
+                    <img src="../images/partenairemecene.png">
+                    <img src="../images/partenaireorganisateur.png">
+
+                </div>
+                <div id="topartiste" class="wrapper" >
+                    <h3>Top artiste</h3>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="topcrea" class="wrapper" >
+                    <h3>Top crea</h3>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="artiste">
+                        <a href="#">
+                            <img src="../images/faces/128.jpg">
+                            <div class="info">
+                                <span class="name">Paul</span>
+                                <div>
+                                    <i></i><span class="upload">8</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <img src="../images/PUB.png">
+            </div>
             <?php include_once 'footer.php'; ?>
         </section>
     </body>

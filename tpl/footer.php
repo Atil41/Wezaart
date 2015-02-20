@@ -1,4 +1,3 @@
-<?php include('intro.php'); ?>
 <div class="footer col-md-12">
     <div class="info">
         <ul>
@@ -17,4 +16,5 @@
         <p>Déjà 1.345 artistes</p>
         <span>@ 2014</span>
     </div>
+    <?php include('intro.php'); ?>
 </div>

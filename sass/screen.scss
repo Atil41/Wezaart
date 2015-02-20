@@ -9,10 +9,10 @@ font-family: 'Raleway', sans-serif;
 
 */
 
-.noFocus:focus {
-    outline: none;
-}
 
+*:focus {
+    outline: 0;
+}
 #identification {
     background-color: #fff;
     color:black;
@@ -55,8 +55,8 @@ font-family: 'Raleway', sans-serif;
         height: 18px;
         display: inline-block;
         line-height: 16px;
-		color: #fff;
-		text-decoration: none;
+        color: #fff;
+        text-decoration: none;
 
         a {
             color: #fff;
@@ -80,8 +80,8 @@ font-family: 'Raleway', sans-serif;
         height: 18px;
         display: inline-block;
         line-height: 16px;
-		color: #fff;
-		text-decoration: none;
+        color: #fff;
+        text-decoration: none;
     }
 
     #souvenir {
@@ -177,7 +177,10 @@ font-family: 'Raleway', sans-serif;
                     color: #fff;
                     border-radius: 50%;
                     transition: all .3s ease-in;
-
+                    outline: 0;
+                    &:active{
+                        outline: 0;
+                    }
                 }
 
                 &:hover .button{
@@ -202,35 +205,35 @@ font-family: 'Raleway', sans-serif;
 
         }
     }
-	
+
     .moneys {
-	
-		.euros {
-		text-decoration:none;
-		background-color: #171a1c;
-		margin:auto;
-		color:white;
-		border-radius: 50px;
-		height:30px;
-        width: 125px;
-		}
-		a {
-		text-decoration:none;
-		}
-		.iconesmoneys {
-		padding-top:3px;
-		float: left;
-		margin-left:20px;
-		}
-		.chiffres{
-		padding-top:4px;
-		}
-		img {
-		padding-right:5px;
-		}
-		
-	}
-	
+
+        .euros {
+            text-decoration:none;
+            background-color: #171a1c;
+            margin:auto;
+            color:white;
+            border-radius: 50px;
+            height:30px;
+            width: 125px;
+        }
+        a {
+            text-decoration:none;
+        }
+        .iconesmoneys {
+            padding-top:3px;
+            float: left;
+            margin-left:20px;
+        }
+        .chiffres{
+            padding-top:4px;
+        }
+        img {
+            padding-right:5px;
+        }
+
+    }
+
     .userbtn {
         width: 100%;
         padding: 10px;
@@ -338,7 +341,7 @@ header#head{
             transition: all .3s ease-in-out;
 
             a{
-                padding: 14px 30px;
+                padding: 14px 0 14px 42px;
                 text-decoration:none;
                 color: #fff;
                 display:inherit;
@@ -464,7 +467,10 @@ header#head{
     font-weight:100;
     position: absolute!important;
     top: 66px !important;
-    left: 305px !important;
+    left: 280px !important;
+    background-color: #000!important;
+    width: 135px!important;
+    border-radius: 0 0 3px 3px;
 }
 .ui-widget{
     font-family: 'Raleway', sans-serif!important;
@@ -474,12 +480,10 @@ header#head{
     color:#fff!important;
     font-weight:100!important;
     border-color: #fff!important;
-
 }
 section#content {
-    background: #ccc;
+    background: #fff;
     overflow:visible;
-    position:absolute;
     transition: all .6s ease-in-out;
     @media screen and (max-width: $break-small) {
         margin-left:50%;
@@ -490,6 +494,9 @@ section#content {
 
     &.navhide{
         margin-left: 0!important;
+    }
+    .presentation{
+        background-color: #ccc;
     }
     #owl-slide {
         .item{
@@ -590,6 +597,8 @@ section#content {
             opacity: 0.8;
             width: 120px;
             color: #FFF;
+            text-transform: capitalize;
+
             &:focus{
                 outline: 0;
             }
@@ -637,7 +646,7 @@ section#content {
         }
     }
 
-    #topartiste{
+    >#topartiste{
         width: 100%;
         background: #fff;
 
@@ -848,7 +857,8 @@ section#content {
             height: 292px;
             display: block;
             position: relative;
-            background: url(../images/img-cat-design.png) center top no-repeat;
+            background: url(../images/img-cat-design.jpg) center top no-repeat;
+            background-size: cover;
             .cercleinfos i{
                 font-size:15px;
                 color:#fff;
@@ -891,7 +901,8 @@ section#content {
             height: 292px;
             display: block;
             position: relative;
-            background: url(../images/img-cat-lettres.png) center top no-repeat;
+            background: url(../images/img-cat-lettres.jpg) center top no-repeat;
+            background-size: cover;
 
             .cercleinfos i{
                 font-size:15px;
@@ -977,7 +988,7 @@ section#content {
             height: 292px;
             display: block;
             position: relative;
-            background: url(../images/img-cat-video.png) center top no-repeat;
+            background: url(../images/img-cat-video.jpg) center top no-repeat;
 
             .cercleinfos i{
                 font-size:15px;
@@ -1027,7 +1038,8 @@ section#content {
             height: 292px;
             display: block;
             position: relative;
-            background: url(../images/img-cat-happening.png) center top no-repeat;
+            background: url(../images/img-cat-happening.jpg) center top no-repeat;
+            background-size: cover;
 
             .cercleinfos i{
                 font-size:15px;
@@ -1078,6 +1090,7 @@ section#content {
     #profilhead{
         display: block;
         width: 100%;
+        z-index: 1;
         height: 180px;
         background-image:url(http://lorempixel.com/1100/200);
         background-size: cover;
@@ -1129,16 +1142,18 @@ section#content {
         }
     }
     #wezuploadedwrap{
+        margin-top:15px;
+        margin-bottom:15px;
+
         #Container{
             .mix{
                 display: none;
             }
             .wezuploaded{
-                width: 180px;
                 height: 220px;
-                display: block;
                 float: left;
-                margin: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
                 position: relative;
 
                 a{
@@ -1149,6 +1164,7 @@ section#content {
                     color:#FFF;
                     background-size:cover;
                     background-position: center;
+                    position:relative;
                     &:hover{
                         span{
                             opacity: 1;
@@ -1169,9 +1185,67 @@ section#content {
         }
 
     }
+    #rightcolumn{
+
+        padding: 205px 10px 10px;
+        background-color:#ccc;
+        position: absolute;
+        right: 0;
+        bottom:0;
+        height: 100%;
+        img{
+            margin: 5px auto;
+            width: 150px;
+            display: block;
+        }
+        #partenaire{
+            img{
+                margin: 5px auto;
+                width: 150px;
+                display: block;
+            }
+        }
+        #topartiste, #topcrea{
+            padding:10px;
+            display:inline-block;
+            h3{
+                text-transform: uppercase;
+            }
+            .artiste{
+                width:100%;
+                display:block;
+                float:left;
+                padding:5px 0;
+                a{
+                    color: #293033;
+                    text-decoration: none;
+                    font-size: 14px;
+                    img{
+                        width: 50px;
+                        border-radius: 50%;
+                        display: block;
+                        float: left
+                    }
+                    span{
+                        float: left;
+                        clear: left;
+                    }
+                    .info{
+                        float:left;
+                        margin: 10px 5px;
+                        >div{
+                            float: left;
+                            clear: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
     /*   Footer*/
 
     .footer {
+        background-color: #ccc;
         padding: 30px;
         border-top: 1px solid #c4c4c4;
         overflow: hidden;

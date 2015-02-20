@@ -164,7 +164,13 @@ $(document).ready(function () {
         beforeMove: introTimer()
     });
 
-
+    $.ajax({
+        url: 'http://api.randomuser.me/?results=10',
+        dataType: 'json',
+        success: function (data) {
+            console.log(data);
+        }
+    });
 });
 
 
