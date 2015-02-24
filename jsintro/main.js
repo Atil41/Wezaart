@@ -136,8 +136,6 @@ $(document).ready(function () {
         $(".intro-box").stop().fadeIn(300);
     });
     $(".intro-box").stop().fadeOut(0).fadeIn(300);
-
-
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
         var timerWidth = 100 / nbrSlide;
@@ -151,7 +149,6 @@ $(document).ready(function () {
     }
     if ($.cookie('intro') == undefined) {
         $.cookie('intro', "viewed");
-
     }
     else {
         $(".intro-box").stop().fadeOut(0);
@@ -163,22 +160,40 @@ $(document).ready(function () {
         loop: true,
         beforeMove: introTimer()
     });
-
     $.ajax({
-        url: 'http://api.randomuser.me/?results=10',
+        url: 'http://api.randomuser.me/?results=20',
         dataType: 'json',
         success: function (data) {
+            var contact = JSON.stringify(data);
+            var obj = jQuery.parseJSON(contact);
             console.log(data);
+            //colone droite artiste
+
+            $('#rightcolumn .artiste img').each(function (i) {
+                $(this).attr("src", obj.results[i].user.picture.thumbnail);
+
+            });
+            $('#rightcolumn .artiste .info .firstname').each(function (i) {
+                $(this).text(obj.results[i].user.name.first);
+            });
+            $('#rightcolumn .artiste .info .lastname').each(function (i) {
+                $(this).text(obj.results[i].user.name.last);
+            });
+            //top artiste caroussel
+
+
+            $('#topartiste .artiste a.name .lastname').each(function (i) {
+                $(this).text(obj.results[i].user.name.last);
+            });
+            $('#topartiste .artiste img').each(function (i) {
+                $(this).attr("src", obj.results[i].user.picture.thumbnail);
+            });
+            $('#topartiste .artiste a.name .firstname').each(function (i) {
+                $(this).text(obj.results[i].user.name.first);
+            });
+            $('#topartiste > span').each(function (i) {
+                $(this).text(obj.results[i].user.name.first);
+            });
         }
     });
 });
-
-
-
-
-
-
-
-
-
-

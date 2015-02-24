@@ -18,7 +18,7 @@
 
 </section>
 <!-- page content -->
-<a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
+<a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
 <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
 <nav id="navtop">
     <ul>
@@ -32,107 +32,26 @@
         <h2>Le top artiste</h2>
     </div>
     <div id="owl-artistes" class="wrapper" >
+        <?php
+        for ($i = 1; $i <= 15; $i++) {
+            $myLine = rand(1, 100);
+            $file = new SplFileObject('../data/bio.txt');
+            //this is zero based so need to subtract 1
+            $file->seek($myLine - 1);
+            $artiste = '<div class="artiste">
+            <a href="#"><img></a>
+            <a class="name" href="#"><span class="firstname"></span><span class="lastname"></span></a>
+            <span>' . $file->current() . '</span>
+        <div class = "artistebtn">
+        <a href = "#"><div class = "button"><i class = "icon icon-w-like"></i></div></a>
+        <a href = "#"><div class = "button"><div><i class = "icon icon-w-more"></i></div></div></a>
+        <a href = "#"><div class = "button"><i class = "icon icon-w-share"></i></div></a>
+        </div>
+        </div>';
+            echo $artiste;
+        }
+        ?>
 
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste1.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste2.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste3.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste4.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste5.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste1.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste2.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste3.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste4.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
-        <div class="artiste">
-            <a href="#"><img src="../images/artiste5.png"></a>
-            <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-            <span>This is Photoshop's version  of Lorem Ipsum...</span>
-            <div class="artistebtn">
-                <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                <a href="#"><div class="button"><i class="icon-share"></i></div></a>
-            </div>
-        </div>
     </div>
 </div>
 <div class="col-md-12 presentation">
@@ -147,32 +66,32 @@
             </div>
 
             <div class="textemusicale">
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
             </div>
         </div>
-        <div class="imagemusique">
-            <div class="cercleinfos">
-                <i class="icon-info"></i>
+        <div class = "imagemusique">
+            <div class = "cercleinfos">
+                <i class = "icon icon-w-info"></i>
             </div>
-            <div class="textinfos">
+            <div class = "textinfos">
                 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
             </div>
         </div>
-        <div class="clear"></div>
+        <div class = "clear"></div>
     </div>
-    <div id="sectiondroite">
-        <div class="textdroite">
-            <div class="title">
-                <span class="h2">
+    <div id = "sectiondroite">
+        <div class = "textdroite">
+            <div class = "title">
+                <span class = "h2">
                     La section<br/>
                     <strong>VIDÉO</strong>
                 </span>
 
-                <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href = "#"><div class = "decouvrir">DÉCOUVRIR LA SELECTION</div></a>
             </div>
 
-            <div class="textevideo">
+            <div class = "textevideo">
                 <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
             </div>
@@ -180,7 +99,7 @@
 
         <div class="imagevideo">
             <div class="cercleinfos">
-                <i class="icon-info"></i>
+                <i class="icon icon-w-info"></i>
             </div>
 
             <div class="textinfos">
@@ -201,32 +120,32 @@
             </div>
 
             <div class="textedesign">
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
             </div>
         </div>
-        <div class="imagedesign">
-            <div class="cercleinfos">
-                <i class="icon-info"></i>
+        <div class = "imagedesign">
+            <div class = "cercleinfos">
+                <i class = "icon icon-w-info"></i>
             </div>
-            <div class="textinfos">
+            <div class = "textinfos">
                 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
             </div>
         </div>
-        <div class="clear"></div>
+        <div class = "clear"></div>
     </div>
-    <div id="sectiondroite">
-        <div class="textdroite">
-            <div class="title">
-                <span class="h2">
+    <div id = "sectiondroite">
+        <div class = "textdroite">
+            <div class = "title">
+                <span class = "h2">
                     La section<br/>
                     <strong>HAPPENING</strong>
                 </span>
 
-                <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href = "#"><div class = "decouvrir">DÉCOUVRIR LA SELECTION</div></a>
             </div>
 
-            <div class="textehappening">
+            <div class = "textehappening">
                 <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
             </div>
@@ -234,7 +153,7 @@
 
         <div class="imagehappening">
             <div class="cercleinfos">
-                <i class="icon-info"></i>
+                <i class="icon icon-w-info"></i>
             </div>
 
             <div class="textinfos">
@@ -255,21 +174,21 @@
             </div>
 
             <div class="textelettres">
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
                 <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
             </div>
         </div>
 
 
-        <div class="imagelettres">
-            <div class="cercleinfos">
-                <i class="icon-info"></i>
+        <div class = "imagelettres">
+            <div class = "cercleinfos">
+                <i class = "icon icon-w-info"></i>
             </div>
 
-            <div class="textinfos">
+            <div class = "textinfos">
                 Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
             </div>
         </div>
-        <div class="clear"></div>
+        <div class = "clear"></div>
     </div>
 </div>

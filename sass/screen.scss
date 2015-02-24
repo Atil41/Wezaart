@@ -8,8 +8,14 @@ font-family: 'Raleway', sans-serif;
 
 
 */
-
-
+@font-face {
+    font-family: "pictowezaart";
+    src: url('../fonts/wezaart-font.eot');
+    src: url('../fonts/wezaart-font.eot?#iefix') format('eot'),
+        url('../fonts/wezaart-font.woff') format('woff'),
+        url('../fonts/wezaart-font.ttf') format('truetype'),
+        url('../fonts/wezaart-font.svg') format('svg');
+}
 *:focus {
     outline: 0;
 }
@@ -149,6 +155,7 @@ font-family: 'Raleway', sans-serif;
             border:1px solid #bfbfbf;
             font-size:15px;
             text-align:center;
+            text-decoration: none;
             color: #293033;
             transition: all .3s ease-in;
 
@@ -195,8 +202,8 @@ font-family: 'Raleway', sans-serif;
 
             }
             &:nth-child(3){
-                font-size:13px;
                 right: 20px;
+                line-height:24px;
                 &:hover{
                     color: #fff;
                     background-color:#293033;
@@ -221,7 +228,7 @@ font-family: 'Raleway', sans-serif;
             text-decoration:none;
         }
         .iconesmoneys {
-            padding-top:3px;
+            padding-top:5px;
             float: left;
             margin-left:20px;
         }
@@ -341,13 +348,15 @@ header#head{
             transition: all .3s ease-in-out;
 
             a{
-                padding: 14px 0 14px 42px;
+                padding: 8px 0 8px 42px;
                 text-decoration:none;
                 color: #fff;
                 display:inherit;
                 width:100%;
                 i{
                     margin-right: 20px;
+                    vertical-align: middle;
+                    font-size: 25px;
                 }
 
 
@@ -356,7 +365,7 @@ header#head{
                 border-left: 5px solid #c6c6c6;
                 background-color: #171a1c;
                 ul{
-                    height:190px;;
+                    height:150px;;
                 }
             }
 
@@ -446,15 +455,16 @@ header#head{
 }
 
 #navhidebtn{
-    display:none;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: transparent;
     position: absolute;
     left: 10px;
     top: 30px;
     padding: 8px 7px;
+    color: #fff;
+    opacity: 0.6;
 }
 /*    Home Page*/
 .ui-widget-content{
@@ -467,7 +477,7 @@ header#head{
     font-weight:100;
     position: absolute!important;
     top: 66px !important;
-    left: 280px !important;
+    left: 305px !important;
     background-color: #000!important;
     width: 135px!important;
     border-radius: 0 0 3px 3px;
@@ -517,6 +527,10 @@ section#content {
             -moz-border-radius: 3px;
             border-radius: 3px;
             text-align: center;
+            img{
+                border-radius: 50%;
+                width: 105px;
+            }
             span{
                 color: #333;
             }
@@ -672,11 +686,12 @@ section#content {
                 margin: auto;
                 position:relative;
                 >a{
-                    &:before {
+
+                    &:nth-child(1):before {
                         content: '';
                         position: absolute;
-                        top: 25px;
-                        left: 35px;
+                        top: 28px;
+                        left: 31px;
                         height: 110px;
                         width: 110px;
                         background-image: url(../images/img-intro-artiste.png);
@@ -684,6 +699,7 @@ section#content {
                         background-repeat: no-repeat;
                     }
                 }
+
                 .artistebtn{
                     margin-top: 10px;
                 }
@@ -702,10 +718,12 @@ section#content {
                         text-align:center;
                         color: #293033;
                         transition: all .3s ease-in;
-
+                        text-decoration:none;
 
                         &:nth-child(1){
                             left: 20px;
+                            line-height:25px;
+
                             &:hover{
                                 color: #fff;
                                 background-color:#293033;
@@ -716,6 +734,8 @@ section#content {
                             width:40px;
                             height:40px;
                             left: 70px;
+                            line-height:26px;
+
 
                             .button{
                                 width:30px;
@@ -744,6 +764,7 @@ section#content {
                         &:nth-child(3){
                             font-size:13px;
                             right: 20px;
+                            line-height:22px;
                             &:hover{
                                 color: #fff;
                                 background-color:#293033;
@@ -760,16 +781,19 @@ section#content {
             .name{
                 display: inline-block;
                 margin-top: 18px;
-
+                width:100%;
                 span{
                     display: inline-block;
                     font-size:14px;
                     font-weight:bold;
                     color:#333;
-                    >span{
-                        text-transform: uppercase;
-                    }
+                    text-transform: capitalize;
                 }
+                .lastname{
+                    text-transform: uppercase;
+                    margin-left: 5PX;
+                }
+
             }
         }
     }
@@ -826,6 +850,8 @@ section#content {
                 left: 20px;
                 padding: 5px;
                 transition: all 0.3s ease-in-out;
+                height: 27px;
+                width: 27px;
             }
             .textinfos {
                 opacity:0;
@@ -869,7 +895,8 @@ section#content {
                 left: 20px;
                 padding: 5px;
                 transition: all 0.3s ease-in-out;
-
+                height: 27px;
+                width: 27px;
             }
             .textinfos {
                 opacity: 0;
@@ -1000,7 +1027,8 @@ section#content {
                 right: 20px;
                 padding: 5px;
                 transition: all 0.3s ease-in-out;
-
+                height: 27px;
+                width: 27px;
             }
 
             .textinfos {
@@ -1206,7 +1234,6 @@ section#content {
             }
         }
         #topartiste, #topcrea{
-            padding:10px;
             display:inline-block;
             h3{
                 text-transform: uppercase;
@@ -1226,9 +1253,16 @@ section#content {
                         display: block;
                         float: left
                     }
+                    .lastname{
+                        margin-left: 5px;
+                    }
                     span{
                         float: left;
-                        clear: left;
+                    }
+                    i{
+                        float: left;
+                        line-height: 2;
+                        margin-right: 5px;
                     }
                     .info{
                         float:left;

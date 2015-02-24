@@ -19,18 +19,15 @@
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
-    <!--FONTELLO-->
     <!--[if lt IE 9]>
     <script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+    <link rel="stylesheet" href="../css/wezaart-font.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/sliderskin.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/fontello/fontello.css">
-    <link rel="stylesheet" href="../css/fontello/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello/fontello-ie7.css"><![endif]-->
-    <!--/FONTELLO-->
     <!--Slider-->
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="../css/owl.carousel.css">

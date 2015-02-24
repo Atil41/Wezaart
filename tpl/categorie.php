@@ -83,82 +83,48 @@ if (isset($_GET['logout'])) {
             <div id="rightcolumn" class="col-md-2">
 
                 <div id="partenaire" class="wrapper" >
-                    <img src="../images/partenairefournisseur.png">
-                    <img src="../images/partenairemecene.png">
-                    <img src="../images/partenaireorganisateur.png">
+                    <img src="../images/partenaires.png">
 
                 </div>
                 <div id="topartiste" class="wrapper" >
                     <h3>Top artiste</h3>
-                    <div class="artiste">
+                    <?php
+                    $artiste = '<div class="artiste">
                         <a href="#">
-                            <img src="../images/faces/128.jpg">
+                            <img >
                             <div class="info">
-                                <span class="name">Paul</span>
+                                <span class="firstname"></span><span class="lastname"></span>
                                 <div>
-                                    <i></i><span class="upload">8</span>
+                                    <i class="icon icon-w-visuel"></i><span class="upload">' . rand(1, 105) . '</span>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="artiste">
-                        <a href="#">
-                            <img src="../images/faces/128.jpg">
-                            <div class="info">
-                                <span class="name">Paul</span>
-                                <div>
-                                    <i></i><span class="upload">8</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="artiste">
-                        <a href="#">
-                            <img src="../images/faces/128.jpg">
-                            <div class="info">
-                                <span class="name">Paul</span>
-                                <div>
-                                    <i></i><span class="upload">8</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    </div>';
+                    for ($i = 1; $i <= 3; $i++) {
+                        echo $artiste;
+                    }
+                    ?>
+
                 </div>
                 <div id="topcrea" class="wrapper" >
                     <h3>Top crea</h3>
-                    <div class="artiste">
+                    <?php
+                    $artiste = '<div class="artiste">
                         <a href="#">
-                            <img src="../images/faces/128.jpg">
+                            <img src="">
                             <div class="info">
-                                <span class="name">Paul</span>
+                                <span class="firstname"></span><span class="lastname"></span>
                                 <div>
-                                    <i></i><span class="upload">8</span>
+                                    <i class="icon icon-w-visuel"></i><span class="upload">' . rand(1, 105) . '</span>
                                 </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="artiste">
-                        <a href="#">
-                            <img src="../images/faces/128.jpg">
-                            <div class="info">
-                                <span class="name">Paul</span>
-                                <div>
-                                    <i></i><span class="upload">8</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="artiste">
-                        <a href="#">
-                            <img src="../images/faces/128.jpg">
-                            <div class="info">
-                                <span class="name">Paul</span>
-                                <div>
-                                    <i></i><span class="upload">8</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    </div>';
+                    for ($i = 1; $i <= 3; $i++) {
+                        echo $artiste;
+                    }
+                    ?>
+
                 </div>
                 <img src="../images/PUB.png">
             </div>

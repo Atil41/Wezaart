@@ -3,7 +3,7 @@
         <div id="logo"><a href="../index.php"><img src="../images/logo wezaart blanc-new.png" alt="logo"/></a></div>
         <div id="nav">
             <ul>
-                <li><a href="categorie.php?type=performances"><i class="icon-music"></i>Performances</a>
+                <li><a href="categorie.php?type=performances"><i class="icon icon-w-happening"></i>Performances</a>
                     <ul>
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
                         <li><a href="categorie.php?type=performances&subtype=Art_Vivant">Art Vivant</a></li>
@@ -11,7 +11,7 @@
                         <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
-                <li><a href="categorie.php?type=arts_plastiques"><i class="icon-video"></i>Arts Plastiques</a>
+                <li><a href="categorie.php?type=arts_plastiques"><i class="icon icon-w-concept"></i>Arts Plastiques</a>
                     <ul>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=peinture">Peinture</a></li>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=sculpture">Sculpture</a></li>
@@ -19,7 +19,7 @@
                         <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
-                <li><a href="categorie.php?type=arts_numériques"><i class="icon-picture"></i>Arts numériques</a>
+                <li><a href="categorie.php?type=arts_numériques"><i class="icon icon-w-design"></i>Arts numériques</a>
                     <ul>
                         <li><a href="categorie.php?type=arts_numériques&subtype=photographie">Photographie</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=2D_numérique">2D Numérique</a></li>
@@ -27,7 +27,7 @@
                         <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
-                <li><a href="categorie.php?type=sons"><i class="icon-github"></i>Sons</a>
+                <li><a href="categorie.php?type=sons"><i class="icon icon-w-sound"></i>Sons</a>
                     <ul>
                         <li><a href="categorie.php?type=sons&subtype=musique">Musique</a></li>
                         <li><a href="categorie.php?type=sons&subtype=instrumental">Instrumental</a></li>
@@ -35,7 +35,7 @@
                         <li><a href="categorie.php">...</a></li>
                     </ul>
                 </li>
-                <li><a href="categorie.php?type=récits"><i class="icon-feather"></i>Récits</a>
+                <li><a href="categorie.php?type=récits"><i class="icon icon-w-write"></i>Récits</a>
                     <ul>
                         <li><a href="categorie.php?type=récits&subtype=cinéma">Cinéma</a></li>
                         <li><a href="categorie.php?type=récits&subtype=littérature">Littérature</a></li>
@@ -58,13 +58,13 @@
                                     <a href="#"><div class="userbutton"><i class="icon-share"></i></div></a>
                                 </div>-->
                 <div class="artistebtn">
-                    <a href="#"><div class="button"><i class="icon-heart-filled"></i></div></a>
-                    <a href="#"><div class="button"><div><i class="icon-plus"></i></div></div></a>
-                    <a href="#"><div class="button"><i class="icon-share"></i></div></a>
+                    <a href="#"><div class="button"><i class="icon icon-w-settings"></i></div></a>
+                    <a href="#"><div class="button"><div><i class="icon icon-w-settings"></i></div></div></a>
+                    <a href="#"><div class="button"><i class="icon icon-w-settings"></i></div></a>
                 </div>
                 <div class="moneys">
-                    <a href="#"><div class="euros"><div class="iconesmoneys"> <img src="../images/pieces.png" /><img src="../images/top.png" /></div><div class="chiffres">3,70€</div></div></a><p></p>
-                    <a href="#"><div class="euros"><div class="iconesmoneys"> <img src="../images/pieces.png" /><img src="../images/down.png" /></div><div class="chiffres">1,20€</div></div></a>
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> GAINS </div><div class="chiffres">3,70€</div></div></a><p></p>
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> DONS </div><div class="chiffres">1,20€</div></div></a>
                 </div>
                 <div id="logout">
                     <?php
@@ -110,7 +110,7 @@
                         <div id="logintwitter"><a id="logotwitter">Se connecter avec Twitter</a></div><br/>
                         <div id="loginfacebook"><a id="logofacebook">Se connecter avec Facebook</a></div>
                         </p>
-						<p>OU</p>
+                        <p>OU</p>
                         <ol>
                             <li>
                                 <input id="email" name="email" type="email" placeholder="Adresse Email" style="background-color:transparent" required="">

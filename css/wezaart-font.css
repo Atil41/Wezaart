@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "wezaart-font-1";
+  src:url("../font/wezaart-font.eot");
+  src:url("../font/wezaart-font.eot?#iefix") format("embedded-opentype"),
+    url("../font/wezaart-font.woff") format("woff"),
+    url("../font/wezaart-font.ttf") format("truetype"),
+    url("../font/wezaart-font.svg#wezaart-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "wezaart-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "wezaart-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-w-arrow-bottom:before {
+  content: "a";
+}
+.icon-w-arrow-left:before {
+  content: "b";
+}
+.icon-w-arrow-right:before {
+  content: "c";
+}
+.icon-w-arrow-top:before {
+  content: "d";
+}
+.icon-w-behance:before {
+  content: "e";
+}
+.icon-w-burger:before {
+  content: "f";
+}
+.icon-w-close:before {
+  content: "g";
+}
+.icon-w-concept:before {
+  content: "h";
+}
+.icon-w-design:before {
+  content: "i";
+}
+.icon-w-deviantart:before {
+  content: "j";
+}
+.icon-w-dribbble:before {
+  content: "k";
+}
+.icon-w-facebook:before {
+  content: "l";
+}
+.icon-w-groups:before {
+  content: "m";
+}
+.icon-w-happening:before {
+  content: "n";
+}
+.icon-w-info:before {
+  content: "o";
+}
+.icon-w-instagram:before {
+  content: "p";
+}
+.icon-w-letter:before {
+  content: "q";
+}
+.icon-w-like:before {
+  content: "r";
+}
+.icon-w-link:before {
+  content: "s";
+}
+.icon-w-lists:before {
+  content: "t";
+}
+.icon-w-message:before {
+  content: "u";
+}
+.icon-w-money:before {
+  content: "v";
+}
+.icon-w-more:before {
+  content: "w";
+}
+.icon-w-movie:before {
+  content: "x";
+}
+.icon-w-musique:before {
+  content: "y";
+}
+.icon-w-picassa:before {
+  content: "z";
+}
+.icon-w-ribbon:before {
+  content: "A";
+}
+.icon-w-scale:before {
+  content: "B";
+}
+.icon-w-search:before {
+  content: "C";
+}
+.icon-w-selection:before {
+  content: "D";
+}
+.icon-w-settings:before {
+  content: "E";
+}
+.icon-w-share:before {
+  content: "F";
+}
+.icon-w-sound:before {
+  content: "G";
+}
+.icon-w-soundcloud:before {
+  content: "H";
+}
+.icon-w-theatre:before {
+  content: "I";
+}
+.icon-w-time:before {
+  content: "J";
+}
+.icon-w-tiwtter:before {
+  content: "K";
+}
+.icon-w-view:before {
+  content: "L";
+}
+.icon-w-visuel:before {
+  content: "M";
+}
+.icon-w-wez:before {
+  content: "N";
+}
+.icon-w-wezaart:before {
+  content: "O";
+}
+.icon-w-write:before {
+  content: "P";
+}
+.icon-w-youtube:before {
+  content: "Q";
+}
