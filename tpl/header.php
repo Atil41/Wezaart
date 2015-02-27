@@ -8,7 +8,7 @@
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
                         <li><a href="categorie.php?type=performances&subtype=Art_Vivant">Art Vivant</a></li>
                         <li><a href="categorie.php?type=performances&subtype=expression">Expression</a></li>
-                        <li><a href="categorie.php">...</a></li>
+                        <li><a href="categorie.php?type=performances">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_plastiques"><i class="icon icon-w-concept"></i>Arts Plastiques</a>
@@ -16,7 +16,7 @@
                         <li><a href="categorie.php?type=arts_plastiques&subtype=peinture">Peinture</a></li>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=sculpture">Sculpture</a></li>
                         <li><a href="categorie.php?type=arts_plastiques&subtype=illustration">Illustration</a></li>
-                        <li><a href="categorie.php">...</a></li>
+                        <li><a href="categorie.php?type=arts_plastiques">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_numériques"><i class="icon icon-w-design"></i>Arts numériques</a>
@@ -24,7 +24,7 @@
                         <li><a href="categorie.php?type=arts_numériques&subtype=photographie">Photographie</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=2D_numérique">2D Numérique</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=3D_numérique">3D Numérique</a></li>
-                        <li><a href="categorie.php">...</a></li>
+                        <li><a href="categorie.php?type=arts_numériques">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=sons"><i class="icon icon-w-sound"></i>Sons</a>
@@ -32,7 +32,7 @@
                         <li><a href="categorie.php?type=sons&subtype=musique">Musique</a></li>
                         <li><a href="categorie.php?type=sons&subtype=instrumental">Instrumental</a></li>
                         <li><a href="categorie.php?type=sons&subtype=voix">Voix</a></li>
-                        <li><a href="categorie.php">...</a></li>
+                        <li><a href="categorie.php?type=sons">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=récits"><i class="icon icon-w-write"></i>Récits</a>
@@ -40,7 +40,7 @@
                         <li><a href="categorie.php?type=récits&subtype=cinéma">Cinéma</a></li>
                         <li><a href="categorie.php?type=récits&subtype=littérature">Littérature</a></li>
                         <li><a href="categorie.php?type=récits&subtype=bande_dessinée">Bande Dessinée</a></li>
-                        <li><a href="categorie.php">...</a></li>
+                        <li><a href="categorie.php?type=récits">...</a></li>
                     </ul>
                 </li>
             </ul>
@@ -50,7 +50,6 @@
             <div class="userconnect">
                 <a href="#"><img src="../images/artiste1.png" /></a><br/>
                 <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
-                <p class="barre"><img src="../images/top.png" /> 18 | 24 <img src="../images/down.png" /></p>
 
                 <!--                <div class="userbtn">
                                     <a href="#"><div class="userbutton"><i class="icon-heart-filled"></i></div></a>
@@ -58,8 +57,8 @@
                                     <a href="#"><div class="userbutton"><i class="icon-share"></i></div></a>
                                 </div>-->
                 <div class="artistebtn">
-                    <a href="#"><div class="button"><i class="icon icon-w-settings"></i></div></a>
-                    <a href="#"><div class="button"><div><i class="icon icon-w-settings"></i></div></div></a>
+                    <a href="#"><div class="button"><i class="icon icon-picto-star"></i></div></a>
+                    <a href="#"><div class="button"><div><i class="icon icon-picto-w"></i></div></div></a>
                     <a href="#"><div class="button"><i class="icon icon-w-settings"></i></div></a>
                 </div>
                 <div class="moneys">

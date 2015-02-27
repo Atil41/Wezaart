@@ -1,119 +1,5 @@
 $(document).ready(function () {
 
-//    // Top Slider Full Screen
-//    $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
-//    $(window).on('resize', function () {
-//        $('.slider').css("height", $(window).height() - $('.top-artiste').height() - 60 + 'px');
-//    });
-//
-//    // Navigation ------------------------------------------------ //
-//    // Initialisation
-//    $('.wrapper').animate({
-//        width: $(window).width() - $('.header').width() + 'px'
-//    }, 0);
-//    $(window).on('resize', function () {
-//        $('.wrapper').stop().animate({
-//            width: $(window).width() - $('.header').width() + 'px'
-//        }, 0);
-//    });
-
-//	// Slider Owl
-//	$('.slider .owl-carousel').owlCarousel({
-//	    autoplay: true,
-//		autoplaySpeed: 1000,
-//		navSpeed: 1000,
-//		dotsSpeed: 1000,
-//		mouseDrag: false,
-//	    nav:true,
-//        items: 1,
-//		responsive: true,
-//		callbacks: true
-//	});
-//
-//	// Slider Owl
-//	var owl = $('.top-artiste .owl-carousel');
-//	var parameters = {
-//		margin:30,
-//		mouseDrag: false,
-//	    //autoplay: true,
-//	    nav:true,
-//	    items: 5,
-//	    loop: true,
-//	    responsive:{
-//	        750:{
-//	            items:3,
-//	            nav:true
-//	        },
-//	        970:{
-//	            items:4,
-//	            nav:false
-//	        },
-//	        1170:{
-//	            items:5,
-//	            nav:true,
-//	            loop:false
-//	        }
-//		}
-//	};
-//	owl.owlCarousel(parameters);
-//
-//	// Open
-//    $('.burger-nav').click(function() {
-//
-//        $(this).toggleClass('active');
-//        if ($(this).hasClass('active')) {
-//            $('.header').animate({
-//                left: 0 + 'px'
-//            }, 150);
-//            $('.wrapper').animate({
-//                left: 190 + 'px'
-//            }, 150);
-//			// Header Dimension
-//			$('.wrapper').animate({
-//				width: $(window).width() - $('.header').width() + 'px'
-//			}, 150,function(){
-//				//owl.trigger('refresh.owl');
-//            	//owl.owlCarousel(parameters);
-//			});
-//			$(window).on('resize', function(){
-//				$('.wrapper').stop().animate({
-//					width: $(window).width() - $('.header').width() + 'px'
-//				}, 0);
-//			});
-//        } else {
-//
-//            $('.header').animate({
-//                left: - 190 + 'px'
-//            }, 150);
-//            $('.wrapper').animate({
-//                left: 0 + 'px'
-//            }, 150);
-//			// Header Dimension
-//			$('.wrapper').css({"width" : $(window).width() + 'px'}, function(){
-//				//owl.trigger('refresh.owl');
-//			});
-//			$(window).on('resize', function(){
-//				$('.wrapper').stop().animate({
-//					width: $(window).width() + 'px'
-//				}, 0);
-//			});
-//        }
-//    });
-
-// Rollover Navigation
-//    $(".navigation li > a").click(function () {
-//        var parent = $(this).parent().find("ul");
-//        if (parent.is(':visible')) {
-//            $(".navigation .active ul").stop().slideUp(150);
-//            parent.stop().slideUp(150);
-//            $(this).parent().removeClass("active");
-//        } else if (!parent.is(':visible')) {
-//            $(".navigation li ul").stop().slideUp(150);
-//            $(".navigation li").removeClass("active");
-//            parent.stop().slideDown(150);
-//            $(this).parent().addClass("active");
-//        }
-//    });
 
 // Rollover Informations Home
     $('.explication .illustration .info').click(function () {
@@ -167,11 +53,11 @@ $(document).ready(function () {
             var contact = JSON.stringify(data);
             var obj = jQuery.parseJSON(contact);
             console.log(data);
+
             //colone droite artiste
 
             $('#rightcolumn .artiste img').each(function (i) {
                 $(this).attr("src", obj.results[i].user.picture.thumbnail);
-
             });
             $('#rightcolumn .artiste .info .firstname').each(function (i) {
                 $(this).text(obj.results[i].user.name.first);
@@ -179,21 +65,23 @@ $(document).ready(function () {
             $('#rightcolumn .artiste .info .lastname').each(function (i) {
                 $(this).text(obj.results[i].user.name.last);
             });
+
             //top artiste caroussel
 
-
-            $('#topartiste .artiste a.name .lastname').each(function (i) {
+            $('#topartiste #owl-artistes .artiste a.name .lastname').each(function (i) {
                 $(this).text(obj.results[i].user.name.last);
             });
-            $('#topartiste .artiste img').each(function (i) {
+            $('#topartiste #owl-artistes .artiste img').each(function (i) {
                 $(this).attr("src", obj.results[i].user.picture.thumbnail);
             });
-            $('#topartiste .artiste a.name .firstname').each(function (i) {
+            $('#topartiste #owl-artistes .artiste a.name .firstname').each(function (i) {
                 $(this).text(obj.results[i].user.name.first);
             });
             $('#topartiste > span').each(function (i) {
                 $(this).text(obj.results[i].user.name.first);
             });
+            var bgheadurl = $('#profilhead').css('background-image');
+            $('#profilhead > .profilheadimg').css('background-image', bgheadurl);
         }
     });
 });
