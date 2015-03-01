@@ -1,4 +1,4 @@
-<div class="footer col-md-12">
+<div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="info">
         <ul>
             <li><a href="">A propos</a></li>
@@ -17,4 +17,5 @@
         <span>@ 2014</span>
     </div>
     <?php include('intro.php'); ?>
+    <?php include('soutiens.php'); ?>
 </div>

@@ -11,9 +11,16 @@ $(document).ready(function () {
         }
     });
     // Intro - One Page Scroll ------------------------------------------------ //
+    $(".soutiensbox").stop().fadeOut(0);
 
     $("#intro-close").on('click', function () {
         $(".intro-box").stop().fadeOut(300);
+    });
+    $(".popinclose").on('click', function () {
+        $(".soutiensbox").stop().fadeOut(300);
+    });
+    $("#soutiens").on('click', function () {
+        $(".soutiensbox").stop().fadeIn(300);
     });
     $("#intro").on('click', function () {
         $(".intro-box").stop().fadeIn(300);
@@ -22,6 +29,7 @@ $(document).ready(function () {
         $(".intro-box").stop().fadeIn(300);
     });
     $(".intro-box").stop().fadeOut(0).fadeIn(300);
+
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
         var timerWidth = 100 / nbrSlide;
@@ -80,8 +88,10 @@ $(document).ready(function () {
             $('#topartiste > span').each(function (i) {
                 $(this).text(obj.results[i].user.name.first);
             });
-            var bgheadurl = $('#profilhead').css('background-image');
-            $('#profilhead > .profilheadimg').css('background-image', bgheadurl);
+            var bgheadurl = $('projectheadimg').css('background-image');
+            $('#projecthead ').css('background-image', bgheadurl);
+            var bgheadurl = $('categorieheadimg').css('background-image');
+            $('#categoriehead ').css('background-image', bgheadurl);
         }
     });
 });

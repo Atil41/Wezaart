@@ -22,6 +22,7 @@
 <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
 <nav id="navtop">
     <ul>
+        <a href="#"><li>La boutique</li></a>
         <a href="#" class="prehome"><li>Le concept</li></a>
         <a href="#"><li class="button">WEZ'LIVE</li></a>
         <a href="#"><li class="buttonred">Devenez VIP</li></a>
@@ -29,7 +30,7 @@
 </nav>
 <div id="topartiste" class="col-md-12">
     <div class="title" >
-        <h2>Le top artiste</h2>
+        <h2>Ces artistes sont sortis de l'ombre</h2>
     </div>
     <div id="owl-artistes" class="wrapper" >
         <?php

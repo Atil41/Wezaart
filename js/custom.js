@@ -25,11 +25,11 @@ jQuery(document).ready(function ($) {
         pagination: false,
         scrollPerPage: true
     });
-    $('#content').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+    $('#content').toggleClass("navhide").toggleClass("col-lg-10").toggleClass("col-lg-12").toggleClass("col-md-10").toggleClass("col-md-12").toggleClass("col-sm-9").toggleClass("col-sm-12").toggleClass("col-xs-8").toggleClass("col-xs-12");
     $('#Container').mixItUp();
 
     $('#navhidebtn').click(function () {
-        $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-md-10").toggleClass("col-md-12");
+        $('#content').removeClass('notransition').toggleClass("navhide").toggleClass("col-lg-10").toggleClass("col-lg-12").toggleClass("col-md-10").toggleClass("col-md-12").toggleClass("col-sm-9").toggleClass("col-sm-12").toggleClass("col-xs-8").toggleClass("col-xs-12");
     });
     $(".sort:nth-child(2)").addClass("active");
 

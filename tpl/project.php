@@ -23,22 +23,12 @@ if (isset($_GET['logout'])) {
     <body>
         <?php include_once 'header.php'; ?>
         <section id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding navhide notransition"><!--//all 12 col-->
-            <section id="categoriehead">
-                <div class="categorieheadimg"  <?php
+            <section id="projecthead">
+                <div class="projectheadimg"  <?php
                 if (isset($_GET['type']) || !empty($_GET['type'])) {
-                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégorie
-                    if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                        $image.= str_replace(' ', '_', $_GET['subtype']) . '/'; //sous catégorie?
-                        $image.= rand(1, 20) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    } else {
-                        $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    }
-                } else {
-                    $randomW = rand(800, 1200);
-                    $randomH = rand(200, 300);
-                    echo 'style = "background-image: url("http://lorempixel.com/' . $randomW . '/' . $randomH . '/");';
+                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégori
+                    $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
+                    echo $image;
                 }
                 ?></div>
                 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
@@ -69,12 +59,6 @@ if (isset($_GET['logout'])) {
 
                 </div>
 
-                <div id="filter">
-                    <p>Trier par :</p>
-                    <button class="sort" data-sort="popularity:asc">Popularité</button>
-                    <button class="sort" data-sort="nom:asc">Nom</button>
-                    <button class="sort" data-sort="date:asc">Date</button>
-                </div>
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
@@ -86,55 +70,12 @@ if (isset($_GET['logout'])) {
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
             </nav>
-            <div id="wezuploadedwrap" class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
-
-                <div id="Container" class="wrapper" >
-                    <?php
-                    for ($i = 1; $i <= 20; $i++) {
-                        $randomW = rand(200, 300);
-                        $randomH = rand(200, 300);
-                        $myLine = rand(1, 105);
-                        $file = new SplFileObject('../data/titre.txt');
-                        //this is zero based so need to subtract 1
-                        $file->seek($myLine - 1);
-                        if (isset($_GET['type']) || !empty($_GET['type'])) {
-                            $image = '<div class="wezuploaded mix col-xs-12 col-sm-6 col-md-3 col-lg-3" category="' . rand(1, 3) . '"'; //rndm categorie
-                            $image.='data-popularity = "' . rand(1, 100) . '"'; //rndm popularity
-                            $image.='data-nom = "' . rand(1, 100) . '"'; //rndm nom
-                            $image.='data-date = "' . rand(1, 100) . '">'; //rndm date
-                            $image.='<a class = "name" href="project.php?type=' . str_replace(' ', '_', $_GET['type']); //recupere type projet url
-                            if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                                $image.= '&subtype=' . str_replace(' ', '_', $_GET['subtype']); //recupere sous-type projet url
-                            }
-                            $image.= '&picture=../images/categorie/' . $_GET['type'] . '/'; //recupere titre projet url
-                            if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                                $image.= str_replace(' ', '_', $_GET['subtype']) . '/'; //sous catégorie?
-                            }
-                            $image.= $i . '.jpg'; // numero d'image i
-                            $image.= '&title=' . str_replace(' ', '_', $file->current()); //recupere titre projet url
-                            $image.='" style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; // catégorie?
-                            if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                                $image.= str_replace(' ', '_', $_GET['subtype']) . '/'; //sous catégorie?
-                                $image.= $i . '.jpg)">'; // numero d'image i
-                                $image.='<div class = "titre"><span>' . $file->current() . '</span></div></a></div>'; //rndm titre
-                                echo $image;
-                            } else {
-                                $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
-                                $image.='<div class = "titre"><span>' . $file->current() . '</span></div></a></div>'; //rndm titre
-                                echo $image;
-                            }
-                        } else {
-                            echo '<div class = "wezuploaded mix col-xs-12 col-sm-6 col-md-3 col-lg-3" category = "' . rand(1, 3) . '" data-popularity = "' . rand(1, 100) . '" data-nom = "' . rand(1, 100) . '" data-date = "' . rand(1, 100) . '"><a class = "name" href = "#titre' . $file->current() . '" style = "background-image: url(http://lorempixel.com/' . $randomW . '/' . $randomH . '/)"><div class = "titre"><span>' . $file->current() . '</span></div></a></div>';
-                        }
-                    }
-                    ?>
-                </div>
-            </div>
+            <img src="../images/nav/crea.jpg">
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">
                 <img id="soutiens" src="../images/soutiens.png">
+
                 <div id="partenaire" class="wrapper" >
                     <a href="#"><img src="../images/partenaires.png"></a>
-
                 </div>
                 <div id="topartiste" class="wrapper" >
                     <h3>artistes similaires</h3>
@@ -176,6 +117,7 @@ if (isset($_GET['logout'])) {
                     ?>
 
                 </div>
+                <a href="#"><img src="../images/PUB.png"></a>
             </div>
             <?php include_once 'footer.php'; ?>
         </section>
