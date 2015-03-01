@@ -82,8 +82,8 @@ if (isset($_GET['logout'])) {
             </nav>
             <div id="wezuploadedwrap" class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
 
-                <div id="Container" class="wrapper" >
-                    <img src="<?php $_GET['picture'] ?>>"
+                <div id="Container" class="wrapper">
+                    <img src="<?php $_GET['picture'] ?>">
                 </div>
                 <div class = "artiste">
                     <a href = "#">
