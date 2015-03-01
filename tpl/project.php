@@ -117,7 +117,6 @@ if (isset($_GET['logout'])) {
                     ?>
 
                 </div>
-                <a href="#"><img src="../images/PUB.png"></a>
             </div>
             <?php include_once 'footer.php'; ?>
         </section>

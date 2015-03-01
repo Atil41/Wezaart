@@ -88,10 +88,10 @@ $(document).ready(function () {
             $('#topartiste > span').each(function (i) {
                 $(this).text(obj.results[i].user.name.first);
             });
-            var bgheadurl = $('projectheadimg').css('background-image');
-            $('#projecthead ').css('background-image', bgheadurl);
-            var bgheadurl = $('categorieheadimg').css('background-image');
-            $('#categoriehead ').css('background-image', bgheadurl);
+            var bgheadurl = $('.projectheadimg').css('background-image');
+            $('#projecthead').css('background-image', bgheadurl);
+            var bgheadurl = $('.categorieheadimg').css('background-image');
+            $('#categoriehead').css('background-image', bgheadurl);
         }
     });
 });

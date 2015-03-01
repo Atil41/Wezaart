@@ -26,19 +26,9 @@ if (isset($_GET['logout'])) {
             <section id="projecthead">
                 <div class="projectheadimg"  <?php
                 if (isset($_GET['type']) || !empty($_GET['type'])) {
-                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégorie
-                    if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                        $image.= str_replace(' ', '_', $_GET['subtype']) . '/'; //sous catégorie?
-                        $image.= rand(1, 20) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    } else {
-                        $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    }
-                } else {
-                    $randomW = rand(800, 1200);
-                    $randomH = rand(200, 300);
-                    echo 'style = "background-image: url("http://lorempixel.com/' . $randomW . '/' . $randomH . '/");';
+                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégori
+                    $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
+                    echo $image;
                 }
                 ?></div>
                 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
@@ -68,7 +58,15 @@ if (isset($_GET['logout'])) {
                     ?>
 
                 </div>
-
+                <div id="filter" class="profil">
+                    <button>Profil</button>
+                    <button>Créations</button>
+                    <button>Évenements</button>
+                    <button>Favoris</button>
+                    <button>Forum</button>
+                    <button>Boutique</button>
+                    <button>Statistiques</button>
+                </div>
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
@@ -80,22 +78,9 @@ if (isset($_GET['logout'])) {
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
             </nav>
-            <div id="wezuploadedwrap" class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
-
-                <div id="Container" class="wrapper">
-                    <img src="<?php $_GET['picture'] ?>">
-                </div>
-                <div class = "artiste">
-                    <a href = "#">
-                        <div class = "picture"><img ></div>
-                        <span class = "title"><?php $_GET['title'] ?></span>
-                        <div class = "info">
-                            <span class = "firstname"></span><span class = "lastname"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <img src="../images/nav/profil.jpg">
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+                <img id="soutiens" src="../images/soutiens.png">
 
                 <div id="partenaire" class="wrapper" >
                     <a href="#"><img src="../images/partenaires.png"></a>
@@ -140,7 +125,6 @@ if (isset($_GET['logout'])) {
                     ?>
 
                 </div>
-                <a href="#"><img src="../images/PUB.png"></a>
             </div>
             <?php include_once 'footer.php'; ?>
         </section>
