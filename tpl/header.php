@@ -8,15 +8,13 @@
                         <li><a href="categorie.php?type=performances&subtype=danse">Danse</a></li>
                         <li><a href="categorie.php?type=performances&subtype=Art_Vivant">Art Vivant</a></li>
                         <li><a href="categorie.php?type=performances&subtype=expression">Expression</a></li>
-                        <li><a href="categorie.php?type=performances">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_plastiques"><i class="icon icon-w-concept"></i>Arts Plastiques</a>
                     <ul>
-                        <li><a href="categorie.php?type=arts_plastiques&subtype=peinture">Peinture</a></li>
-                        <li><a href="categorie.php?type=arts_plastiques&subtype=sculpture">Sculpture</a></li>
-                        <li><a href="categorie.php?type=arts_plastiques&subtype=illustration">Illustration</a></li>
-                        <li><a href="categorie.php?type=arts_plastiques">...</a></li>
+                        <li><a href="categorie.php?type=arts_plastiques&subtype=image">Image</a></li>
+                        <li><a href="categorie.php?type=arts_plastiques&subtype=volume">Volume</a></li>
+                        <li><a href="categorie.php?type=arts_plastiques&subtype=hybride">Hybride</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=arts_numériques"><i class="icon icon-w-design"></i>Arts numériques</a>
@@ -24,23 +22,20 @@
                         <li><a href="categorie.php?type=arts_numériques&subtype=photographie">Photographie</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=2D_numérique">2D Numérique</a></li>
                         <li><a href="categorie.php?type=arts_numériques&subtype=3D_numérique">3D Numérique</a></li>
-                        <li><a href="categorie.php?type=arts_numériques">...</a></li>
                     </ul>
                 </li>
-                <li><a href="categorie.php?type=sons"><i class="icon icon-w-sound"></i>Sons</a>
+                <li><a href="categorie.php?type=sons"><i class="icon icon-picto-sound"></i>Sons</a>
                     <ul>
                         <li><a href="categorie.php?type=sons&subtype=musique">Musique</a></li>
                         <li><a href="categorie.php?type=sons&subtype=instrumental">Instrumental</a></li>
                         <li><a href="categorie.php?type=sons&subtype=voix">Voix</a></li>
-                        <li><a href="categorie.php?type=sons">...</a></li>
                     </ul>
                 </li>
                 <li><a href="categorie.php?type=récits"><i class="icon icon-w-write"></i>Récits</a>
                     <ul>
                         <li><a href="categorie.php?type=récits&subtype=cinéma">Cinéma</a></li>
                         <li><a href="categorie.php?type=récits&subtype=littérature">Littérature</a></li>
-                        <li><a href="categorie.php?type=récits&subtype=bande_dessinée">Bande Dessinée</a></li>
-                        <li><a href="categorie.php?type=récits">...</a></li>
+                        <li><a href="categorie.php?type=récits&subtype=hybride">Hybride</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,8 +43,8 @@
         <?php if (((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) || ((!empty($_POST['email'])) && (!empty($_POST['password'])))): ?>
 
             <div class="userconnect">
-                <a href="#"><img src="../images/artiste1.png" /></a><br/>
-                <a class="name" href="#"><span>Élisa <span>Breton</span></span></a>
+                <a href="profil.php"><img src="../images/artiste1.png" /></a><br/>
+                <a class="name" href="profil.php"><span>Élisa <span>Breton</span></span></a>
 
                 <!--                <div class="userbtn">
                                     <a href="#"><div class="userbutton"><i class="icon-heart-filled"></i></div></a>
@@ -59,21 +54,6 @@
                 <div class="artistebtn">
                     <a href="#"><div class="button"><i class="icon icon-picto-star"></i></div></a>
                     <a href="#"><div class="button"><div><i class="icon icon-picto-w"></i></div></div></a>
-                    <a href="#"><div class="button"><i class="icon icon-w-settings"></i></div></a>
-                </div>
-                <div class="moneys">
-                    <a href="#"><div class="euros"><div class="iconesmoneys"> GAINS </div><div class="chiffres">3,70€</div></div></a><p></p>
-                    <a href="#"><div class="euros"><div class="iconesmoneys"> DONS </div><div class="chiffres">1,20€</div></div></a>
-                </div>
-                <div id="logout">
-                    <?php
-                    if ((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) {
-                        echo $_COOKIE['cookiemail'] . " " . $_COOKIE['cookiepass'];
-                    }
-                    if ((isset($_POST['email'])) && (isset($_POST['password']))) {
-                        echo $_POST['email'] . " " . $_POST['password'];
-                    }
-                    ?>
                     <a href="<?php
                     echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
                     if (!isset($_GET) || empty($_GET)) {
@@ -82,9 +62,12 @@
                         echo '&';
                     }
                     echo 'logout';
-                    ?>"><button>logout</button></a>
+                    ?>"><div class="button"><i class="icon icon-w-settings"></i></div></a>
                 </div>
-
+                <div class="moneys">
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> GAINS </div><div class="chiffres">3,70€</div></div></a><p></p>
+                    <a href="#"><div class="euros"><div class="iconesmoneys"> DONS </div><div class="chiffres">1,20€</div></div></a>
+                </div>
                 <div class="clear"></div>
             </div>
 

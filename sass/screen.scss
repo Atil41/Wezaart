@@ -16,9 +16,10 @@ font-family: 'Raleway', sans-serif;
         url('../fonts/untitled-font-1.ttf') format('truetype'),
         url('../fonts/untitled-font-1.svg') format('svg');
 }
-*:focus {
+*,*:focus {
     outline: 0;
 }
+
 #identification {
     background-color: #fff;
     color:black;
@@ -116,6 +117,8 @@ font-family: 'Raleway', sans-serif;
     text-align: center;
     width: 100%;
     padding: 0 20px;
+    position: absolute;
+    bottom: 20px;
     >a:nth-child(1){
         position:relative;
         &:before {
@@ -144,7 +147,7 @@ font-family: 'Raleway', sans-serif;
     }
     .artistebtn{
         position:relative;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         a {
             padding-top: 6px;
             display: inline-block;
@@ -331,7 +334,7 @@ header#head{
             transition: all .3s ease-in-out;
             text-transform:capitalize;
             a{
-                padding: 8px 0 8px 15%;
+                padding: 7px 0 7px 15%;
                 text-decoration:none;
                 color: #fff;
                 display:inherit;
@@ -348,7 +351,7 @@ header#head{
                 border-left: 5px solid #c6c6c6;
                 background-color: #171a1c;
                 ul{
-                    height:150px;;
+                    height:110px;;
                 }
             }
 
@@ -487,7 +490,95 @@ section#content {
         margin-left:16.66666667%;
     }
     >img{
+        padding: 0;
         width: 1000px;
+    }
+    .contentproject{
+        height: 1440px;
+        width: 1000px;
+        position: absolute;
+        top: 180px;
+        padding: 45px 30px;
+        a{
+            outline:0;
+            display:inline-block;
+            float:left;
+            .img{
+                width: 570px;
+                background-size: cover;
+                background-position: center;
+                border-radius:3px;
+                img{
+                    margin: 0 auto;
+                    display: inherit;
+                    text-align: center;
+                    max-width: 570px;
+                    max-height: 470px;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .artiste{
+            display:block;
+            float:left;
+            padding:5px 0;
+            display: inline;
+            margin-left: 35px;
+            margin-top: -10px;
+            width:330px;
+            .title{
+                color: #fb8c00;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+                opacity: 1;
+            }
+            span{
+                color: #293033;
+                opacity:0.5;
+            }
+            a{
+                color: #293033;
+                text-decoration: none;
+                font-size: 14px;
+
+                .picture{
+                    padding: 0px;
+                    transition: all 0.2s ease-in-out;
+                    border-radius: 50%;
+                    float:left;
+                    overflow:auto;
+                    padding: 3px;
+                    border: 1px solid transparent;
+                    margin-right:5px;
+
+                    img{
+                        width: 50px;
+                        display: block;
+                        float: left;
+                        border-radius: 50%;
+
+                    }
+                }
+                .lastname{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+
+                .info{
+                    float: left;
+                    margin-top: 10px;
+                    display: inline;
+                    overflow: hidden;
+                    line-height: 100%;
+                    >div{
+                        float: left;
+                        clear: left;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
     }
     &.navhide{
         margin-left: 0!important;
@@ -505,7 +596,13 @@ section#content {
         }
     }
     #owl-artistes{
-
+        .owl-controls {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 20px;
+            margin-top: -50px;
+        }
         .artiste{
             padding: 30px 0px;
             margin: 10px;
@@ -523,52 +620,52 @@ section#content {
             }
         }
     }
-    .owl-theme{
-
+    #owl-slide{
         .owl-controls{
-            margin-top: -40px;
-            position: absolute;
-            right: 15px;
-            top: -10px;
-            .owl-prev{
-                background: url(../images/arrow-prev-noir.png) no-repeat 10px center;
-                font-size: 0;
-                padding: 14px;
-                border: 1px solid #cccccc;
-                border-radius: 50%;
-                float: left;
-                &:hover{
-                    background: url(../images/arrow-prev-blanc.png) #283032 no-repeat 10px center;
-
-                }
-            }
-            .owl-next{
-                background: url(../images/arrow-next-noir.png)  no-repeat 10px center;
-                font-size: 0;
-                padding: 14px;
-                border: 1px solid #cccccc;
-                border-radius: 50%;
-                float: left;
-                &:hover{
-                    background: url(../images/arrow-next-blanc.png) #283032 no-repeat 10px center;
-
-                }
-            }
-
-
-            .owl-page{
-                span{
-                    opacity: 1;
-                }
-                &.active span{
-                    background-color: #fff;
-                    border: 4px solid #aaa;
-
-                }
-            }
-
+            margin-top: -30px;
+            position: relative;
         }
     }
+    #owl-artistes{
+
+        .owl-prev{
+            background: url(../images/arrow-prev-noir.png) no-repeat 10px center;
+            font-size: 0;
+            padding: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            float: left;
+            &:hover{
+                background: url(../images/arrow-prev-blanc.png) #283032 no-repeat 10px center;
+
+            }
+        }
+        .owl-next{
+            background: url(../images/arrow-next-noir.png)  no-repeat 10px center;
+            font-size: 0;
+            padding: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            float: left;
+            &:hover{
+                background: url(../images/arrow-next-blanc.png) #283032 no-repeat 10px center;
+
+            }
+        }
+
+
+        .owl-page{
+            span{
+                opacity: 1;
+            }
+            &.active span{
+                background-color: #fff;
+                border: 4px solid #aaa;
+
+            }
+        }
+    }
+
     #searchbar {
         position: absolute;
         top: 35px;
@@ -605,7 +702,7 @@ section#content {
             }
         }
         a{
-
+            text-decoration: none;
             color: #fff;
             opacity: 0.5;
         }
@@ -812,7 +909,7 @@ section#content {
                     float: right;
                     margin:-30px;
                     //width: 230px;
-                    width: 50%;
+                    width: 25%;
                     padding: 5px;
                     background: #c6c6c6;
                     border-radius: 35px;
@@ -992,7 +1089,7 @@ section#content {
                     float: left;
                     margin:-30px;
                     //width: 230px;
-                    width: 50%;
+                    width: 25%;
                     padding: 5px;
                     background: #c6c6c6;
                     border-radius: 35px;
@@ -1009,7 +1106,7 @@ section#content {
             display: block;
             position: relative;
             background: url(../images/img-cat-video.jpg) center top no-repeat;
-
+            background-size:cover;
             .cercleinfos i{
                 font-size:15px;
                 color:#fff;
@@ -1026,7 +1123,7 @@ section#content {
 
             .textinfos {
                 opacity: 0;
-                background: #000;
+                background: rgba(0,0,0,0);
                 width: 100%;
                 height: 100%;
                 display: block;
@@ -1036,7 +1133,6 @@ section#content {
                 color: #fff;
                 font-weight: bold;
                 transition: all 0.3s ease-in-out;
-
             }
         }
 
@@ -1048,8 +1144,8 @@ section#content {
             }
 
             .textinfos {
-                opacity:0.7;
-
+                background: rgba(0,0,0,0.5);
+                opacity: 1;
 
             }
         }
@@ -1116,12 +1212,24 @@ section#content {
         height: 180px;
         background-size: cover;
         position: relative;
+        >*{
+            z-index: 99;
+        }
         >.categorieheadimg{
             width: 100%;
             height: 100%;
             filter: blur(5px);
             background-size: cover;
             overflow: auto;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+
+        }
+        >.categorieshadow{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(41, 48, 51, 0.5);
         }
         .title{
             position: absolute;
@@ -1148,7 +1256,6 @@ section#content {
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color:rgba(41,48,51,0.5);
             padding:5px 20px;
 
             *{
@@ -1396,6 +1503,14 @@ section#content {
             filter: blur(5px);
             background-size: cover;
             overflow: auto;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        >.projectshadow{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(41, 48, 51, 0.5);
         }
         .title{
             position: absolute;
@@ -1431,7 +1546,7 @@ section#content {
             &.profil{
                 button{
                     margin: 0 15px;
-                    &:nth-child(1){
+                    &.active{
                         opacity: 1;
                         border-bottom: 3px solid #fb8c00;
                     }
@@ -1481,16 +1596,19 @@ section#content {
                     background-size:cover;
                     background-position: center;
                     position:relative;
+                    overflow:auto;
                     &:hover{
                         span{
                             opacity: 1;
                             width: 100%;
+                            bottom: 0px;
+
                         }
                     }
                     span{
-
+                        width: 100%;
                         position: absolute;
-                        bottom: 0px;
+                        bottom: -22px;
                         left: 0px;
                         padding: 5px;
                         transition: all 0.3s ease-in-out;

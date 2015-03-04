@@ -134,9 +134,6 @@
 .icon-w-share:before {
     content: "F";
 }
-.icon-w-sound:before {
-    content: "G";
-}
 .icon-w-soundcloud:before {
     content: "H";
 }
@@ -172,4 +169,7 @@
 }
 .icon-picto-wezaart:before {
     content: "O";
+}
+.icon-picto-sound:before {
+    content: "G";
 }

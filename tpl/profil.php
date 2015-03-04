@@ -24,15 +24,14 @@ if (isset($_GET['logout'])) {
         <?php include_once 'header.php'; ?>
         <section id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding navhide notransition"><!--//all 12 col-->
             <section id="projecthead">
-                <div class="projectheadimg"  <?php
-                if (isset($_GET['type']) || !empty($_GET['type'])) {
-                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégori
-                    $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
-                    echo $image;
-                }
-                ?></div>
+                <div class="projectheadimg"  style = "background-image: url(<?php
+                $image = '../images/categorie/performances/'; //rndm background catégori
+                $image.= rand(1, 60) . '.jpg'; //rndm numero d'image
+                echo $image;
+                ?>)"></div>
+                <img class="bghead">
                 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
-                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
                 <nav id="navtop">
                     <ul>
                         <a href="#"><li>La boutique</li></a>
@@ -59,9 +58,9 @@ if (isset($_GET['logout'])) {
 
                 </div>
                 <div id="filter" class="profil">
-                    <button>Profil</button>
-                    <button>Créations</button>
-                    <button>Évenements</button>
+                    <button class="profil active">Profil</button>
+                    <button class="creation">Créations</button>
+                    <button class="event">Évenements</button>
                     <button>Favoris</button>
                     <button>Forum</button>
                     <button>Boutique</button>
@@ -70,7 +69,7 @@ if (isset($_GET['logout'])) {
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
-            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
             <nav id="navtop">
                 <ul>
                     <a href="#" class="prehome"><li>Le concept</li></a>
@@ -78,7 +77,7 @@ if (isset($_GET['logout'])) {
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
             </nav>
-            <img src="../images/nav/profil.jpg">
+            <img class="body col-xs-12 col-sm-9 col-md-10 col-lg-10" src="../images/nav/profil.jpg">
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">
                 <img id="soutiens" src="../images/soutiens.png">
 
@@ -90,7 +89,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>
@@ -110,7 +109,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>

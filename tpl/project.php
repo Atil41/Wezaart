@@ -24,6 +24,7 @@ if (isset($_GET['logout'])) {
         <?php include_once 'header.php'; ?>
         <section id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding navhide notransition"><!--//all 12 col-->
             <section id="projecthead">
+                <div class="projectshadow"></div>
                 <div class="projectheadimg"  <?php
                 if (isset($_GET['type']) || !empty($_GET['type'])) {
                     $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégori
@@ -32,7 +33,7 @@ if (isset($_GET['logout'])) {
                 }
                 ?></div>
                 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
-                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
                 <nav id="navtop">
                     <ul>
                         <a href="#"><li>La boutique</li></a>
@@ -62,7 +63,7 @@ if (isset($_GET['logout'])) {
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
-            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
             <nav id="navtop">
                 <ul>
                     <a href="#" class="prehome"><li>Le concept</li></a>
@@ -71,6 +72,20 @@ if (isset($_GET['logout'])) {
                 </ul>
             </nav>
             <img src="../images/nav/crea.jpg">
+            <div class='contentproject'>
+                <a href="<?php echo $_GET['picture'] ?>" class="popup">
+                    <div class="img">
+                        <img src="<?php echo $_GET['picture']; ?>">
+                    </div>
+                </a>
+                <div class = "artiste">
+                    <a href = "profil.php"><div class = "picture"><img ></div></a>
+                    <span class = "title"><?php echo str_replace('_', ' ', $_GET['title']) ?></span>
+                    <div class = "info">
+                        <a href = "profil.php"><span>par </span><span class = "firstname"></span><span class = "lastname"></span></a><span>le 10 Fevrier 2015</span>
+                    </div>
+                </div>
+            </div>
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">
                 <img id="soutiens" src="../images/soutiens.png">
 
@@ -82,7 +97,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>
@@ -102,7 +117,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>

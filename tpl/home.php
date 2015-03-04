@@ -19,7 +19,7 @@
 </section>
 <!-- page content -->
 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
-<div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+<div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
 <nav id="navtop">
     <ul>
         <a href="#"><li>La boutique</li></a>
@@ -63,12 +63,12 @@
                     La section<br/>
                     <strong>Performance</strong>
                 </span>
-                <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
 
             <div class="textemusicale">
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                <p>Découvrez des artistes hors du commun qui font de leur corps leur principal outil de travail. Spectacles de rue, Danses, Théâtre, Cirque, ou Body painting.</p>
+                <p>Ici, les artistes ont regroupés des oeuvres exceptionnelles pleines de mouvement et d’émotion!</p>
             </div>
         </div>
         <div class = "imagemusique">
@@ -76,7 +76,7 @@
                 <i class = "icon icon-w-info"></i>
             </div>
             <div class = "textinfos">
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <img src="../images/img-cat-perfo-hover.png">
             </div>
         </div>
         <div class = "clear"></div>
@@ -89,12 +89,12 @@
                     <strong>VIDÉO</strong>
                 </span>
 
-                <a href = "#"><div class = "decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href = "#"><div class = "decouvrir">DÉCOUVRIR</div></a>
             </div>
 
             <div class = "textevideo">
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                <p>Des oeuvres façonnées par des arts ancestraux. Peinture, sculpture ou tout autre art manuel, visité et revisité par des artistes étonnants et fascinant!</p>
+                <p>Ici, venez découvrir des oeuvres hautes en couleurs et en formes!</p>
             </div>
         </div>
 
@@ -104,7 +104,7 @@
             </div>
 
             <div class="textinfos">
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <img src="../images/img-cat-video-hover.png">
             </div>
         </div>
 
@@ -117,12 +117,11 @@
                     La section<br/>
                     <strong>DESIGN</strong>
                 </span>
-                <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
-
             <div class="textedesign">
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                <p>Ce n’est pas l’appareil qui fait l’oeuvre. Photographie, digital painting, modelage numérique, les artistes font de cette section un recueil d’étonnement et de découverte!</p>
+                <p>Ici, les artistes ont dompté la machine et en font un univers merveilleux!</p>
             </div>
         </div>
         <div class = "imagedesign">
@@ -130,7 +129,7 @@
                 <i class = "icon icon-w-info"></i>
             </div>
             <div class = "textinfos">
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <img src="../images/img-cat-design-hover.png">
             </div>
         </div>
         <div class = "clear"></div>
@@ -143,12 +142,11 @@
                     <strong>HAPPENING</strong>
                 </span>
 
-                <a href = "#"><div class = "decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href = "#"><div class = "decouvrir">DÉCOUVRIR</div></a>
             </div>
-
             <div class = "textehappening">
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                <p>Faîtes de vos oreilles un récepteur de magie! Les artistes ont fait de cette section un véritable havre de délice auditif. Musique, chants, bruitages, instrumentals!</p>
+                <p>Ici, venez découvrir des sons que vous n’entendrez nulle part ailleurs!</p>
             </div>
         </div>
 
@@ -158,7 +156,7 @@
             </div>
 
             <div class="textinfos">
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <img src="../images/img-cat-happening-hover.png">
             </div>
         </div>
 
@@ -171,12 +169,11 @@
                     La section<br/>
                     <strong>LETTRES</strong>
                 </span>
-                <a href="#"><div class="decouvrir">DÉCOUVRIR LA SELECTION</div></a>
+                <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
-
             <div class="textelettres">
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
-                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                <p>Entrez dans des histoires extraordinaires, contés de manières diverses et parfois surprenantes! Du cinéma, de littérature et même de la bande dessinée!</p>
+                <p>Ici, laissez-vous porter par des récits d’artistes rêveurs, engagés ou philosophes!</p>
             </div>
         </div>
 
@@ -187,7 +184,7 @@
             </div>
 
             <div class = "textinfos">
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                <img src="../images/img-cat-lettres-hover.png">
             </div>
         </div>
         <div class = "clear"></div>
