@@ -92,7 +92,7 @@
                         <div id="logintwitter"><a id="logotwitter">Se connecter avec Twitter</a></div><br/>
                         <div id="loginfacebook"><a id="logofacebook">Se connecter avec Facebook</a></div>
                         </p>
-                        <p>OU</p>
+                        <p><center>OU</center></p>
                         <ol>
                             <li>
                                 <input id="email" name="email" type="email" placeholder="Adresse Email" style="background-color:transparent" required="">

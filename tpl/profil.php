@@ -62,7 +62,7 @@ if (isset($_GET['logout'])) {
                     <button class="creation">Créations</button>
                     <button class="event">Évenements</button>
                     <button>Favoris</button>
-                    <button>Forum</button>
+                    <button>Discussions</button>
                     <button>Boutique</button>
                     <button>Statistiques</button>
                 </div>
