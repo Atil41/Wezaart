@@ -44,7 +44,6 @@ $(document).ready(function () {
         $(".intro-box").stop().fadeIn(300);
     });
     $(".intro-box").stop().fadeOut(0).fadeIn(300);
-
     function introTimer() {
         var nbrSlide = $('.intro .slide').length;
         var timerWidth = 100 / nbrSlide;
@@ -76,10 +75,9 @@ $(document).ready(function () {
             var contact = JSON.stringify(data);
             var obj = jQuery.parseJSON(contact);
             console.log(data);
-
             //colone droite artiste
-
-            $(' .artiste img').each(function (i) {
+            $(' .artiste').each(function (i) {
+                var profil = ' <a class="profil" href="profile.php?name=kelley">< div class = "picture" > < img src = "http://api.randomuser.me/portraits/thumb/women/75.jpg" > < /div>< div class = "info" >< span class = "firstname" > grace < /span><span class="lastname">kelley</span >< div >< i class = "icon icon-w-visuel" > < /i><span class="upload">10</span >< /div>< /div>< /a>< /div>';
                 $(this).attr("src", obj.results[i].user.picture.thumbnail);
             });
             $(' .artiste .info .firstname').each(function (i) {
@@ -92,7 +90,6 @@ $(document).ready(function () {
                 var profil = $('.profil' + index);
                 profil.attr('href', 'profile.php?name=' + name);
             });
-
             //top artiste caroussel
             // profile.php?nom=monnom&prenom=monprenom&img=adresse/de/limage.png
 

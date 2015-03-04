@@ -34,8 +34,8 @@
     </div>
     <div id="owl-artistes" class="wrapper" >
         <?php
-        for ($i = 1; $i <= 15; $i++) {
-            $myLine = rand(1, 100);
+        for ($i = 1; $i <= 5; $i++) {
+            $myLine = $i;
             $file = new SplFileObject('../data/bio.txt');
             //this is zero based so need to subtract 1
             $file->seek($myLine - 1);
@@ -61,14 +61,15 @@
             <div class="title">
                 <span class="h2">
                     La section<br/>
-                    <strong>Performance</strong>
+                    <strong>PERFORMANCE</strong>
                 </span>
                 <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
 
             <div class="textemusicale">
-                <p>Découvrez des artistes hors du commun qui font de leur corps leur principal outil de travail. Spectacles de rue, Danses, Théâtre, Cirque, ou Body painting.</p>
+                <p>Découvrez des artistes hors du commun qui font de leur corps leur principal outil de travail. Spectacles de rue, Danses, Théâtre, Cirque, ou Body painting. </p>
                 <p>Ici, les artistes ont regroupés des oeuvres exceptionnelles pleines de mouvement et d’émotion!</p>
+
             </div>
         </div>
         <div class = "imagemusique">
@@ -86,7 +87,7 @@
             <div class = "title">
                 <span class = "h2">
                     La section<br/>
-                    <strong>VIDÉO</strong>
+                    <strong>Arts Plastiques</strong>
                 </span>
 
                 <a href = "#"><div class = "decouvrir">DÉCOUVRIR</div></a>
@@ -95,6 +96,7 @@
             <div class = "textevideo">
                 <p>Des oeuvres façonnées par des arts ancestraux. Peinture, sculpture ou tout autre art manuel, visité et revisité par des artistes étonnants et fascinant!</p>
                 <p>Ici, venez découvrir des oeuvres hautes en couleurs et en formes!</p>
+
             </div>
         </div>
 
@@ -115,7 +117,7 @@
             <div class="title">
                 <span class="h2">
                     La section<br/>
-                    <strong>DESIGN</strong>
+                    <strong>Arts Numériques</strong>
                 </span>
                 <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
@@ -139,13 +141,13 @@
             <div class = "title">
                 <span class = "h2">
                     La section<br/>
-                    <strong>HAPPENING</strong>
+                    <strong>Sons</strong>
                 </span>
 
                 <a href = "#"><div class = "decouvrir">DÉCOUVRIR</div></a>
             </div>
             <div class = "textehappening">
-                <p>Faîtes de vos oreilles un récepteur de magie! Les artistes ont fait de cette section un véritable havre de délice auditif. Musique, chants, bruitages, instrumentals!</p>
+                <p>Faîtes de vos oreilles un récepteur de magie! Les artistes ont fait de cette section un véritable havre de délice auditif. Musique, chants, bruitages, instrumentaux!</p>
                 <p>Ici, venez découvrir des sons que vous n’entendrez nulle part ailleurs!</p>
             </div>
         </div>
@@ -167,7 +169,7 @@
             <div class="title">
                 <span class="h2">
                     La section<br/>
-                    <strong>LETTRES</strong>
+                    <strong>Récits</strong>
                 </span>
                 <a href="#"><div class="decouvrir">DÉCOUVRIR</div></a>
             </div>
