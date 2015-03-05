@@ -24,7 +24,7 @@
     <ul>
         <a href="#"><li>La boutique</li></a>
         <a href="#" class="prehome"><li>Le concept</li></a>
-        <a href="#"><li class="button">WEZ'LIVE</li></a>
+        <a href="wezlive.php"><li class="button">WEZ'LIVE</li></a>
         <a href="#"><li class="buttonred">Devenez VIP</li></a>
     </ul>
 </nav>

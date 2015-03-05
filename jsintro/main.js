@@ -25,6 +25,12 @@ $(document).ready(function () {
     $("#filter .event").on('click', function () {
         $("#content .body").attr("src", "../images/nav/event.jpg");
     });
+    $("#filter .boutique").on('click', function () {
+        $("#content .body").attr("src", "../images/nav/boutique.jpg");
+    });
+
+
+
     $("#intro-close").on('click', function () {
         $(".intro-box").stop().fadeOut(300);
     });

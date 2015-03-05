@@ -37,7 +37,7 @@ if (isset($_GET['logout'])) {
                     <ul>
                         <a href="#"><li>La boutique</li></a>
                         <a href="#" class="prehome"><li>Le concept</li></a>
-                        <a href="#"><li class="button">WEZ'LIVE</li></a>
+                        <a href="wezlive.php"><li class="button">WEZ'LIVE</li></a>
                         <a href="#"><li class="buttonred">Devenez VIP</li></a>
                     </ul>
                 </nav>
@@ -62,10 +62,10 @@ if (isset($_GET['logout'])) {
                     <button class="profil active">Profil</button>
                     <button class="creation">Créations</button>
                     <button class="event">Évenements</button>
-                    <button>Favoris</button>
-                    <button>Discussions</button>
-                    <button>Boutique</button>
-                    <button>Statistiques</button>
+                    <button class="favoris">Favoris</button>
+                    <button class="discution">Discussions</button>
+                    <button class="boutique">Boutique</button>
+                    <button class="statistiques">Statistiques</button>
                 </div>
             </section>
 

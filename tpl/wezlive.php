@@ -24,25 +24,14 @@ if (isset($_GET['logout'])) {
         <?php include_once 'header.php'; ?>
         <section id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding navhide notransition"><!--//all 12 col-->
             <section id="projecthead">
+                <div class="projectshadow"></div>
                 <div class="projectheadimg"  <?php
-                if (isset($_GET['type']) || !empty($_GET['type'])) {
-                    $image = 'style = "background-image: url(../images/categorie/' . $_GET['type'] . '/'; //rndm background catégorie
-                    if (isset($_GET['subtype']) || !empty($_GET['subtype'])) {
-                        $image.= str_replace(' ', '_', $_GET['subtype']) . '/'; //sous catégorie?
-                        $image.= rand(1, 20) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    } else {
-                        $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
-                        echo $image;
-                    }
-                } else {
-                    $randomW = rand(800, 1200);
-                    $randomH = rand(200, 300);
-                    echo 'style = "background-image: url("http://lorempixel.com/' . $randomW . '/' . $randomH . '/");';
-                }
+                $image = 'style = "background-image: url(../images/categorie/performances/'; //rndm background catégori
+                $image.= rand(1, 60) . '.jpg)">'; //rndm numero d'image
+                echo $image;
                 ?></div>
                 <a href="#"><div id="navhidebtn"><i class="icon icon-w-burger"></i></div></a>
-                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+                <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
                 <nav id="navtop">
                     <ul>
                         <a href="#"><li>La boutique</li></a>
@@ -51,51 +40,23 @@ if (isset($_GET['logout'])) {
                         <a href="#"><li class="buttonred">Devenez VIP</li></a>
                     </ul>
                 </nav>
-                <div class="title">
-                    <?php
-                    if (isset($_GET['type']) and ! empty($_GET['type'])) {
-                        echo '<h1>' . str_replace('_', ' ', $_GET['type']) . '</h1>';
-                        if (isset($_GET['subtype']) and ! empty($_GET['subtype'])) {
-                            echo '<h2>' . str_replace('_', ' ', $_GET['subtype']) . '</h2>';
-                        }
-                    } else {
-                        $myLine = rand(1, 115);
-                        $file = new SplFileObject('../data/nom.txt');
-                        //this is zero based so need to subtract 1
-                        $file->seek($myLine - 1);
-                        echo '<h1>' . $file->current() . '</h1>';
-                    }
-                    ?>
-
-                </div>
+                <div class="title"><h2>WEZ'Live</h2></div>
 
             </section>
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
-            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon-search"></i></a></div>
+            <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>
             <nav id="navtop">
                 <ul>
                     <a href="#" class="prehome"><li>Le concept</li></a>
-                    <a href="#"><li class="button">WEZ'LIVE</li></a>
+                    <a href="wezlive.php"><li class="button">WEZ'LIVE</li></a>
                     <a href="#"><li class="buttonred">Devenez VIP</li></a>
                 </ul>
             </nav>
-            <div id="wezuploadedwrap" class="col-xs-12 col-sm-9 col-md-10 col-lg-10">
+            <img src="../images/nav/wezlive.png">
 
-                <div id="Container" class="wrapper" >
-                    <img src="<?php $_GET['picture'] ?>>"
-                </div>
-                <div class = "artiste">
-                    <a href = "#">
-                        <div class = "picture"><img ></div>
-                        <span class = "title"><?php $_GET['title'] ?></span>
-                        <div class = "info">
-                            <span class = "firstname"></span><span class = "lastname"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+                <img id="soutiens" src="../images/soutiens.png">
 
                 <div id="partenaire" class="wrapper" >
                     <a href="#"><img src="../images/partenaires.png"></a>
@@ -105,7 +66,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>
@@ -125,7 +86,7 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a href = "#">
+                            <a href = "profil.php">
                             <div class = "picture"><img ></div>
                             <div class = "info">
                             <span class = "firstname"></span><span class = "lastname"></span>
@@ -140,7 +101,6 @@ if (isset($_GET['logout'])) {
                     ?>
 
                 </div>
-                <a href="#"><img src="../images/PUB.png"></a>
             </div>
             <?php include_once 'footer.php'; ?>
         </section>
