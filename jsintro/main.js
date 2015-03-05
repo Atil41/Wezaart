@@ -76,19 +76,24 @@ $(document).ready(function () {
             var obj = jQuery.parseJSON(contact);
             console.log(data);
             //colone droite artiste
-            $(' .artiste').each(function (i) {
-                var profil = ' <a class="profil" href="profile.php?name=kelley">< div class = "picture" > < img src = "http://api.randomuser.me/portraits/thumb/women/75.jpg" > < /div>< div class = "info" >< span class = "firstname" > grace < /span><span class="lastname">kelley</span >< div >< i class = "icon icon-w-visuel" > < /i><span class="upload">10</span >< /div>< /div>< /a>< /div>';
-                $(this).attr("src", obj.results[i].user.picture.thumbnail);
+            $('#rightcolumn .artiste').each(function (i) {
+                var firstname = obj.results[i].user.name.first;
+                var lastname = obj.results[i].user.name.last;
+                var picture = obj.results[i].user.picture.thumbnail;
+                var profil = '<a class="profil" href="profil.php?firstname=' + firstname + '&lastname=' + lastname + '&picture=' + picture + '"><div class="picture"><img src="' + picture + '"></div><div class="info"><span class="firstname" > ' + firstname + ' </span><span class="lastname">' + lastname + '</span><div><i class="icon icon-w-visuel"></i><span class="upload">10</span></div></div></a></div>';
+                $(this).html(profil);
             });
-            $(' .artiste .info .firstname').each(function (i) {
-                $(this).text(obj.results[i].user.name.first);
-            });
-            $(' .artiste .info .lastname').each(function (i) {
-                $(this).text(obj.results[i].user.name.last);
-                var name = obj.results[i].user.name.last;
-                var index = i + 1;
-                var profil = $('.profil' + index);
-                profil.attr('href', 'profile.php?name=' + name);
+            $('.contentproject .artiste .title').each(function (i) {
+                var firstname = obj.results[i].user.name.first;
+                var lastname = obj.results[i].user.name.last;
+                var picture = obj.results[i].user.picture.thumbnail;
+                var profilpicture = '<a href="profil.php"><div class="picture"><img src=' + picture + '></div></a>';
+                var name = '<div class="info"><a href="profil.php?firstname=' + firstname + '&lastname=' + lastname + '&picture=' + picture + '"><span>par </span><span class="firstname">' + firstname + '</span><span class="lastname">' + lastname + '</span><span>le 10 Fevrier 2015</span></a></div>';
+                $('.contentproject .artiste .title').prepend(profilpicture);
+                $('.contentproject .artiste .title').append(name);
+
+
+
             });
             //top artiste caroussel
             // profile.php?nom=monnom&prenom=monprenom&img=adresse/de/limage.png

@@ -1514,8 +1514,8 @@ section#content {
         }
         .title{
             position: absolute;
-            top: 100px;
-            left: 20px;
+            top: 90px;
+            left: 35px;
             h1{
                 text-transform: uppercase;
                 z-index: 1;
@@ -1537,7 +1537,6 @@ section#content {
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color:rgba(41,48,51,0.5);
             padding:5px 20px 0 20px;
             *{
                 float: left;

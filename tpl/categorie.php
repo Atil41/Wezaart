@@ -147,15 +147,6 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a class="profil' . $i . '" href = "profil.php">
-                            <div class = "picture"><img ></div>
-                            <div class = "info">
-                            <span class = "firstname"></span><span class = "lastname"></span>
-                            <div>
-                            <i class = "icon icon-w-visuel"></i><span class = "upload">' . rand(1, 105) . '</span>
-                            </div>
-                            </div>
-                            </a>
                             </div>';
                         echo $artiste;
                     }
@@ -167,15 +158,6 @@ if (isset($_GET['logout'])) {
                     <?php
                     for ($i = 1; $i <= 3; $i++) {
                         $artiste = '<div class = "artiste">
-                            <a class=profil' . $i . ' href = "profil.php">
-                            <div class = "picture"><img ></div>
-                            <div class = "info">
-                            <span class = "firstname"></span><span class = "lastname"></span>
-                            <div>
-                            <i class = "icon icon-w-view"></i><span class = "upload">' . rand(1, 105) . '</span>
-                            </div>
-                            </div>
-                            </a>
                             </div>';
                         echo $artiste;
                     }

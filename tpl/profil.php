@@ -24,6 +24,7 @@ if (isset($_GET['logout'])) {
         <?php include_once 'header.php'; ?>
         <section id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding navhide notransition"><!--//all 12 col-->
             <section id="projecthead">
+                <div class="projectshadow"></div>
                 <div class="projectheadimg"  style = "background-image: url(<?php
                 $image = '../images/categorie/performances/'; //rndm background catégori
                 $image.= rand(1, 60) . '.jpg'; //rndm numero d'image
@@ -42,10 +43,10 @@ if (isset($_GET['logout'])) {
                 </nav>
                 <div class="title">
                     <?php
-                    if (isset($_GET['type']) and ! empty($_GET['type'])) {
-                        echo '<h1>' . str_replace('_', ' ', $_GET['type']) . '</h1>';
-                        if (isset($_GET['subtype']) and ! empty($_GET['subtype'])) {
-                            echo '<h2>' . str_replace('_', ' ', $_GET['subtype']) . '</h2>';
+                    if (isset($_GET['firstname']) and ! empty($_GET['firstname'])) {
+                        echo '<h1>' . str_replace('_', ' ', $_GET['firstname']) . '</h1>';
+                        if (isset($_GET['lastname']) and ! empty($_GET['lastname'])) {
+                            echo '<h2>' . str_replace('_', ' ', $_GET['lastname']) . '</h2>';
                         }
                     } else {
                         $myLine = rand(1, 115);
@@ -67,6 +68,7 @@ if (isset($_GET['logout'])) {
                     <button>Statistiques</button>
                 </div>
             </section>
+
             <!-- page content -->
             <a href="#"><div id="navhidebtn"><i class="icon-menu"></i></div></a>
             <div id="searchbar"><input id="tags" type="text" placeholder="Recherche"><a href="#"><i class="icon icon-w-search"></i></a></div>

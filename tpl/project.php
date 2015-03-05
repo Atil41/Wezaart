@@ -79,11 +79,8 @@ if (isset($_GET['logout'])) {
                     </div>
                 </a>
                 <div class = "artiste">
-                    <a href = "profil.php"><div class = "picture"><img ></div></a>
                     <span class = "title"><?php echo str_replace('_', ' ', $_GET['title']) ?></span>
-                    <div class = "info">
-                        <a href = "profil.php"><span>par </span><span class = "firstname"></span><span class = "lastname"></span></a><span>le 10 Fevrier 2015</span>
-                    </div>
+
                 </div>
             </div>
             <div id="rightcolumn" class="hidden-xs col-sm-3 col-md-2 col-lg-2">

@@ -1696,8 +1696,8 @@ section#content #projecthead > .projectshadow {
 /* line 1515, ../sass/screen.scss */
 section#content #projecthead .title {
   position: absolute;
-  top: 100px;
-  left: 20px;
+  top: 90px;
+  left: 35px;
 }
 /* line 1519, ../sass/screen.scss */
 section#content #projecthead .title h1 {
@@ -1722,57 +1722,56 @@ section#content #projecthead #filter {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(41, 48, 51, 0.5);
   padding: 5px 20px 0 20px;
 }
-/* line 1542, ../sass/screen.scss */
+/* line 1541, ../sass/screen.scss */
 section#content #projecthead #filter * {
   float: left;
   display: inline-block;
 }
-/* line 1547, ../sass/screen.scss */
+/* line 1546, ../sass/screen.scss */
 section#content #projecthead #filter.profil button {
   margin: 0 15px;
 }
-/* line 1549, ../sass/screen.scss */
+/* line 1548, ../sass/screen.scss */
 section#content #projecthead #filter.profil button.active {
   opacity: 1;
   border-bottom: 3px solid #fb8c00;
 }
-/* line 1555, ../sass/screen.scss */
+/* line 1554, ../sass/screen.scss */
 section#content #projecthead #filter button {
   background: none;
   border: 0;
   color: #FFF;
   opacity: 0.5;
 }
-/* line 1560, ../sass/screen.scss */
+/* line 1559, ../sass/screen.scss */
 section#content #projecthead #filter button.active {
   opacity: 1;
 }
-/* line 1564, ../sass/screen.scss */
+/* line 1563, ../sass/screen.scss */
 section#content #projecthead #filter p {
   color: #fff;
   margin: 0 15px;
   line-height: 22px;
 }
 @media screen and (max-width: 768px) {
-  /* line 1564, ../sass/screen.scss */
+  /* line 1563, ../sass/screen.scss */
   section#content #projecthead #filter p {
     width: 100%;
   }
 }
-/* line 1574, ../sass/screen.scss */
+/* line 1573, ../sass/screen.scss */
 section#content #wezuploadedwrap {
   padding-top: 15px;
   margin-bottom: 15px;
   background-color: #fff;
 }
-/* line 1580, ../sass/screen.scss */
+/* line 1579, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .mix {
   display: none;
 }
-/* line 1583, ../sass/screen.scss */
+/* line 1582, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded {
   height: 220px;
   float: left;
@@ -1780,7 +1779,7 @@ section#content #wezuploadedwrap #Container .wezuploaded {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 1590, ../sass/screen.scss */
+/* line 1589, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a {
   border-radius: 3px;
   display: block;
@@ -1792,13 +1791,13 @@ section#content #wezuploadedwrap #Container .wezuploaded a {
   position: relative;
   overflow: auto;
 }
-/* line 1601, ../sass/screen.scss */
+/* line 1600, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a:hover span {
   opacity: 1;
   width: 100%;
   bottom: 0px;
 }
-/* line 1608, ../sass/screen.scss */
+/* line 1607, ../sass/screen.scss */
 section#content #wezuploadedwrap #Container .wezuploaded a span {
   width: 100%;
   position: absolute;
@@ -1814,12 +1813,12 @@ section#content #wezuploadedwrap #Container .wezuploaded a span {
   /* IE6-9 */
 }
 @media screen and (max-width: 768px) {
-  /* line 1608, ../sass/screen.scss */
+  /* line 1607, ../sass/screen.scss */
   section#content #wezuploadedwrap #Container .wezuploaded a span {
     opacity: 1;
   }
 }
-/* line 1628, ../sass/screen.scss */
+/* line 1627, ../sass/screen.scss */
 section#content #rightcolumn {
   padding: 205px 5px 5px;
   background-color: #ccc;
@@ -1828,45 +1827,45 @@ section#content #rightcolumn {
   bottom: 0;
   height: 100%;
 }
-/* line 1636, ../sass/screen.scss */
+/* line 1635, ../sass/screen.scss */
 section#content #rightcolumn > a {
   width: 100%;
   display: block;
   margin: 20px auto 0 auto;
 }
-/* line 1640, ../sass/screen.scss */
+/* line 1639, ../sass/screen.scss */
 section#content #rightcolumn > a img {
   width: 100%;
 }
-/* line 1645, ../sass/screen.scss */
+/* line 1644, ../sass/screen.scss */
 section#content #rightcolumn #partenaire img {
   margin: 5px auto;
   width: 100%;
   display: block;
 }
-/* line 1652, ../sass/screen.scss */
+/* line 1651, ../sass/screen.scss */
 section#content #rightcolumn #topartiste, section#content #rightcolumn #topcrea {
   display: inline-block;
 }
-/* line 1654, ../sass/screen.scss */
+/* line 1653, ../sass/screen.scss */
 section#content #rightcolumn #topartiste h3, section#content #rightcolumn #topcrea h3 {
   text-transform: uppercase;
   font-size: 18px;
 }
-/* line 1658, ../sass/screen.scss */
+/* line 1657, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste, section#content #rightcolumn #topcrea .artiste {
   width: 100%;
   display: block;
   float: left;
   padding: 5px 0;
 }
-/* line 1663, ../sass/screen.scss */
+/* line 1662, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a, section#content #rightcolumn #topcrea .artiste a {
   color: #293033;
   text-decoration: none;
   font-size: 14px;
 }
-/* line 1667, ../sass/screen.scss */
+/* line 1666, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .picture, section#content #rightcolumn #topcrea .artiste a .picture {
   padding: 0px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1877,7 +1876,7 @@ section#content #rightcolumn #topartiste .artiste a .picture, section#content #r
   padding: 3px;
   border: 1px solid transparent;
 }
-/* line 1676, ../sass/screen.scss */
+/* line 1675, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .picture:after, section#content #rightcolumn #topcrea .artiste a .picture:after {
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
@@ -1893,12 +1892,12 @@ section#content #rightcolumn #topartiste .artiste a .picture:after, section#cont
   color: transparent;
   padding: 20px;
 }
-/* line 1691, ../sass/screen.scss */
+/* line 1690, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .picture:hover, section#content #rightcolumn #topcrea .artiste a .picture:hover {
   padding: 3px;
   border: 1px solid #a0a3a4;
 }
-/* line 1694, ../sass/screen.scss */
+/* line 1693, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .picture:hover:after, section#content #rightcolumn #topcrea .artiste a .picture:hover:after {
   padding: 16px;
   color: #fff;
@@ -1906,29 +1905,29 @@ section#content #rightcolumn #topartiste .artiste a .picture:hover:after, sectio
   opacity: 0.8;
   background-color: #3f484b;
 }
-/* line 1702, ../sass/screen.scss */
+/* line 1701, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .picture img, section#content #rightcolumn #topcrea .artiste a .picture img {
   width: 50px;
   display: block;
   float: left;
   border-radius: 50%;
 }
-/* line 1710, ../sass/screen.scss */
+/* line 1709, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .firstname, section#content #rightcolumn #topcrea .artiste a .firstname {
   margin-right: 5px;
 }
-/* line 1713, ../sass/screen.scss */
+/* line 1712, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a span, section#content #rightcolumn #topcrea .artiste a span {
   float: left;
   line-height: 14px;
 }
-/* line 1716, ../sass/screen.scss */
+/* line 1715, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a i, section#content #rightcolumn #topcrea .artiste a i {
   float: left;
   line-height: 20px;
   margin-right: 5px;
 }
-/* line 1721, ../sass/screen.scss */
+/* line 1720, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .info, section#content #rightcolumn #topcrea .artiste a .info {
   float: left;
   margin-top: 10px;
@@ -1937,13 +1936,13 @@ section#content #rightcolumn #topartiste .artiste a .info, section#content #righ
   width: 53%;
   line-height: 100%;
 }
-/* line 1728, ../sass/screen.scss */
+/* line 1727, ../sass/screen.scss */
 section#content #rightcolumn #topartiste .artiste a .info > div, section#content #rightcolumn #topcrea .artiste a .info > div {
   float: left;
   clear: left;
   margin-top: 5px;
 }
-/* line 1740, ../sass/screen.scss */
+/* line 1739, ../sass/screen.scss */
 section#content .footer {
   background-color: #ccc;
   padding: 20px 50px;
@@ -1951,46 +1950,46 @@ section#content .footer {
   overflow: hidden;
   line-height: 30px;
 }
-/* line 1746, ../sass/screen.scss */
+/* line 1745, ../sass/screen.scss */
 section#content .footer a {
   color: #000 !important;
 }
-/* line 1750, ../sass/screen.scss */
+/* line 1749, ../sass/screen.scss */
 section#content .footer p {
   background: transparent;
   margin: 0;
 }
-/* line 1754, ../sass/screen.scss */
+/* line 1753, ../sass/screen.scss */
 section#content .footer .info {
   float: left;
 }
-/* line 1756, ../sass/screen.scss */
+/* line 1755, ../sass/screen.scss */
 section#content .footer .info ul li {
   float: left;
   margin-right: 10px;
   font-weight: bold;
 }
-/* line 1761, ../sass/screen.scss */
+/* line 1760, ../sass/screen.scss */
 section#content .footer .info ol li {
   float: left;
   margin-right: 10px;
   opacity: 0.6;
 }
-/* line 1767, ../sass/screen.scss */
+/* line 1766, ../sass/screen.scss */
 section#content .footer .copyright {
   float: right;
   text-align: right;
 }
-/* line 1770, ../sass/screen.scss */
+/* line 1769, ../sass/screen.scss */
 section#content .footer .copyright p {
   font-weight: bold;
 }
-/* line 1773, ../sass/screen.scss */
+/* line 1772, ../sass/screen.scss */
 section#content .footer .copyright span {
   opacity: 0.6;
 }
 
-/* line 1779, ../sass/screen.scss */
+/* line 1778, ../sass/screen.scss */
 .soutiensbox {
   position: absolute;
   top: 0;
@@ -2000,19 +1999,19 @@ section#content .footer .copyright span {
   background: url("../images/bkg-intro.png") repeat center;
   padding: 10%;
 }
-/* line 1787, ../sass/screen.scss */
+/* line 1786, ../sass/screen.scss */
 .soutiensbox .content {
   vertical-align: center;
   text-align: center;
   position: relative;
 }
-/* line 1791, ../sass/screen.scss */
+/* line 1790, ../sass/screen.scss */
 .soutiensbox .content img {
   margin: 0 auto;
   width: 650px;
   display: block;
 }
-/* line 1796, ../sass/screen.scss */
+/* line 1795, ../sass/screen.scss */
 .soutiensbox .content .popinclose {
   width: 50px;
   height: 50px;

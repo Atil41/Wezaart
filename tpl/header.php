@@ -43,8 +43,8 @@
         <?php if (((isset($_COOKIE['cookiemail'])) && (isset($_COOKIE['cookiepass']))) || ((!empty($_POST['email'])) && (!empty($_POST['password'])))): ?>
 
             <div class="userconnect">
-                <a href="profil.php"><img src="../images/artiste1.png" /></a><br/>
-                <a class="name" href="profil.php"><span>Élisa <span>Breton</span></span></a>
+                <a href="profil.php?firstname=Élisa&lastname=Breton&picture=../images/artiste1.png"><img src="../images/artiste1.png" /></a><br/>
+                <a class="name" href="profil.php?firstname=Élisa&lastname=Breton&picture=../images/artiste1.png"><span>Élisa <span>Breton</span></span></a>
 
                 <!--                <div class="userbtn">
                                     <a href="#"><div class="userbutton"><i class="icon-heart-filled"></i></div></a>
